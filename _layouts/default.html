@@ -35,11 +35,16 @@
 				</ul>
 			</footer>
 			<script>
-				ga('create', 'UA-17707549-2', 'auto', 'myTracker');
+				ga(function(tracker) {
+				  // Logs the trackers name.
+				  // (Note: default trackers are given the name "t0")
+				  console.log(tracker.get('name'));
 
-				ga(function() {
-				  // Logs the "myTracker" tracker object to the console.
-				  console.log(ga.getByName('myTracker'));
+				  // Logs the client ID for the current user.
+				  console.log(tracker.get('clientId'));
+
+				  // Logs the URL of the referring site (if available).
+				  console.log(tracker.get('referrer'));
 				});
 			</script>
 		</body>
