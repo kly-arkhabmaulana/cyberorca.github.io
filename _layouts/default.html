@@ -37,17 +37,11 @@
 	        		<li><a href="https://github.com/cyberorca">github.com/cyberorca</a></li>
 				</ul>
 			</footer>
-			<script>
-			window.addEventListener('load',trackEvent);
-			function trackEvent(){
-				gtag('event', 'generate_lead', {
-				  'value': '2',
-				  'currency': 'USD',
-				  'transaction_id': '1234'
-				});
-			}
-				
-			</script>
-			<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-17707549-2'); gtag('event', 'Displayed', { 'event_category' : 'GAPixelForm', 'event_label' : 'Sumo' }); </script>
+
+			<script> 
+				window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} 
+				gtag('js', new Date()); 
+				gtag('config', 'UA-17707549-2'); 
+				gtag('event', 'Displayed', { 'event_category' : 'GAPixelForm', 'event_label' : 'Sumo', 'value': 1 }); </script>
 		</body>
 	</html>
