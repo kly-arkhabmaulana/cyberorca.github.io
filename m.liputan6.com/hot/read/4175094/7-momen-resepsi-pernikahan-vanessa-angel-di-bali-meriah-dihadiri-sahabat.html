@@ -794,10 +794,14 @@
                     PWT.jsLoaded = function() { //PubMatic pwt.js on load callback is used to load GPT
                         (function() {
                             var gads = document.createElement('script');
+                            var rads = document.createElement('script'); // #1
                             var useSSL = 'https:' == document.location.protocol;
                             gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+                            rads.src = (useSSL ? 'https:' : 'http:') + '//adserver.kl-youniverse.com/asyncjs.php'; // #2
+                            rads.async = true; // #3
                             var node = document.getElementsByTagName('script')[0];
                             node.parentNode.insertBefore(gads, node);
+                            node.parentNode.insertBefore(rads, node); // #4
                         })();
                     };
                 </script>
@@ -2205,7 +2209,7 @@
             </div>
         </div>
     </div>
-    <script id="custom-javascript" type="text/javascript">
+    <!-- id="custom-javascript" type="text/javascript">
         /*** START of [ADS] Additional javascript for banner ****/
         //start variable tweak tillads
         var gamTiltadsContainer;
@@ -3745,9 +3749,9 @@
                     content: '.read-page-upper',
                     autoload: true
                 });
-            </script\>
+            </script>
             <!-- End of Vidy Property-->`;
-
+<script>
                                 $("head").append(vidyScript);
                             },
                             scriptEmbedVidy() {
@@ -6639,7 +6643,7 @@
     </script>
     <script id="rich-card" type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","author":{"@type":"Person","name":"Muhammad Fahrur Safi'i"},"dateModified":"2020-02-10T10:20:00+07:00","datePublished":"2020-02-10T10:20:00+07:00","description":"Gelar resepsi pernikahan di Bali secara tertutup, begini kemeriahan pernikahan Vanessa Angel yang diunggah di media sosial.","headline":"7 Momen Resepsi Pernikahan Vanessa Angel di Bali, Meriah Dihadiri Sahabat","image":["https:\/\/cdn0-production-images-kly.akamaized.net\/xZ8hTQ0t2c48UJn08KGfc6AIDGw=\/1x127:1080x735\/640x360\/filters:quality(75):strip_icc():format(jpeg)\/kly-media-production\/medias\/3045619\/original\/051479200_1581303328-febyfebiola.jpg","https:\/\/cdn0-production-images-kly.akamaized.net\/OsbJbIUE0k0geI3Y7dmTwXwm6Qg=\/640x480\/smart\/filters:quality(75):strip_icc():format(jpeg)\/kly-media-production\/medias\/3045619\/original\/051479200_1581303328-febyfebiola.jpg","https:\/\/cdn0-production-images-kly.akamaized.net\/7RleQAwYUUmAKJ8p9biTzOkhiZY=\/640x640\/smart\/filters:quality(75):strip_icc():format(jpeg)\/kly-media-production\/medias\/3045619\/original\/051479200_1581303328-febyfebiola.jpg"],"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","height":37,"width":192,"url":"https:\/\/cdn1-production-assets-kly.akamaized.net\/mobile_logos\/188\/original\/096889200_1569833881-l-6-logo-orange-white.png"},"name":"Liputan6"},"mainEntityOfPage":"https:\/\/m.liputan6.com\/hot\/read\/4175094\/7-momen-resepsi-pernikahan-vanessa-angel-di-bali-meriah-dihadiri-sahabat"}</script>
     <!-- REVIVE LOADER -->
-    <script async src="//adserver.kl-youniverse.com/asyncjs.php"></script>
+    <!-- <script async src="//adserver.kl-youniverse.com/asyncjs.php">--> 
 </body>
 
 </html>
