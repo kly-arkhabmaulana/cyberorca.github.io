@@ -790,7 +790,7 @@
 
                     /*HL VIDEO STICKY STATE*/
                     var dfp_videoHLStickyState = false;
-
+		    /* START - LOAD PUBMATIC, GOOGLE ADS & REVIVE */
                     PWT.jsLoaded = function() { //PubMatic pwt.js on load callback is used to load GPT
                         (function() {
                             var gads = document.createElement('script');
@@ -804,6 +804,7 @@
                             node.parentNode.insertBefore(rads, node); // #4
                         })();
                     };
+		    /* END  - LOAD PUBMATIC, GOOGLE ADS & REVIVE */
                 </script>
 
                 <script type='text/javascript'>
