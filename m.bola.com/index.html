@@ -778,10 +778,14 @@
                     PWT.jsLoaded = function() { //PubMatic pwt.js on load callback is used to load GPT
                         (function() {
                             var gads = document.createElement('script');
+                            var rads = document.createElement('script'); // #1
                             var useSSL = 'https:' == document.location.protocol;
                             gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+                            rads.src = (useSSL ? 'https:' : 'http:') + '//adserver.kl-youniverse.com/asyncjs.php'; // #2
+                            rads.async = true; // #3
                             var node = document.getElementsByTagName('script')[0];
                             node.parentNode.insertBefore(gads, node);
+                            node.parentNode.insertBefore(rads, node); // #4
                         })();
                     };
                 </script>
@@ -6039,8 +6043,6 @@
             mobile.final();
         }
     </script>
-    <!-- REVIVE LOADER -->
-    <script async src="//adserver.kl-youniverse.com/asyncjs.php"></script>
 </body>
 
 </html>
