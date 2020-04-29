@@ -5228,7 +5228,7 @@ googletag.cmd.push(function() {
     CriteoCDBLoad();
     
     /*  START TARGETING BLOCK   */
-    var pagingNum = "1";
+    var pagingNum = window.kly.gtm.pageParam ;
     if (isMatcont) { googletag.pubads().setTargeting("isMatcont", ["1"]);}
     if(typeof Krux !== "undefined"){
             googletag.pubads().setTargeting('ksg', Krux.segments);
