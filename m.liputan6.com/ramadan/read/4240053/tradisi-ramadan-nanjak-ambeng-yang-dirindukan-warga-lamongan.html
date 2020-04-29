@@ -1388,6 +1388,7 @@ dable('sendLogOnce');
         CriteoCDBLoad();
     
         /*  START TARGETING BLOCK   */
+        var pagingNum = "1";
         if (isMatcont) { googletag.pubads().setTargeting("isMatcont", ["1"]);}
         if(typeof Krux !== "undefined"){
             googletag.pubads().setTargeting('ksg', Krux.segments);
@@ -1402,6 +1403,7 @@ dable('sendLogOnce');
         googletag.pubads().setTargeting("isAdvertorial", kmklabs.article && kmklabs.article.isAdvertorial.toString());   
         googletag.pubads().setTargeting("isMultipage", kmklabs.article && kmklabs.article.isMultipage.toString());
         googletag.pubads().setTargeting("articleId", kmklabs.gtm.articleId.toString());
+        googletag.pubads().setTargeting("pagingNum", pagingNum);
         /*  END TARGETING BLOCK   */
 
         googletag.pubads().setCentering(true);
