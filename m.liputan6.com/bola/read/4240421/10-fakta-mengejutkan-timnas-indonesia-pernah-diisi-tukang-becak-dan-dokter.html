@@ -827,8 +827,8 @@ dable('sendLogOnce');
         googletag.pubads().setTargeting("pageType", kmklabs.pageType);
         googletag.pubads().setTargeting("channel", kmklabs.channel.full_slug);
         googletag.pubads().setTargeting("audience", kmklabs.gtm.audience.split("|"));
-        googletag.pubads().setTargeting("isAdvertorial", kmklabs.article && kmklabs.article.isAdvertorial.toString());   
-        googletag.pubads().setTargeting("isMultipage", kmklabs.article && kmklabs.article.isMultipage.toString());
+        googletag.pubads().setTargeting("isAdvertorial", typeof (isAdvertorial = kmklabs.article && kmklabs.article.isAdvertorial.toString()) === "undefined" ? "false" :  isAdvertorial);   
+        googletag.pubads().setTargeting("isMultipage", typeof (isMultipage = kmklabs.article && kmklabs.article.isMultipage.toString()) === "undefined" ? "false" : isMultipage );
         googletag.pubads().setTargeting("articleId", kmklabs.gtm.articleId.toString());
         googletag.pubads().setTargeting("pagingNum", kmklabs.gtm.pageParam && kmklabs.gtm.pageParam.toString());
         /*  END TARGETING BLOCK   */
