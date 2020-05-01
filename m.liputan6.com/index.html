@@ -478,11 +478,11 @@ dable('sendLogOnce');
   /*SET INTERVAL TO AUTO REFRESH BOTTOM FRAME ADS - NEW*/
     window.GAMLibrary = {};
     window.GAMLibrary = {
-        dfpAds_liftSticker  :   '/36504930/m.liputan6.com/dfp-slideup',
-        dfpAds_exposer      :   '/36504930/m.liputan6.com/dfp-exposer',
-        dfpAds_dfpBottomframe:  '/36504930/m.liputan6.com/dfp-bottomfrm',
-        dfpAds_dfpTopFrame  :   '/36504930/m.liputan6.com/dfp-topfrm',
-        oop_dfpHeadline     :   '/36504930/m.liputan6.com/dfp-headline',
+        dfpSlideup          :   '/36504930/m.liputan6.com/dfp-slideup',
+        dfpExposer          :   '/36504930/m.liputan6.com/dfp-exposer',
+        dfpBottomFrame      :   '/36504930/m.liputan6.com/dfp-bottomfrm',
+        dfpTopFrame         :   '/36504930/m.liputan6.com/dfp-topfrm',
+        dfpHeadline         :   '/36504930/m.liputan6.com/dfp-headline',
         timedBottomFrm      :   null,
         infiniteSCId        :   1,
         setGamBFInterval    :   function (active = true) {
@@ -583,6 +583,63 @@ dable('sendLogOnce');
                                                     };
                                     this.scrollHandler = this.scroll.bind(this);
                                     window.addEventListener("scroll", this.scrollHandler);
+                                },
+        infiniteSCArticle   :  function() {
+                                        /**
+                                        * DEPENDEND CLASS, TAG AND ID
+                                        * Class : article-content-body__item--hidden
+                                        * Tag : -
+                                        * ID : gpt-ad-liputan6-sc-[n]
+                                        **/
+
+                                        var parentElement = document.querySelector(".article-content-body"),
+                                            pagingElement = parentElement.querySelectorAll(".article-content-body__item");
+
+                                        pagingElement && pagingElement.forEach(function(v, i) {
+                                            v.setAttribute("paging-index", i + 1);
+                                        })
+
+                                        mo = new MutationObserver(function(mutations) {
+
+                                            mutations.forEach(function(el) {
+                                                var oldValue = el.oldValue,
+                                                    target = el.target,
+                                                    SC,
+                                                    pagingIndex;
+
+                                                if (oldValue && oldValue.match(/article-content-body__item/ig)) {
+                                                    pagingIndex = target.getAttribute('paging-index');
+                                                    if (!(pagingIndex % 2)) {
+                                                        target.childNodes.forEach(function(v, i) {
+                                                            if (v.id && v.id.match(/gpt-ad-liputan6-sc/ig)) {
+                                                                if (document.getElementById(v.id) && !SC) {
+                                                                    
+                                                                    /* DEFINE AND FETCH SC */
+                                                                    if (SC = googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], v.id)) {
+                                                                        SC.addService(googletag.pubads()).setTargeting("pagetype", kmklabs.pageType).setTargeting("position", (pagingIndex/2));
+                                                                        googletag.display(v.id);
+                                                                        googletag.pubads().refresh([SC]);
+                                                                    }
+                                                                }
+                                                            }
+                                                        });
+
+                                                    }
+
+                                                }
+
+                                            });
+                                        });
+
+                                        parentElement && mo.observe(parentElement, {
+                                            childList: true,
+                                            attributes: true,
+                                            characterData: false,
+                                            subtree: true,
+                                            attributeOldValue: true,
+                                            characterDataOldValue: false,
+
+                                        });
                                 }
         
     }
@@ -642,22 +699,22 @@ dable('sendLogOnce');
             });
             
         /*DEFINE ALL SLOT*/
-        googletag.defineSlot(GAMLibrary.oop_dfpHeadline, [
+        googletag.defineSlot(GAMLibrary.dfpHeadline, [
             [320, 50],
             [320, 100]
         ], 'div-gpt-ad-liputan6-hl').addService(googletag.pubads());
         googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], 'div-gpt-ad-liputan6-sc').addService(googletag.pubads());
-        googletag.defineSlot(GAMLibrary.dfpAds_exposer, [[300,250],[300,600],[320,480]], 'div-gpt-ad-liputan6-dfp-exposer-oop').addService(googletag.pubads());
-        googletag.defineOutOfPageSlot(GAMLibrary.dfpAds_dfpTopFrame, 'div-gpt-ad-liputan6-topfrm-oop').addService(googletag.pubads());
+        googletag.defineSlot(GAMLibrary.dfpExposer, [[300,250],[300,600],[320,480]], 'div-gpt-ad-liputan6-dfp-exposer-oop').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(GAMLibrary.dfpTopFrame, 'div-gpt-ad-liputan6-topfrm-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-newsTag1', 'div-gpt-ad-liputan6-newsTag1-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-newsTag2', 'div-gpt-ad-liputan6-newsTag2-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-visual-story-1', 'div-gpt-ad-liputan6-visual-story-1-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-visual-story-2', 'div-gpt-ad-liputan6-visual-story-2-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-visual-story-3', 'div-gpt-ad-liputan6-visual-story-3-oop').addService(googletag.pubads());
-        googletag.defineOutOfPageSlot(GAMLibrary.dfpAds_liftSticker, 'div-gpt-ad-liputan6-overlay-oop').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(GAMLibrary.dfpSlideup, 'div-gpt-ad-liputan6-overlay-oop').addService(googletag.pubads());
         
         /*Bottom Frame Scrolling*/
-        GAMLibrary.timedBottomFrm = googletag.defineSlot(GAMLibrary.dfpAds_dfpBottomframe, [[320, 50],[320, 100]], 'div-gpt-ad-liputan6-bottomfrm').addService(googletag.pubads());
+        GAMLibrary.timedBottomFrm = googletag.defineSlot(GAMLibrary.dfpBottomFrame, [[320, 50],[320, 100]], 'div-gpt-ad-liputan6-bottomfrm').addService(googletag.pubads());
         GAMLibrary.scrollBottomFrame();
          /*Bottom Frame Scrolling*/
 
@@ -669,14 +726,14 @@ dable('sendLogOnce');
             /*check delivering ads slot*/
             if (dfp_slotDelivered == 'block')
             {
-                if (dfp_slotAdUnitPath == GAMLibrary.oop_dfpHeadline) {
+                if (dfp_slotAdUnitPath == GAMLibrary.dfpHeadline) {
                     console.log('INIT STICKY HEADLINE ');
                     var urlParams = new URLSearchParams(window.location.search);
                     var myParam = JSON.parse(urlParams.get('interval'));
                     headlineSticky(myParam);
                 }
 
-                if ( dfp_slotAdUnitPath == GAMLibrary.dfpAds_dfpTopFrame ){
+                if ( dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame ){
                     let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
                     var that = GAMLibrary.LockScroll;
                     GAMLibrary.LockScroll.set();
@@ -726,8 +783,8 @@ dable('sendLogOnce');
         googletag.pubads().setTargeting("pageType", kmklabs.pageType);
         googletag.pubads().setTargeting("channel", kmklabs.channel.full_slug);
         googletag.pubads().setTargeting("audience", kmklabs.gtm.audience.split("|"));
-        googletag.pubads().setTargeting("isAdvertorial", kmklabs.article && kmklabs.article.isAdvertorial.toString());   
-        googletag.pubads().setTargeting("isMultipage", kmklabs.article && kmklabs.article.isMultipage.toString());
+        googletag.pubads().setTargeting("isAdvertorial", typeof (isAdvertorial = kmklabs.article && kmklabs.article.isAdvertorial.toString()) === "undefined" ? "false" :  isAdvertorial);   
+        googletag.pubads().setTargeting("isMultipage", typeof (isMultipage = kmklabs.article && kmklabs.article.isMultipage.toString()) === "undefined" ? "false" : isMultipage );
         googletag.pubads().setTargeting("articleId", kmklabs.gtm.articleId.toString());
         googletag.pubads().setTargeting("pagingNum", kmklabs.gtm.pageParam && kmklabs.gtm.pageParam.toString());
         /*  END TARGETING BLOCK   */
