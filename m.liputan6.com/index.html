@@ -524,7 +524,7 @@ dable('sendLogOnce');
                                         });
                                     }
                                 },
-        document_meta       :   function (metaName) {
+        documentMeta       :   function (metaName) {
                                     var metaResult = '';
                                     var metas = document.getElementsByTagName('meta');
                                     if (metas) {
@@ -550,7 +550,7 @@ dable('sendLogOnce');
                                         return v.toLowerCase();
                                     });
                                 },
-        LockScroll          :   {
+        lockScroll          :   {
                                     status: false,
                                     timeout: 3000,
                                     unset: function() {
@@ -595,8 +595,8 @@ dable('sendLogOnce');
                                         var parentElement = document.querySelector(".article-content-body"),
                                             pagingElement = parentElement.querySelectorAll(".article-content-body__item");
 
-                                        pagingElement && pagingElement.forEach(function(v, i) {
-                                            v.setAttribute("paging-index", i + 1);
+                                        pagingElement && pagingElement.forEach(function(element, index) {
+                                            element.setAttribute("paging-index", index + 1);
                                         })
 
                                         mo = new MutationObserver(function(mutations) {
@@ -610,14 +610,14 @@ dable('sendLogOnce');
                                                 if (oldValue && oldValue.match(/article-content-body__item/ig)) {
                                                     pagingIndex = target.getAttribute('paging-index');
                                                     if (!(pagingIndex % 2)) {
-                                                        target.childNodes.forEach(function(v, i) {
-                                                            if (v.id && v.id.match(/gpt-ad-liputan6-sc/ig)) {
-                                                                if (document.getElementById(v.id) && !SC) {
+                                                        target.childNodes.forEach(function(child, index) {
+                                                            if (child.id && child.id.match(/gpt-ad-liputan6-sc/ig)) {
+                                                                if (document.getElementById(child.id) && !SC) {
                                                                     
                                                                     /* DEFINE AND FETCH SC */
-                                                                    if (SC = googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], v.id)) {
+                                                                    if ( SC = googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [300, 250], child.id) ) {
                                                                         SC.addService(googletag.pubads()).setTargeting("pagetype", kmklabs.pageType).setTargeting("position", (pagingIndex/2));
-                                                                        googletag.display(v.id);
+                                                                        googletag.display(child.id);
                                                                         googletag.pubads().refresh([SC]);
                                                                     }
                                                                 }
@@ -676,10 +676,10 @@ dable('sendLogOnce');
             /* POPULATE META DATA KEYWORDS */
             dfp_pageTitle = kmklabs.article && kmklabs.article.title.klyFiltering(' '),
             dfp_titles = (typeof dfp_pageTitle !== 'undefined') ? dfp_pageTitle.klyFiltering("-") : '',
-            dfp_pageKeywords = GAMLibrary.document_meta("keywords"),
+            dfp_pageKeywords = GAMLibrary.documentMeta("keywords"),
             dfp_keyword = dfp_pageKeywords.klyFiltering(","),
             /* POPULATE META DATA DESC */
-            dfp_pageDesc = GAMLibrary.document_meta("description"),
+            dfp_pageDesc = GAMLibrary.documentMeta("description"),
             dfp_desc = dfp_pageDesc.klyFiltering(","),
             tagForAds = kmklabs && (tagForAds = kmklabs.gtm.tag.klyFiltering("|")),
             dfp_keywords = dfp_keyword.concat(dfp_titles, dfp_desc, tagForAds);
@@ -735,18 +735,18 @@ dable('sendLogOnce');
 
                 if ( dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame ){
                     let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
-                    var that = GAMLibrary.LockScroll;
-                    GAMLibrary.LockScroll.set();
+                    var that = GAMLibrary.lockScroll;
+                    GAMLibrary.lockScroll.set();
 
-                    if (GAMLibrary.LockScroll.status) {
+                    if (GAMLibrary.lockScroll.status) {
                         setTimeout(function() {
                             that.unset();
                         }, that.timeout);
                     } else {
-                        GAMLibrary.LockScroll.unset();
+                        GAMLibrary.lockScroll.unset();
                     }
                     if (deviceOrientation) {
-                        GAMLibrary.LockScroll.unset();
+                        GAMLibrary.lockScroll.unset();
                     }
                     window.addEventListener("resize", function() {
                         let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
@@ -786,7 +786,7 @@ dable('sendLogOnce');
         googletag.pubads().setTargeting("isAdvertorial", typeof (isAdvertorial = kmklabs.article && kmklabs.article.isAdvertorial.toString()) === "undefined" ? "false" :  isAdvertorial);   
         googletag.pubads().setTargeting("isMultipage", typeof (isMultipage = kmklabs.article && kmklabs.article.isMultipage.toString()) === "undefined" ? "false" : isMultipage );
         googletag.pubads().setTargeting("articleId", kmklabs.gtm.articleId.toString());
-        googletag.pubads().setTargeting("pagingNum", kmklabs.gtm.pageParam && kmklabs.gtm.pageParam.toString());
+        googletag.pubads().setTargeting("pagingNum", typeof (pageParam = kmklabs.gtm.pageParam && kmklabs.gtm.pageParam.toString()) === "undefined" ? "false" : pageParam );
         /*  END TARGETING BLOCK   */
         
         googletag.pubads().setCentering(true);
