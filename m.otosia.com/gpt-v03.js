@@ -224,7 +224,7 @@ console.log('%c GPT '+gpt_gam_site+' '+gpt_gam_ver ,'color:#d3d3d3; font-size:25
         /*OUT OF PAGE SLOTS*/
         googletag.defineOutOfPageSlot(GAMLibrary.dfpTopFrame, 'div-gpt-ad-otosia-topfrm-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot(GAMLibrary.dfpExposer2, 'div-gpt-ad-otosia-dfp-exposer-slot2-oop').addService(googletag.pubads());
-        googletag.defineOutOfPageSlot(GAMLibrary.dfpSlideup, 'div-gpt-ad-dfp-slideup-oop').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(GAMLibrary.dfpSlideup, 'div-gpt-ad-dfp-overlay-oop').addService(googletag.pubads());
 
         /*Bottom Frame Scrolling*/
         GAMLibrary.timedBottomFrm = googletag.defineSlot(GAMLibrary.dfpBottomFrame, [[320, 50],[320, 100]], 'div-gpt-ad-otosia-bottomfrm').addService(googletag.pubads());
@@ -355,6 +355,9 @@ console.log('%c GPT '+gpt_gam_site+' '+gpt_gam_ver ,'color:#d3d3d3; font-size:25
     });
     googletag.cmd.push(function() {
         googletag.display('div-gpt-ad-otosia-dfp-exposer-slot2-oop');
+    });
+    googletag.cmd.push(function() {
+        googletag.display('div-gpt-ad-dfp-overlay-oop');
     });
     
     var gptMOtosiaStyle = document.createElement('style');
