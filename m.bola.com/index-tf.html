@@ -484,7 +484,28 @@ if(window.kmklabs.pageType === "ReadPage") {
             "https://cdn-production-assets-kly.akamaized.net/builds/mobile_bola-icons.data.png.7d788e6e.css",
             "https://cdn-production-assets-kly.akamaized.net/builds/mobile_bola-icons.fallback.08f350a8.css"
           ]);
-        </script><noscript><link rel="stylesheet" type="text/css" href="https://cdn-production-assets-kly.akamaized.net/builds/mobile_bola-icons.fallback.08f350a8.css" /></noscript><script>window.SITE = "BOLA";</script></head><body class="mobile js-has-tb category-bola" itemscope="itemscope" itemtype="http://schema.org/WebPage"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCLF9JK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="fb-root"></div><div class="layout" id="back-to-top"><div class="layout__ads" data-info="ad"><div class="channel-ad channel-ad_ad-initm" data-info="ad" data-component-name="mobile:channel-ad"><!-- MOBILE BOLA.COM CHANNEL -->
+        </script><noscript><link rel="stylesheet" type="text/css" href="https://cdn-production-assets-kly.akamaized.net/builds/mobile_bola-icons.fallback.08f350a8.css" /></noscript><script>window.SITE = "BOLA";</script>
+<style>
+          .gam-freeze-3s{
+            overflow:hidden;
+            position:fixed;
+            width:100%;
+          }
+</style>
+<script>	
+    var count = 0;
+    var intervalLock = setInterval(function(){
+        console.log("%c PUBLISHING COUNTER - " +count,'color:red; font-size:25px; font-weight: bold;');
+        count++;
+    },1000);
+		var gamFreeze3s = setTimeout(function(){
+			document.body.classList.remove('gam-freeze-3s');
+      console.log("%c PUBLISHING UNLOCK",'color:red; font-size:25px; font-weight: bold;');
+      clearInterval(intervalLock);
+		},6000);
+</script>
+    
+</head><body class="mobile js-has-tb category-bola gam-freeze-3s" itemscope="itemscope" itemtype="http://schema.org/WebPage"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCLF9JK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="fb-root"></div><div class="layout" id="back-to-top"><div class="layout__ads" data-info="ad"><div class="channel-ad channel-ad_ad-initm" data-info="ad" data-component-name="mobile:channel-ad"><!-- MOBILE BOLA.COM CHANNEL -->
 <script type="text/javascript">
     var gpt_gam_site = window.location.hostname.toUpperCase(),
     gpt_gam_ver = 'V.0.1';
@@ -626,15 +647,26 @@ if(window.kmklabs.pageType === "ReadPage") {
                                 status: false,
                                 timeout: 3000,
                                 unset: function() {
-                                  document.body.style.overflow = "initial";
-                                  document.body.style.position = "unset";
-                                  document.body.style.width = "unset";
+                                  // document.body.style.overflow = "initial";
+                                  document.body.classList.remove('gam-freeze-3s');
                                   this.status = false;
+                                  console.log('%c GPT UNLOCK','color:lime; font-size:25px; font-weight: bold;');
                                 },
                                 set: function() {
-                                  document.body.style.overflow = "hidden";
-                                  document.body.style.position = "fixed";
-                                  document.body.style.width = window.screen.width + "px";
+                                  let that = this;
+                                  //document.body.style.overflow = "hidden";
+                                  document.body.classList.add('gam-freeze-3s');  
+                                  let count = 0;
+                                  let intervalGPTLock = setInterval(function(){
+                                      console.log("%c GPT COUNTER - " + count, 'color:lime; font-size:25px; font-weight: bold;');
+                                      count++;
+                                  },1000);
+
+                                  setTimeout(function() {
+                                    that.unset();
+                                    clearInterval(intervalGPTLock);
+                                  }, that.timeout);
+                                  console.log('%c GPT LOCK ','color:lime; font-size:25px; font-weight: bold;');
                                   this.status = true;
                                 }
                               },
@@ -761,15 +793,9 @@ if(window.kmklabs.pageType === "ReadPage") {
             if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
               let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
               var that = GAMLibrary.lockScroll;
+              
               GAMLibrary.lockScroll.set();
-
-              if (GAMLibrary.lockScroll.status) {
-                setTimeout(function() {
-                that.unset();
-                }, that.timeout);
-              } else {
-                GAMLibrary.lockScroll.unset();
-              }
+       
               if (deviceOrientation) {
                 GAMLibrary.lockScroll.unset();
               }
@@ -777,9 +803,13 @@ if(window.kmklabs.pageType === "ReadPage") {
                 let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
                 if (deviceOrientation) {
                   that.unset();
-                  console.log("unset lock scroll")
                 }
               });
+
+            }
+          }else{
+            if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
+              GAMLibrary.lockScroll.unset();
             }
           }
   
