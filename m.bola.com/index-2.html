@@ -496,24 +496,36 @@
               ]);
             </script><noscript><link rel="stylesheet" type="text/css" href="https://cdn-production-assets-kly.akamaized.net/builds/mobile_bola-icons.fallback.08f350a8.css" /></noscript><script>window.SITE = "BOLA";</script>
     <style>
-              .gam-freeze-3s{
-                overflow:hidden;
-                overflow-y: hidden;
-                width:100%;
+              body,
+              html {
+                position: fixed;
+                width: 100%; 
+                height: 100%
               }
     </style>
+    <script>
+    
+    </script>
     <script>	
         var gaPushed = false;
-       
-            var gamFreeze3s = setTimeout(function(){
-                document.body.classList.remove('gam-freeze-3s');
-          let lockTime = new Date().getTime();
-          let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
-          let diff = lockTime - startLoad;
-          let lockTimeStamp = Math.floor(diff / 1000 % 60);
-          console.log("%c PUBLISHING UNLOCK - " + lockTimeStamp,'color:red; font-size:25px; font-weight: bold;');
-          gaPushed = true;
-            },6000);
+        function haltScroll(e) {
+            e.preventDefault();
+        }
+        document.addEventListener("touchmove", haltScroll, { passive: false });
+      
+        
+        var gamFreeze3s = setTimeout(function(){
+              document.querySelector("body").style.position = "unset";
+              document.querySelector("html").style.position = "unset";
+              document.removeEventListener("touchmove", haltScroll, { passive: true });
+              let lockTime = new Date().getTime();
+              let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
+              let diff = lockTime - startLoad;
+              let lockTimeStamp = Math.floor(diff / 1000 % 60);
+              console.log("%c PUBLISHING UNLOCK - " + lockTimeStamp,'color:red; font-size:25px; font-weight: bold;');   
+        },6000);
+            
+            
     </script>
         
     </head><body class="mobile js-has-tb category-bola gam-freeze-3s" itemscope="itemscope" itemtype="http://schema.org/WebPage"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCLF9JK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="fb-root"></div><div class="layout" id="back-to-top"><div class="layout__ads" data-info="ad"><div class="channel-ad channel-ad_ad-initm" data-info="ad" data-component-name="mobile:channel-ad"><!-- MOBILE BOLA.COM CHANNEL -->
@@ -661,7 +673,8 @@
                                       let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
                                       let diff = lockTime - startLoad;
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
-                                      document.body.classList.remove('gam-freeze-3s');
+                                      document.querySelector("body").style.position = "unset";
+                                      document.querySelector("html").style.position = "unset";
                                       //( ga ) ? this.eventTrackingLock(lockTimeStamp) : '';
                                       console.log('%c GPT UNLOCK : '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                     },
