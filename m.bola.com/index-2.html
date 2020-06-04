@@ -322,10 +322,6 @@
      window.kmklabs.channel = {"id":417,"name":"Bola","full_slug":""}; window.kmklabs.category = {"id":417,"name":"Bola","full_slug":""}; window.kmklabs.toggle = {"disableVirtualpvPhoto":false,"lip6DelayPaging":true}; 
      kmklabs.startLoad = new Date().getTime();
     
-    let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
-    let lockTimeStamp = Math.floor(startLoad / 1000 % 60);
-    console.log("%c PUBLISHING LOCK - " + lockTimeStamp,'color:red; font-size:25px; font-weight: bold;');
-     
      </script><script>window.dataLayer = window.dataLayer || [];</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -338,7 +334,8 @@
                              appId: "bf555687-8dcf-45e6-98a6-500935c5093e",
                          });
                      });
-                 </script><script type="text/javascript">; <!-- Page-hiding snippet (recommended)  -->
+                 </script>
+    <script type="text/javascript">
     (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
     h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
@@ -507,25 +504,40 @@
     
     </script>
     <script>	
-        var gaPushed = false;
+        var gamFreeze3s = null;
         function haltScroll(e) {
             e.preventDefault();
         }
-        document.addEventListener("touchmove", haltScroll, { passive: false });
-      
-        
-        var gamFreeze3s = setTimeout(function(){
-              document.querySelector("body").style.position = "unset";
-              document.querySelector("html").style.position = "unset";
-              document.removeEventListener("touchmove", haltScroll, { passive: true });
-              let lockTime = new Date().getTime();
-              let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
-              let diff = lockTime - startLoad;
-              let lockTimeStamp = Math.floor(diff / 1000 % 60);
-              console.log("%c PUBLISHING UNLOCK - " + lockTimeStamp,'color:red; font-size:25px; font-weight: bold;');   
-        },6000);
-            
-            
+        function freezePages(){
+          let startLoad2 = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
+          let lockTime2 = new Date().getTime();
+          let diff2 = lockTime2 - startLoad2;
+          let lockTimeStamp2 = Math.floor(diff2 / 1000 % 60);
+          let lt2 = Math.floor(lockTime2 / 1000 % 60);
+          let sl2 = Math.floor(startLoad2 / 1000 % 60);
+          
+          console.log("%c PUBLISHING LOCK - " + lockTimeStamp2 + " ( " + lt2 + " - " + sl2 + " )",'color:red; font-size:25px; font-weight: bold;');
+          
+          document.addEventListener("touchmove", haltScroll, { passive: false });
+
+          gamFreeze3s = setTimeout(function(){
+                unfreezePages();
+                let lockTime = new Date().getTime();
+                let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
+                let diff = lockTime - startLoad;
+                let lockTimeStamp = Math.floor(diff / 1000 % 60);
+                let lt = Math.floor(lockTime / 1000 % 60);
+                let sl = Math.floor(startLoad / 1000 % 60);
+                console.log("%c PUBLISHING UNLOCK - " + lockTimeStamp + " ( " + lt + " - " + sl + " )",'color:red; font-size:25px; font-weight: bold;');   
+          },6000);
+        }
+        function unfreezePages(){
+            document.querySelector("body").style.position = "unset";
+            document.querySelector("html").style.position = "unset";
+            document.removeEventListener("touchmove", haltScroll, { passive: true });
+            clearTimeout(gamFreeze3s);
+        }
+        freezePages();    
     </script>
         
     </head><body class="mobile js-has-tb category-bola gam-freeze-3s" itemscope="itemscope" itemtype="http://schema.org/WebPage"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCLF9JK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="fb-root"></div><div class="layout" id="back-to-top"><div class="layout__ads" data-info="ad"><div class="channel-ad channel-ad_ad-initm" data-info="ad" data-component-name="mobile:channel-ad"><!-- MOBILE BOLA.COM CHANNEL -->
@@ -668,14 +680,14 @@
                                   },
           lockScroll          :   {
                                     timeout: 3000,
-                                    unset: function(ga) {
+                                    unset: function() {
                                       let lockTime = new Date().getTime();
                                       let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
                                       let diff = lockTime - startLoad;
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
                                       document.querySelector("body").style.position = "unset";
                                       document.querySelector("html").style.position = "unset";
-                                      //( ga ) ? this.eventTrackingLock(lockTimeStamp) : '';
+                                      unfreezePages();
                                       console.log('%c GPT UNLOCK : '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                     },
                                     set: function() {
@@ -684,7 +696,7 @@
                                       let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
                                       let diff = lockTime - startLoad;
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
-                                      document.body.classList.add('gam-freeze-3s');  
+                                      this.eventTrackingLock(lockTimeStamp);
                                       setTimeout(function() {
                                         that.unset(1);
                                       }, that.timeout);
@@ -823,7 +835,7 @@
                   let deviceOrientation = window.matchMedia("(orientation: portrait)");
                   let that = GAMLibrary.lockScroll;
                   if (!deviceOrientation.matches) {
-                    GAMLibrary.lockScroll.unset(0);
+                    GAMLibrary.lockScroll.unset();
                   }else{
                     GAMLibrary.lockScroll.set();
                   }
@@ -836,7 +848,7 @@
                 
               }else{
                 if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
-                  GAMLibrary.lockScroll.unset(1);
+                  GAMLibrary.lockScroll.unset();
                 }
               }
       
