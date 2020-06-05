@@ -532,9 +532,9 @@
           },6000);
         }
         function unfreezePages(){
-            document.querySelector("body").style.position = "unset";
-            document.querySelector("html").style.position = "unset";
-            document.removeEventListener("touchmove", haltScroll, { passive: true });
+            let style = document.createElement('style');
+            style.innerText = 'body,html {position: unset!important;}';
+            document.body.appendChild(style);
             clearTimeout(gamFreeze3s);
         }
         freezePages();    
@@ -680,13 +680,12 @@
                                   },
           lockScroll          :   {
                                     timeout: 3000,
-                                    unset: function() {
+                                    unset: function(ga) {
                                       let lockTime = new Date().getTime();
                                       let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
                                       let diff = lockTime - startLoad;
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
-                                      document.querySelector("body").style.position = "unset";
-                                      document.querySelector("html").style.position = "unset";
+                                      (ga) ? this.eventTrackingLock(lockTimeStamp) : '';
                                       unfreezePages();
                                       console.log('%c GPT UNLOCK : '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                     },
@@ -698,7 +697,7 @@
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
                                       this.eventTrackingLock(lockTimeStamp);
                                       setTimeout(function() {
-                                        that.unset(1);
+                                        that.unset();
                                       }, that.timeout);
                                       console.log('%c GPT LOCK - '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                     },
@@ -841,14 +840,14 @@
                   }
                   window.addEventListener("resize", function() {
                     if (!deviceOrientation.matches) {
-                      that.unset(0);
+                      that.unset();
                     }
                   });
                 }
                 
               }else{
                 if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
-                  GAMLibrary.lockScroll.unset();
+                  GAMLibrary.lockScroll.unset(1);
                 }
               }
       
