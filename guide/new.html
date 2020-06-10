@@ -1,8 +1,8 @@
                     <!-- GAM CONTAINER START -->
-                    <div id="div-gpt-ad-liputan6-visual-story-1" data-info="ad"></div>
-                    <div id="div-gpt-ad-liputan6-visual-story-2" data-info="ad"></div>
-                    <div id="div-gpt-ad-liputan6-visual-story-3" data-info="ad"></div>
-                    <div id="div-gpt-ad-liputan6-bottomfrm-oop" data-info="ad">
+                    <div id="div-gpt-ad-www-liputan6-visual-story-1" data-info="ad"></div>
+                    <div id="div-gpt-ad-www-liputan6-visual-story-2" data-info="ad"></div>
+                    <div id="div-gpt-ad-www-liputan6-visual-story-3" data-info="ad"></div>
+                    <div id="div-gpt-ad-www-liputan6-bottomfrm-oop" data-info="ad">
 
                     <div id="div-gpt-ad-m-liputan6-visual-story-1" data-info="ad"></div>
                     <div id="div-gpt-ad-m-liputan6-visual-story-2" data-info="ad"></div>
@@ -12,7 +12,8 @@
 
                     <!-- GPT START -->
                     <script>
-                      var isMobile = window.location.host.match(/(m.liputan6.com)/i);
+                      var isMobile = window.location.host.match(/(m.liputan6.com)/i),
+                      gamPf = {'sd':(isMobile ? 'm' : 'www'),'pf' : (isMobile ? 'mobile' : 'desktop')};
                       window.googletag = window.googletag || {cmd: []};
                       (function() {
                         var gads = document.createElement('script'),
@@ -21,46 +22,25 @@
                         gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
                         node.parentNode.insertBefore(gads, node);
                       })();
-                      if( isMobile ){
-                        googletag.cmd.push(function() {
-                            googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-visual-story-1', 'div-gpt-ad-m-liputan6-visual-story-1').addService(googletag.pubads());
-                            googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-visual-story-2', 'div-gpt-ad-m-liputan6-visual-story-2').addService(googletag.pubads());
-                            googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-visual-story-3', 'div-gpt-ad-m-liputan6-visual-story-3').addService(googletag.pubads());
-                            googletag.defineOutOfPageSlot('/36504930/m.liputan6.com/dfp-bottomfrm', 'div-gpt-ad-m-liputan6-bottomfrm-oop').addService(googletag.pubads());
+
+                      googletag.cmd.push(function() {
+                          googletag.defineOutOfPageSlot('/36504930/'+ gamPf.sd +'.liputan6.com/dfp-visual-story-1', 'div-gpt-ad-'+ gamPf.sd +'-liputan6-visual-story-1').addService(googletag.pubads());
+                          googletag.defineOutOfPageSlot('/36504930/'+ gamPf.sd +'.liputan6.com/dfp-visual-story-2', 'div-gpt-ad-'+ gamPf.sd +'-liputan6-visual-story-2').addService(googletag.pubads());
+                          googletag.defineOutOfPageSlot('/36504930/'+ gamPf.sd +'.liputan6.com/dfp-visual-story-3', 'div-gpt-ad-'+ gamPf.sd +'-liputan6-visual-story-3').addService(googletag.pubads());
+                          googletag.defineOutOfPageSlot('/36504930/'+ gamPf.sd +'.liputan6.com/dfp-bottomfrm', 'div-gpt-ad-'+ gamPf.sd +'-liputan6-bottomfrm-oop').addService(googletag.pubads());
                         
-                            googletag.pubads().setTargeting("subCategory", [kmklabs.gtm.subCategory,]);
-                            googletag.pubads().setTargeting("PageType", kmklabs.pageType);
-                            googletag.pubads().setTargeting("Site", "LIPUTAN6.COM");
-                            googletag.pubads().setTargeting("Platform", "MOBILE");
-                            googletag.pubads().setCentering(true);
-                            googletag.pubads().enableSingleRequest();
-                            googletag.pubads().collapseEmptyDivs();
-                            googletag.enableServices();
-                        });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-m-liputan6-visual-story-1'); });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-m-liputan6-visual-story-2'); });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-m-liputan6-visual-story-3'); });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-m-liputan6-bottomfrm-oop'); });
-                      }else{
-                        googletag.cmd.push(function() {
-                            googletag.defineOutOfPageSlot('/36504930/www.liputan6.com/dfp-visual-story-1', 'div-gpt-ad-liputan6-visual-story-1').addService(googletag.pubads());
-                            googletag.defineOutOfPageSlot('/36504930/www.liputan6.com/dfp-visual-story-2', 'div-gpt-ad-liputan6-visual-story-2').addService(googletag.pubads());
-                            googletag.defineOutOfPageSlot('/36504930/www.liputan6.com/dfp-visual-story-3', 'div-gpt-ad-liputan6-visual-story-3').addService(googletag.pubads());
-                            googletag.defineOutOfPageSlot('/36504930/www.liputan6.com/dfp-bottomfrm', 'div-gpt-ad-liputan6-bottomfrm-oop').addService(googletag.pubads());
-                        
-                            googletag.pubads().setTargeting("subCategory", [kmklabs.gtm.subCategory,]);
-                            googletag.pubads().setTargeting("PageType", kmklabs.pageType);
-                            googletag.pubads().setTargeting("Site", "LIPUTAN6.COM");
-                            googletag.pubads().setTargeting("Platform", "DESKTOP");
-                            googletag.pubads().setCentering(true);
-                            googletag.pubads().enableSingleRequest();
-                            googletag.pubads().collapseEmptyDivs();
-                            googletag.enableServices();
-                        });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-liputan6-visual-story-1'); });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-liputan6-visual-story-2'); });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-liputan6-visual-story-3'); });
-                        googletag.cmd.push(function() { googletag.display('div-gpt-ad-liputan6-bottomfrm-oop'); });
-                      }
+                          googletag.pubads().setTargeting("subCategory", [kmklabs.gtm.subCategory,]);
+                          googletag.pubads().setTargeting("PageType", kmklabs.pageType);
+                          googletag.pubads().setTargeting("Site", "LIPUTAN6.COM");
+                          googletag.pubads().setTargeting("Platform", gamPf.pf);
+                          googletag.pubads().setCentering(true);
+                          googletag.pubads().enableSingleRequest();
+                          googletag.pubads().collapseEmptyDivs();
+                          googletag.enableServices();
+                      });
+                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-'+ gamPf.sd +'-liputan6-visual-story-1'); });
+                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-'+ gamPf.sd +'-liputan6-visual-story-2'); });
+                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-'+ gamPf.sd +'-liputan6-visual-story-3'); });
+                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-'+ gamPf.sd +'-liputan6-bottomfrm-oop'); });
                     </script>
                     <!-- GPT END -->
