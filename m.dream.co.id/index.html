@@ -6,7 +6,7 @@
         <title>Dream.co.id : Situs Berita Muslim Populer</title>
         <meta name="description" content="Situs Berita Muslim terbesar dan populer di indonesia. Berita, hijab, sunnah, sejarah, wawancara, dakwah, foto, video, gaya hidup muslim di indonesia hingga mancanegara" />
         <meta name="keywords" content="situs, berita, muslim, terbesar, populer, indonesia, mancanegara, hijab, sunnah, sejarah, wawancara, dakwah, foto, video, gaya, hidup, halal, haram, ramadhan, idul, fitri, adha, qurban, zakat, puasa, shalat, wudhu, quran, hadist, syariah" />
-        <meta http-equiv="Expires" content="Wed, 08 Apr 2020 21:36:25 GMT" />
+        <meta http-equiv="Expires" content="Thu, 20 Aug 2020 11:33:53 GMT" />
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         <meta
             name="viewport"
@@ -73,7 +73,7 @@
             rel="apple-touch-icon"
             href="https://cdns.klimg.com/dream.co.id/resources/m-assets/img/apple-touch-icon-152x152-precomposed.png"
         />
-        <link rel="stylesheet" href="https://cdns.klimg.com/a.dream.co.id/m-assets/css/v.4.2.5/main.css"> <script src="https://cdns.klimg.com/a.dream.co.id/m-assets/js/v.4.2.4/dream_new.js"></script> <script type="text/javascript">
+        <link rel="stylesheet" href="https://cdns.klimg.com/a.dream.co.id/m-assets/css/v.4.3.3/main.css"> <script src="https://cdns.klimg.com/a.dream.co.id/m-assets/js/v.4.3.2/dream_new.js"></script> <script type="text/javascript">
         window.kly = {};
         window.kly.env = 'production';
         window.kly.baseAssetsUrl = '';
@@ -153,6 +153,29 @@
         </script>
         <!-- End Google Tag Manager -->
 
+        <!-- Page-hiding snippet (recommended)  -->
+        <script type="text/javascript">
+            (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+            })(window,document.documentElement,'async-hide','dataLayer',4000,
+            {'GTM-5DHWXQW':true});
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-108534636-6', 'auto', {allowLinker: true, cookieDomain: 'm.dream.co.id'});
+            ga('require', 'linkid', 'linkid.js');
+            ga('require', 'displayfeatures');
+            ga('require', 'GTM-5DHWXQW');
+        </script>
+        <style>
+            .async-hide { opacity: 0 !important}
+        </style>
+        <!-- end of Page-hiding snippet (recommended)  -->
+
         <meta property="og:title" content="Dream.co.id : Situs Berita Muslim Populer" />
         <meta property="og:description" content="Situs Berita Muslim terbesar dan populer di indonesia. Berita, hijab, sunnah, sejarah, wawancara, dakwah, foto, video, gaya hidup muslim di indonesia hingga mancanegara" />
         <meta property="og:type" content="article" />
@@ -201,8 +224,35 @@
                 }(document, 'script', 'facebook-jssdk'));
         </script>
         <!-- End of FB Analytics -->
+        <style>
+            body,
+            html {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script>
+            var gamFreeze3s = null;
+            function freezePages() {
+                gamFreeze3s = setTimeout(function(){
+                    unfreezePages();
+                },6000);
+            }
+            function unfreezePages() {
+                let style = document.createElement('style');
+                style.innerText = 'body,html {position: unset!important;}';
+                document.body.appendChild(style);
+                clearTimeout(gamFreeze3s);
+            }
+            freezePages();
+            window.addEventListener('DOMContentLoaded',function(){window.kly.startLoad=new Date().getTime();});
+        </script>
     </head>
     <body >
+        <!-- Realite Analytics -->
+        <img src="https://stat.realite.id/tracker/5eaa3bf66c59f.gif" style="display:none" height="1" width="1" alt="" />
+        <!-- End Realite Analytics -->
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe
@@ -234,7 +284,7 @@
         <div class="container">
             <div class="navbar-left">
                 <a href="" class="icon"><img src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/update2.0/burger-menu-new.png" width="20" height="16" alt="asset dream.co.id"></a>
-                <a href="index.html" class="logo"><img style="height:40px;" src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/new_dream_mobile.png" alt="dream.co.id logo"></a>
+                <a href="index.html" class="logo"><img style="height:40px;" src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/dream_logo_dirumahaja.png" alt="dream.co.id logo"></a>
             </div>
             <div class="navbar-swiper swiper-container">
                 <div class="swiper-wrapper">
@@ -243,6 +293,7 @@
                     <div class="swiper-slide"><a href="lifestyle/index.html">HALAL LIFESTYLE</a></div>
                     <div class="swiper-slide"><a href="culinary/index.html">CULINARY</a></div>
                     <div class="swiper-slide"><a href="travel/index.html">TRAVEL</a></div>
+                    <div class="swiper-slide"><a href="haji/index.html">HAJI</a></div>
                     <div class="swiper-slide"><a href="news/index.html">HOT NEWS</a></div>
                     <div class="swiper-slide"><a href="dinar/index.html">DINAR</a></div>
                     <div class="swiper-slide"><a href="video/index.html">VIDEO</a></div>
@@ -255,7 +306,7 @@
             <div class="navbar-full">
                 <div class="navbar-header">
                     <div class="navbar-top">
-                        <a href="index.html" class="logo"><img style="height:40px;" src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/new_dream_mobile.png" alt="dream.co.id logo"></a>
+                        <a href="index.html" class="logo"><img style="height:40px;" src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/dream_logo_dirumahaja.png" alt="dream.co.id logo"></a>
                         <a href="" class="close"><img src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/update2.0/close-new.png" width="17" height="18" alt="asset dream.co.id"></a>
                     </div>
                     <div class="navbar-search">
@@ -307,6 +358,7 @@
                         <li><a href="showbiz/index.html" class="icon-showbiz">Showbiz</a></li>
                         <li><a href="fresh/index.html" class="icon-fresh">Health & Fresh</a></li>
                         <li><a href="travel/index.html" class="icon-travel">Travel</a></li>
+                        <li class="haji-link"><a href="haji/index.html" class="icon-haji">Haji</a></li>
                         <li><a href="men-fashion/index.html" class="icon-menfashion">Men Fashion</a></li>
                         <li><a href="automotive/index.html" class="icon-automotive">Automotive</a></li>
                         <li><a href="techno/index.html" class="icon-techno">Techno</a></li>
@@ -342,24 +394,24 @@
             <div class="headline-top swiper-container">
     <div class="swiper-wrapper">
         <div class="headline-item swiper-slide">
-    <figure><a href="your-story/momen-glenn-fredly-berpeci-merdu-melantunkan-sholawat-nabi-200408u.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/04/08/133802/momen-glenn-fredly-berpeci-merdu-melantunkan-sholawat-nabi-200408u.jpg" alt="Momen Glenn Fredly Berpeci, Merdu Melantunkan Sholawat Nabi"></a>
+    <figure><a href="your-story/doa-niat-puasa-10-hari-pertama-muharram-200819a.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/08/19/144876/doa-niat-puasa-10-hari-pertama-muharram-200819a.jpg" alt="Doa Niat Puasa 10 Hari Pertama Muharram"></a>
 	<div class="description">
-		<h1><a href="your-story/momen-glenn-fredly-berpeci-merdu-melantunkan-sholawat-nabi-200408u.html">Momen Glenn Fredly Berpeci, Merdu Melantunkan Sholawat Nabi</a></h1>
+		<h1><a href="your-story/doa-niat-puasa-10-hari-pertama-muharram-200819a.html">Doa Niat Puasa 10 Hari Pertama Muharram</a></h1>
 	</div>
 </div><div class="headline-item swiper-slide">
-    <figure><a href="https://www.dream.co.id/tag/glenn-fredly/"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/real/2020/04/08/527050/glenn-fredly-meninggal-dunia.jpg" alt="Glenn Fredly Meninggal Dunia"></a>
+    <figure><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/real/2020/08/18/579813/merdeka-dari-mental-ilness.jpg" alt="Merdeka dari Mental Ilness">
 	<div class="description">
-		<h1><a href="https://www.dream.co.id/tag/glenn-fredly/">Glenn Fredly Meninggal Dunia</a></h1>
+		<h1>Merdeka dari Mental Ilness</h1>
 	</div>
 </div><div class="headline-item swiper-slide">
-    <figure><a href="https://www.dream.co.id/photo/5-potret-menantu-cristiano-ronaldo-cantiknya-bikin-adem-hati-2004017.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/real/2020/04/06/525385/5-potret-menantu-cristiano-ronaldo-cantiknya-bikin-adem-hati.jpg" alt="5 Potret Menantu Cristiano Ronaldo, Cantiknya Bikin Adem Hati!"></a>
+    <figure><a href="https://www.dream.co.id/tag/begood/"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/real/2020/08/17/579735/bagikan-kisah-inspirasi-kebaikan-kamu.jpg" alt="Bagikan Kisah Inspirasi Kebaikan Kamu"></a>
 	<div class="description">
-		<h1><a href="https://www.dream.co.id/photo/5-potret-menantu-cristiano-ronaldo-cantiknya-bikin-adem-hati-2004017.html">5 Potret Menantu Cristiano Ronaldo, Cantiknya Bikin Adem Hati!</a></h1>
+		<h1><a href="https://www.dream.co.id/tag/begood/">Bagikan Kisah Inspirasi Kebaikan Kamu</a></h1>
 	</div>
 </div><div class="headline-item swiper-slide">
-    <figure><a href="showbiz/momen-momen-terakhir-glenn-fredly-200408k.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/04/08/133798/momen-momen-terakhir-glenn-fredly-200408k.jpg" alt="Momen-momen Terakhir Glenn Fredly"></a>
+    <figure><a href="showbiz/berkali-kali-rumah-tangganya-diisukan-cerai-aura-kasih-udah-biasa-200819h.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/08/19/144862/berkali-kali-rumah-tangganya-diisukan-cerai-aura-kasih-udah-biasa-200819h.jpg" alt="Berkali-kali Diisukan Cerai, Aura Kasih: Sudah Biasa.."></a>
 	<div class="description">
-		<h1><a href="showbiz/momen-momen-terakhir-glenn-fredly-200408k.html">Momen-momen Terakhir Glenn Fredly</a></h1>
+		<h1><a href="showbiz/berkali-kali-rumah-tangganya-diisukan-cerai-aura-kasih-udah-biasa-200819h.html">Berkali-kali Diisukan Cerai, Aura Kasih: Sudah Biasa..</a></h1>
 	</div>
 </div>
     </div>
@@ -373,40 +425,40 @@
                         <div class="infeed-slot" data-template="90" data-slot="1"></div>
                         <!--ENDOF KLN INFEED 1 CODE --><div class="swiper-slide">
     <div class="item">
-        <figure><a href="showbiz/armand-maulana-tunda-lelang-barang-saat-dengar-glenn-fredly-meninggal-200408f.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133794/armand-maulana-tunda-lelang-barang-saat-dengar-glenn-fredly-meninggal-200408f.jpg" alt="Glenn Fredly Meninggal, Armand Maulana Syok"></a></figure>
+        <figure><a href="showbiz/rebahan-di-pantai-salmafina-sunan-bikin-riuh-2008203.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144922/rebahan-di-pantai-salmafina-sunan-bikin-riuh-2008203.jpg" alt="Rebahan di Pantai, Salmafina Sunan Bikin Riuh"></a></figure>
         <div class="description">
             <a class="link link-kategori">SHOWBIZ</a>
-            <p><a href="showbiz/armand-maulana-tunda-lelang-barang-saat-dengar-glenn-fredly-meninggal-200408f.html">Glenn Fredly Meninggal, Armand Maulana Syok</a></p>
+            <p><a href="showbiz/rebahan-di-pantai-salmafina-sunan-bikin-riuh-2008203.html">Rebahan di Pantai, Salmafina Sunan Bikin Riuh</a></p>
         </div>
     </div>
 </div>                        <!--KLN INFEED 2 CODE -->
                         <div class="infeed-slot" data-template="90" data-slot="2"></div>
                         <!--ENDOF KLN INFEED 2 CODE --><div class="swiper-slide">
     <div class="item">
-        <figure><a href="showbiz/merinding-pesan-menyentuh-glenn-fredly-untuk-tetap-bersyukur-200408k.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133793/merinding-pesan-menyentuh-glenn-fredly-untuk-tetap-bersyukur-200408k-rev200409.jpg" alt="Merinding! Pesan Menyentuh Glenn Fredly Untuk Tetap Bersyukur"></a></figure>
+        <figure><a href="lifestyle/nivea-luncurkan-varian-baru-hokkaido-rose-series-200820p.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144920/nivea-luncurkan-varian-baru-hokkaido-rose-series-200820p.jpg" alt="Cerahkan Kulit Lelah Dengan Hokkaido Rose Series by NIVEA"></a></figure>
         <div class="description">
-            <a class="link link-kategori">SHOWBIZ</a>
-            <p><a href="showbiz/merinding-pesan-menyentuh-glenn-fredly-untuk-tetap-bersyukur-200408k.html">Merinding! Pesan Menyentuh Glenn Fredly Untuk Tetap Bersyukur</a></p>
+            <a class="link link-kategori">LIFESTYLE</a>
+            <p><a href="lifestyle/nivea-luncurkan-varian-baru-hokkaido-rose-series-200820p.html">Cerahkan Kulit Lelah Dengan Hokkaido Rose Series by NIVEA</a></p>
         </div>
     </div>
 </div>                        <!--KLN INFEED 3 CODE -->
                         <div class="infeed-slot" data-template="90" data-slot="3"></div>
                         <!--ENDOF KLN INFEED 3 CODE --><div class="swiper-slide">
     <div class="item">
-        <figure><a href="showbiz/haru-unggahan-terakhir-mutia-ayu-bareng-glenn-fredly-2004080.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133788/haru-unggahan-terakhir-mutia-ayu-bareng-glenn-fredly-2004080-rev2004081.jpg" alt="Haru! Unggahan 13 Jam Terakhir Mutia Ayu Sebelum Glenn Fredly Meninggal Dunia"></a></figure>
+        <figure><a href="showbiz/nikita-mirzani-ikut-kometari-kalimat-anjay-lutfi-agizal-pacar-putri-iis-dahlia-200820b.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144918/nikita-mirzani-ikut-kometari-kalimat-anjay-lutfi-agizal-pacar-putri-iis-dahlia-200820b.jpg" alt="Nikita Mirzani Ikut Kometari Kalimat Anjay Lutfi Agizal Pacar Putri Iis Dahlia"></a></figure>
         <div class="description">
             <a class="link link-kategori">SHOWBIZ</a>
-            <p><a href="showbiz/haru-unggahan-terakhir-mutia-ayu-bareng-glenn-fredly-2004080.html">Haru! Unggahan 13 Jam Terakhir Mutia Ayu Sebelum Glenn Fredly Meninggal Dunia</a></p>
+            <p><a href="showbiz/nikita-mirzani-ikut-kometari-kalimat-anjay-lutfi-agizal-pacar-putri-iis-dahlia-200820b.html">Nikita Mirzani Ikut Kometari Kalimat Anjay Lutfi Agizal Pacar Putri Iis Dahlia</a></p>
         </div>
     </div>
 </div>                        <!--KLN INFEED 4 CODE -->
                         <div class="infeed-slot" data-template="90" data-slot="4"></div>
                         <!--ENDOF KLN INFEED 4 CODE --><div class="swiper-slide">
     <div class="item">
-        <figure><a href="showbiz/glenn-fredly-meninggal-dewi-lestari-dan-ernest-prakasa-terpukul-200408k.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133792/glenn-fredly-meninggal-dewi-lestari-dan-ernest-prakasa-terpukul-200408k.jpg" alt="Glenn Fredly Meninggal, Ernest Prakasa: No, Please No"></a></figure>
+        <figure><a href="showbiz/pulang-dari-medan-diminta-keterangan-soal-nadia-jawaban-rizky-da-mengejutkan-2008204.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144916/pulang-dari-medan-diminta-keterangan-soal-nadia-jawaban-rizky-da-mengejutkan-2008204.jpg" alt="Ditanya Soal Rumah Tangganya dengan Nadia, Jawaban Rizky DA Mengejutkan"></a></figure>
         <div class="description">
             <a class="link link-kategori">SHOWBIZ</a>
-            <p><a href="showbiz/glenn-fredly-meninggal-dewi-lestari-dan-ernest-prakasa-terpukul-200408k.html">Glenn Fredly Meninggal, Ernest Prakasa: No, Please No</a></p>
+            <p><a href="showbiz/pulang-dari-medan-diminta-keterangan-soal-nadia-jawaban-rizky-da-mengejutkan-2008204.html">Ditanya Soal Rumah Tangganya dengan Nadia, Jawaban Rizky DA Mengejutkan</a></p>
         </div>
     </div>
 </div>
@@ -419,34 +471,34 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
     <div class="item">
-        <figure><a href="your-story/ustad-abdul-somad-bagikan-amalan-malam-nisfu-syaban-perbanyak-baca-yasin-2004083.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133784/ustad-abdul-somad-bagikan-amalan-malam-nisfu-syaban-perbanyak-baca-yasin-2004083.jpg" alt="Amalan dan Doa Malam Nisfu Syaban yang Dibaca Ustad Abdul Somad"></a></figure>
-        <div class="description">
-            <a class="link link-kategori">YOUR STORY</a>
-            <p><a href="your-story/ustad-abdul-somad-bagikan-amalan-malam-nisfu-syaban-perbanyak-baca-yasin-2004083.html">Amalan dan Doa Malam Nisfu Syaban yang Dibaca Ustad Abdul Somad</a></p>
-        </div>
-    </div>
-</div><div class="swiper-slide">
-    <div class="item">
-        <figure><a href="your-story/doa-mohon-ampun-karena-menyakiti-orang-lain-200408c.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133756/doa-mohon-ampun-karena-menyakiti-orang-lain-200408c.jpg" alt="Doa Mohon Ampun Karena Khilaf Telah Menyakiti Orang Lain"></a></figure>
-        <div class="description">
-            <a class="link link-kategori">YOUR STORY</a>
-            <p><a href="your-story/doa-mohon-ampun-karena-menyakiti-orang-lain-200408c.html">Doa Mohon Ampun Karena Khilaf Telah Menyakiti Orang Lain</a></p>
-        </div>
-    </div>
-</div><div class="swiper-slide">
-    <div class="item">
-        <figure><a href="your-story/amalan-merayakan-malam-nisfu-syaban-200408m.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133780/amalan-merayakan-malam-nisfu-syaban-200408m.jpg" alt="Amalan Malam Nisfu Syaban yang Akan Dikabulkan Allah SWT"></a></figure>
-        <div class="description">
-            <a class="link link-kategori">YOUR STORY</a>
-            <p><a href="your-story/amalan-merayakan-malam-nisfu-syaban-200408m.html">Amalan Malam Nisfu Syaban yang Akan Dikabulkan Allah SWT</a></p>
-        </div>
-    </div>
-</div><div class="swiper-slide">
-    <div class="item">
-        <figure><a href="news/kebijakan-psbb-mobil-dan-motor-dibatasi-penumpangnya-2004080.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133775/kebijakan-psbb-mobil-dan-motor-dibatasi-penumpangnya-2004080.jpg" alt="Catat! Aturan Kendaraan Pribadi Saat PSBB di Jakarta Mulai Jumat Besok"></a></figure>
+        <figure><a href="news/saudi-tak-akan-jalankan-normalisasi-hubungan-dengan-israel-200820h.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144923/saudi-tak-akan-jalankan-normalisasi-hubungan-dengan-israel-200820h.jpg" alt="Saudi Tak Akan Jalankan Normalisasi Hubungan dengan Israel"></a></figure>
         <div class="description">
             <a class="link link-kategori">NEWS</a>
-            <p><a href="news/kebijakan-psbb-mobil-dan-motor-dibatasi-penumpangnya-2004080.html">Catat! Aturan Kendaraan Pribadi Saat PSBB di Jakarta Mulai Jumat Besok</a></p>
+            <p><a href="news/saudi-tak-akan-jalankan-normalisasi-hubungan-dengan-israel-200820h.html">Saudi Tak Akan Jalankan Normalisasi Hubungan dengan Israel</a></p>
+        </div>
+    </div>
+</div><div class="swiper-slide">
+    <div class="item">
+        <figure><a href="https://m.dream.co.id/news/update-corona-20-agustus-bertambah-2266-angka-positif-covid-19-jadi-147211-2008202.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144919/update-corona-20-agustus-bertambah-2266-angka-positif-covid-19-jadi-147211-2008202.jpg" alt="Update Corona 20 Agustus: Bertambah 2.266, Angka Positif Covid-19 Jadi 147.211"></a></figure>
+        <div class="description">
+            <a class="link link-kategori">NEWS</a>
+            <p><a href="https://m.dream.co.id/news/update-corona-20-agustus-bertambah-2266-angka-positif-covid-19-jadi-147211-2008202.html">Update Corona 20 Agustus: Bertambah 2.266, Angka Positif Covid-19 Jadi 147.211</a></p>
+        </div>
+    </div>
+</div><div class="swiper-slide">
+    <div class="item">
+        <figure><a href="https://m.dream.co.id/news/diancam-putus-listrik-karena-telat-bayar-ustaz-riza-muhammad-saya-malu-200820d.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144921/diancam-putus-listrik-karena-telat-bayar-ustaz-riza-muhammad-saya-malu-200820d.jpg" alt="Diancam Putus Listrik Karena Telat Bayar, Ustaz Riza Muhammad: Saya Malu"></a></figure>
+        <div class="description">
+            <a class="link link-kategori">NEWS</a>
+            <p><a href="https://m.dream.co.id/news/diancam-putus-listrik-karena-telat-bayar-ustaz-riza-muhammad-saya-malu-200820d.html">Diancam Putus Listrik Karena Telat Bayar, Ustaz Riza Muhammad: Saya Malu</a></p>
+        </div>
+    </div>
+</div><div class="swiper-slide">
+    <div class="item">
+        <figure><a href="https://m.dream.co.id/news/bioskop-dan-kolam-renang-di-dki-jakarta-dibolehkan-kembali-beroperasi-2008206.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144917/bioskop-dan-kolam-renang-di-dki-jakarta-dibolehkan-kembali-beroperasi-2008206.jpg" alt="Bioskop dan Kolam Renang di DKI Jakarta Dibolehkan Kembali Beroperasi"></a></figure>
+        <div class="description">
+            <a class="link link-kategori">NEWS</a>
+            <p><a href="https://m.dream.co.id/news/bioskop-dan-kolam-renang-di-dki-jakarta-dibolehkan-kembali-beroperasi-2008206.html">Bioskop dan Kolam Renang di DKI Jakarta Dibolehkan Kembali Beroperasi</a></p>
         </div>
     </div>
 </div>
@@ -459,64 +511,59 @@
 <!--DFP HEADLINE CODE-->
 <div class="banner">
     <div style="text-align: center; background-color: #ECECEC;">
-        <div id='div-revive-ad-dream-hl' style="text-align: center; margin: 0 auto; width: 320px;">
-            <!-- Revive Adserver Asynchronous JS Tag - m.dream.co.id - Headline -->
-            <ins data-revive-zoneid="21" data-revive-id="826a5a6d8734276706a6e7f9fac6fabb"></ins>
-        </div>
+        <div id='div-gpt-ad-dream-hl' style="text-align: center; margin: 0 auto; width: 320px;"></div>
     </div>
 </div>
 <!--END DFP HEADLINE CODE-->
 <!--END EXC_IORG DFP HEADLINE-->
 
         <div class="col-article col-highlight">
-            <!-- Revive Adserver Asynchronous JS Tag - m.dream.co.id - Contextual -->
-            <ins data-revive-zoneid="46" data-revive-id="826a5a6d8734276706a6e7f9fac6fabb"></ins>
             <h2 class="col-titledark"><a>Highlight</a></h2>
             <ul class="article-col">
                 <li>
     <div class="item infeed-slot" data-template="121" data-slot="1" replace>
-        <figure><a href="your-story/momen-glenn-fredly-berpeci-merdu-melantunkan-sholawat-nabi-200408u.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133802/momen-glenn-fredly-berpeci-merdu-melantunkan-sholawat-nabi-200408u.jpg" alt="Momen Glenn Fredly Berpeci, Merdu Melantunkan Sholawat Nabi"></a></figure>
+        <figure><a href="https://m.dream.co.id/your-story/guru-terenyuh-lihat-seorang-muridnya-pakai-masker-dekil-dan-dijahit-200806e.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/06/143816/guru-terenyuh-lihat-seorang-muridnya-pakai-masker-dekil-dan-dijahit-200806e.jpg" alt="Guru Terenyuh Lihat Seorang Muridnya Pakai Masker Dekil dan Dijahit"></a></figure>
         <div class="description">
             <a class="link link-kategori">YOUR STORY</a>
-            <p><a href="your-story/momen-glenn-fredly-berpeci-merdu-melantunkan-sholawat-nabi-200408u.html">Momen Glenn Fredly Berpeci, Merdu Melantunkan Sholawat Nabi</a></p>
+            <p><a href="https://m.dream.co.id/your-story/guru-terenyuh-lihat-seorang-muridnya-pakai-masker-dekil-dan-dijahit-200806e.html">Guru Terenyuh Lihat Seorang Muridnya Pakai Masker Dekil dan Dijahit</a></p>
         </div>
     </div>
 </li>
                 <li>
     <div class="item infeed-slot" data-template="121" data-slot="2" replace>
-        <figure><a href="hijab/mix-and-match/berenang-di-rumah-alyssa-soebandono-santun-pakai-baju-renang-syari-200407q.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/07/133578/berenang-di-rumah-alyssa-soebandono-santun-pakai-baju-renang-syari-200407q_3x2.jpg" alt="Berenang di Rumah, Alyssa Soebandono Santun Pakai Baju Renang Syar'i"></a></figure>
+        <figure><a href="https://m.dream.co.id/hijab/mix-and-match/ketagihan-drama-korea-lihat-gaya-alyssa-soebandono-padukan-bucket-hat-200819e.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144841/ketagihan-drama-korea-lihat-gaya-alyssa-soebandono-padukan-bucket-hat-200819e_3x2.jpg" alt="Ketagihan Drama Korea, Lihat Gaya Alyssa Soebandono Padukan Bucket Hat"></a></figure>
         <div class="description">
             <a class="link link-kategori">MIX AND MATCH</a>
-            <p><a href="hijab/mix-and-match/berenang-di-rumah-alyssa-soebandono-santun-pakai-baju-renang-syari-200407q.html">Berenang di Rumah, Alyssa Soebandono Santun Pakai Baju Renang Syar'i</a></p>
+            <p><a href="https://m.dream.co.id/hijab/mix-and-match/ketagihan-drama-korea-lihat-gaya-alyssa-soebandono-padukan-bucket-hat-200819e.html">Ketagihan Drama Korea, Lihat Gaya Alyssa Soebandono Padukan Bucket Hat</a></p>
         </div>
     </div>
 </li>
                 <li>
     <div class="item">
-        <figure><a href="parenting/ibu-dan-anak/jawab-tantangan-hamish-bisa-urus-sang-putri-tanpa-raisa-200408p.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133719/jawab-tantangan-hamish-bisa-urus-sang-putri-tanpa-raisa-200408p_3x2.jpg" alt="Jawab Tantangan, Hamish Bisa Urus Sang Putri Tanpa Raisa"></a></figure>
+        <figure><a href="https://m.dream.co.id/parenting/ibu-dan-anak/bahaya-menyepelekan-serangan-cemas-pada-anak-2008198.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144809/bahaya-menyepelekan-serangan-cemas-pada-anak-2008198_3x2.jpg" alt="Bahaya Menyepelekan Serangan Cemas Pada Anak"></a></figure>
         <div class="description">
             <a class="link link-kategori">IBU DAN ANAK</a>
-            <p><a href="parenting/ibu-dan-anak/jawab-tantangan-hamish-bisa-urus-sang-putri-tanpa-raisa-200408p.html">Jawab Tantangan, Hamish Bisa Urus Sang Putri Tanpa Raisa</a></p>
+            <p><a href="https://m.dream.co.id/parenting/ibu-dan-anak/bahaya-menyepelekan-serangan-cemas-pada-anak-2008198.html">Bahaya Menyepelekan Serangan Cemas Pada Anak</a></p>
         </div>
     </div>
 </li>
                 <li>
     <div class="item">
-        <figure><a href="travel/news/8-hukum-unik-saat-kamu-mengunjungi-singapura-200407h.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/07/133628/8-hukum-unik-saat-kamu-mengunjungi-singapura-200407h_3x2.jpg" alt="8 Hukum Unik Saat Mengunjungi Singapura"></a></figure>
+        <figure><a href="https://m.dream.co.id/travel/news/bandara-ini-jadi-yang-tersibuk-di-dunia-selama-pandemi-covid-19-200819x.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144852/bandara-ini-jadi-yang-tersibuk-di-dunia-selama-pandemi-covid-19-200819x_3x2.jpg" alt="Bandara Ini Jadi yang Tersibuk di Dunia Selama Pandemi Covid-19"></a></figure>
         <div class="description">
             <a class="link link-kategori">NEWS</a>
-            <p><a href="travel/news/8-hukum-unik-saat-kamu-mengunjungi-singapura-200407h.html">8 Hukum Unik Saat Mengunjungi Singapura</a></p>
+            <p><a href="https://m.dream.co.id/travel/news/bandara-ini-jadi-yang-tersibuk-di-dunia-selama-pandemi-covid-19-200819x.html">Bandara Ini Jadi yang Tersibuk di Dunia Selama Pandemi Covid-19</a></p>
         </div>
     </div>
 </li>
             </ul>
         </div>
 
-        <div class="col-article col-embed">
-    <div class="iframe-video">
-        <iframe width="854" height="480" src="https://www.vidio.com/embed/1904696-wajah-tegar-bcl-saat-antarkan-jenazah-ashraf-sinclair?sticky=false&autoplay=true&player_only=true&live_chat=false&mute=true" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="col-article col-embed" id="native-top">
+    <div class="iframe-video" id="native-content">
+
     </div>
-    <h5>Wajah Tegar BCL Saat Antarkan Jenazah Ashraf Sinclair</h5>
+    <h5 id="native-title"></h5>
 </div>
 
         <div class="col-article col-tag">
@@ -529,10 +576,10 @@
                 <!--DFP NEWSTAG2 CODE-->
                 <div id='div-gpt-ad-dream-newsTag2-oop'></div>
                 <!--END DFP NEWSTAG2 CODE-->
-                <li id="ox-tag-item1"><a href="tag/glenn-fredly/index.html" target="_self"  ># GlennFredlyMeninggal</a></li><li id="ox-tag-item2"><a href="tag/begood/index.html" target="_self"  ># BeGood</a></li><li id="ox-tag-item3"><a href="tag/sisi-religi-selebritis/index.html" target="_self"  ># SisiReligiSelebritis</a></li><li id="ox-tag-item4"><a href="https://hijab.dream.co.id/hotd" target="_blank"  ># HOTD</a></li><li id="ox-tag-item5"><a href="tag/covid-19/index.html" target="_self"  ># UpdateCovid19</a></li><li id="ox-tag-item6"><a href="tag/fashion-artis/index.html" target="_self"  ># FashionArtis</a></li>
+                <li id="ox-tag-item1"><a href="https://m.dream.co.id/tag/new-normal/" target="_self"  ># The New Normal</a></li><li id="ox-tag-item2"><a href="https://m.dream.co.id/tag/begood/" target="_self"  ># BeGood</a></li><li id="ox-tag-item3"><a href="https://m.dream.co.id/tag/sisi-religi-selebritis/" target="_self"  ># SisiReligiSelebritis</a></li><li id="ox-tag-item4"><a href="https://hijab.dream.co.id/hotd" target="_blank"  ># HOTD</a></li><li id="ox-tag-item5"><a href="https://m.dream.co.id/tag/dream-choice/" target="_self"  ># DreamChoice</a></li><li id="ox-tag-item6"><a href="https://m.dream.co.id/tag/fashion-artis/" target="_self"  ># FashionArtis</a></li>
             </ul>
         </div>
-		
+
                             
                     <!--DFP EXPOSER 1 CODE-->
                     <div id="div-gpt-ad-dream-dfp-exposer-slot1" style="margin-left:-15px"></div>
@@ -544,69 +591,68 @@
             <ul class="article-kategori">
                 <li>
     <div class="item">
-        <figure><a href="beauty/penyebab-utama-jerawat-pada-wajah-200408n.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133701/penyebab-utama-jerawat-pada-wajah-200408n.jpg" alt="Penyebab Utama Jerawat Muncul di Wajah"></a></figure>
+        <figure><a href="https://m.dream.co.id/beauty/ini-alasan-mengapa-niacinamide-dan-retinol-sangat-diminati-200820o.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/20/144901/ini-alasan-mengapa-niacinamide-dan-retinol-sangat-diminati-200820o.jpg" alt="Niacinamide dan Retinol Sangat Diminati Untuk Perawatan Kulit, Ini Alasannya"></a></figure>
         <div class=" description">
             
-            <h5><a href="beauty/penyebab-utama-jerawat-pada-wajah-200408n.html">Penyebab Utama Jerawat Muncul di Wajah</a></h5>
-            <span class="date">Rabu, 8 April 2020</span>
+            <h5><a href="https://m.dream.co.id/beauty/ini-alasan-mengapa-niacinamide-dan-retinol-sangat-diminati-200820o.html">Niacinamide dan Retinol Sangat Diminati Untuk Perawatan Kulit, Ini Alasannya</a></h5>
+            <span class="date">Kamis, 20 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="tips-trick/diy-masker-dari-t-shirt-lama-tanpa-jahit-200408v.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/08/133712/diy-masker-dari-t-shirt-lama-tanpa-jahit-200408v.jpg" alt="Cara Membuat Masker Kain dari T-Shirt Tak Terpakai"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/tips-trick/tips-melindungi-wajah-dari-paparan-sinar-biru-pada-layar-gawai-200819l.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144893/tips-melindungi-wajah-dari-paparan-sinar-biru-pada-layar-gawai-200819l.jpg" alt="Tips Melindungi Wajah Dari Paparan Sinar Biru Pada Layar Gawai"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">DIY Masker</a>
-            <p><a href="tips-trick/diy-masker-dari-t-shirt-lama-tanpa-jahit-200408v.html">Cara Membuat Masker Kain dari T-Shirt Tak Terpakai</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Kecantikan</a>
+            <p><a href="https://m.dream.co.id/tips-trick/tips-melindungi-wajah-dari-paparan-sinar-biru-pada-layar-gawai-200819l.html">Tips Melindungi Wajah Dari Paparan Sinar Biru Pada Layar Gawai</a></p>
+            <span class="date">Kamis, 20 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="beauty/teknik-mencegah-garis-kerutan-di-dahi-200407k.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/07/133638/teknik-mencegah-garis-kerutan-di-dahi-200407k.jpg" alt="Teknik Mencegah Garis Kerutan di Dahi"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/tips-trick/tips-mencegah-jerawat-di-tengah-pandemi-covid-19-200819d.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144878/tips-mencegah-jerawat-di-tengah-pandemi-covid-19-200819d.jpg" alt="Tips Mencegah Jerawat di Tengah Pandemi Covid-19"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">Tips Cantik</a>
-            <p><a href="beauty/teknik-mencegah-garis-kerutan-di-dahi-200407k.html">Teknik Mencegah Garis Kerutan di Dahi</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Kecantikan</a>
+            <p><a href="https://m.dream.co.id/tips-trick/tips-mencegah-jerawat-di-tengah-pandemi-covid-19-200819d.html">Tips Mencegah Jerawat di Tengah Pandemi Covid-19</a></p>
+            <span class="date">Kamis, 20 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="beauty/perawatan-wajah-yang-penting-dilakukan-di-malam-hari-2004070.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/07/133672/perawatan-wajah-yang-penting-dilakukan-di-malam-hari-2004070.jpg" alt="Perawatan Wajah yang Penting Dilakukan pada Malam Hari"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/beauty/cantiknya-tampilan-wajah-glowing-alami-dengan-joylab-skintone-moisture-tint-200818k.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/18/144747/cantiknya-tampilan-wajah-glowing-alami-dengan-joylab-skintone-moisture-tint-200818k.jpg" alt="Cantiknya Tampilan Wajah Glowing Alami dengan Joylab Skintone Moisture Tint"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">Perawatan</a>
-            <p><a href="beauty/perawatan-wajah-yang-penting-dilakukan-di-malam-hari-2004070.html">Perawatan Wajah yang Penting Dilakukan pada Malam Hari</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Advertorial</a>
+            <p><a href="https://m.dream.co.id/beauty/cantiknya-tampilan-wajah-glowing-alami-dengan-joylab-skintone-moisture-tint-200818k.html">Cantiknya Tampilan Wajah Glowing Alami dengan Joylab Skintone Moisture Tint</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li>
             </ul>
         </div>
-        
         <div class="detail-box">
     <div class="col-recommended">
         <h6 class="title-box"><span>Recommended</span></h6>
         <ul class="col-recommended__list">
                 <li>
-        <p><a href="https://www.dream.co.id/tag/glenn-fredly/">Glenn Fredly Meninggal Dunia</a></p>
-        <figure><a href="https://www.dream.co.id/tag/glenn-fredly/"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/04/08/527051/glenn-fredly-meninggal-dunia.jpg"></a></figure>
+        <p><a href="https://hijab.dream.co.id/her-face/baru-melahirkan-potret-langsing-cut-meyriska-pakai-gamis-curi-perhatian-2008101.html">Baru Melahirkan, Langsingnya Cut Meyriska Pakai Gamis</a></p>
+        <figure><a href="https://hijab.dream.co.id/her-face/baru-melahirkan-potret-langsing-cut-meyriska-pakai-gamis-curi-perhatian-2008101.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/08/18/579850/baru-melahirkan-langsingnya-cut-meyriska-pakai-gamis.jpg"></a></figure>
     </li>    <li>
-        <p><a href="https://hijab.dream.co.id/her-face/potret-anggun-revalina-s-temat-bergamis-syari-200403k.html">Potret Anggun Revalina S Temat Bergamis Syar'i</a></p>
-        <figure><a href="https://hijab.dream.co.id/her-face/potret-anggun-revalina-s-temat-bergamis-syari-200403k.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/04/06/525371/potret-anggun-revalina-s-temat-bergamis-syari.jpg"></a></figure>
+        <p><a href="https://hijab.dream.co.id/her-face/serba-biru-potret-cantik-bcl-berhijab-pashmina-200812b.html">Serba Biru, Potret Cantik BCL Berhijab Pashmina</a></p>
+        <figure><a href="https://hijab.dream.co.id/her-face/serba-biru-potret-cantik-bcl-berhijab-pashmina-200812b.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/08/18/579851/serba-biru-potret-cantik-bcl-berhijab-pashmina.jpg"></a></figure>
     </li>    <li>
-        <p><a href="https://parenting.dream.co.id/ibu-dan-anak/10-cara-merawat-kesehatan-mental-anak-anda-selama-wabah-virus-corona-covid-19-200401y.html">10 Cara Menjaga Kesehatan Mental Anak Saat Pandemi Covid-19</a></p>
-        <figure><a href="https://parenting.dream.co.id/ibu-dan-anak/10-cara-merawat-kesehatan-mental-anak-anda-selama-wabah-virus-corona-covid-19-200401y.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/04/06/525373/10-cara-menjaga-kesehatan-mental-anak-saat-pandemi-covid-19.jpg"></a></figure>
+        <p><a href="https://parenting.dream.co.id/ibu-dan-anak/anak-introvert-terserang-stres-kenali-tanda-tandanya-2008125.html">Anak Introvert Terserang Stres, Kenali Tanda-tandanya</a></p>
+        <figure><a href="https://parenting.dream.co.id/ibu-dan-anak/anak-introvert-terserang-stres-kenali-tanda-tandanya-2008125.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/08/18/579852/anak-introvert-terserang-stres-kenali-tanda-tandanya.jpg"></a></figure>
     </li>    <li>
-        <p><a href="https://hijab.dream.co.id/mix-and-match/rekomendasi-hijab-instan-untuk-meeting-online-dadakan-200327z.html">Rekomendasi Hijab Instan untuk Meeting Online Dadakan</a></p>
-        <figure><a href="https://hijab.dream.co.id/mix-and-match/rekomendasi-hijab-instan-untuk-meeting-online-dadakan-200327z.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/04/06/525372/rekomendasi-hijab-instan-untuk-meeting-online-dadakan.jpg"></a></figure>
+        <p><a href="https://www.dream.co.id/tutorial/5-langkah-membuat-wajah-glowing-secara-natural-200806p.html">5 Langkah Membuat Wajah Glowing Secara Natural</a></p>
+        <figure><a href="https://www.dream.co.id/tutorial/5-langkah-membuat-wajah-glowing-secara-natural-200806p.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/08/10/576798/5-langkah-membuat-wajah-glowing-secara-natural.jpg"></a></figure>
     </li>    <li>
-        <p><a href="https://hijab.dream.co.id/hotd/user/alvia-destiara">HOTD Terpopuler Minggu Ini: Alvia Destiara</a></p>
-        <figure><a href="https://hijab.dream.co.id/hotd/user/alvia-destiara"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/04/06/525374/hotd-terpopuler-minggu-ini-alvia-destiara.jpg"></a></figure>
+        <p><a href="https://hijab.dream.co.id/hotd/user/temu-cyran">HOTD Terpopuler Minggu Ini: Lioni Virdha</a></p>
+        <figure><a href="https://hijab.dream.co.id/hotd/user/temu-cyran"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/real/2020/08/03/573744/hotd-terpopuler-minggu-ini-lioni-virdha.jpg"></a></figure>
     </li>
         </ul>
     </div>
 </div>
         <div class="col-article col-jadwal belt-jadwal-ramadan">
-    <h5>JADWAL SHOLAT HARI INI<small>9 April 2020</small></h5>
+    <h5>JADWAL SHOLAT HARI INI<small>20 Agustus 2020</small></h5>
     <div class="select-group">
         <select type="text" name="" id="jadwal_kota" class="select-form"><option value="ambon">AMBON</option><option value="balikpapan">BALIKPAPAN</option><option value="banda aceh">BANDA ACEH</option><option value="bandar lampung">BANDAR LAMPUNG</option><option value="bandung">BANDUNG</option><option value="banjarmasin">BANJARMASIN</option><option value="bekasi">BEKASI</option><option value="bengkulu">BENGKULU</option><option value="bogor">BOGOR</option><option value="bukittingi">BUKITTINGI</option><option value="bulungan">BULUNGAN</option><option value="denpasar">DENPASAR</option><option value="gorontalo">GORONTALO</option><option value="jakarta" selected="selected">JAKARTA</option><option value="jambi">JAMBI</option><option value="jayapura">JAYAPURA</option><option value="kendari">KENDARI</option><option value="kupang">KUPANG</option><option value="lhokseumawe">LHOKSEUMAWE</option><option value="makassar">MAKASSAR</option><option value="malang">MALANG</option><option value="mamuju">MAMUJU</option><option value="manado">MANADO</option><option value="manokwari">MANOKWARI</option><option value="mataram">MATARAM</option><option value="medan">MEDAN</option><option value="padang">PADANG</option><option value="palangkaraya">PALANGKARAYA</option><option value="palembang">PALEMBANG</option><option value="palu">PALU</option><option value="pangkal pinang">PANGKAL PINANG</option><option value="pekanbaru">PEKANBARU</option><option value="pontianak">PONTIANAK</option><option value="samarinda">SAMARINDA</option><option value="semarang">SEMARANG</option><option value="serang">SERANG</option><option value="surabaya">SURABAYA</option><option value="surakarta">SURAKARTA</option><option value="tangerang">TANGERANG</option><option value="tanjung pinang">TANJUNG PINANG</option><option value="ternate">TERNATE</option><option value="yogyakarta">YOGYAKARTA</option></select>
     </div>
@@ -635,38 +681,38 @@
             <ul class="article-kategori">
                 <li>
     <div class="item">
-        <figure><a href="parenting/ibu-dan-anak/jawab-tantangan-hamish-bisa-urus-sang-putri-tanpa-raisa-200408p.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133719/jawab-tantangan-hamish-bisa-urus-sang-putri-tanpa-raisa-200408p.jpg" alt="Jawab Tantangan, Hamish Bisa Urus Sang Putri Tanpa Raisa"></a></figure>
+        <figure><a href="https://m.dream.co.id/parenting/ibu-dan-anak/bahaya-menyepelekan-serangan-cemas-pada-anak-2008198.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144809/bahaya-menyepelekan-serangan-cemas-pada-anak-2008198.jpg" alt="Bahaya Menyepelekan Serangan Cemas Pada Anak"></a></figure>
         <div class=" description">
             
-            <h5><a href="parenting/ibu-dan-anak/jawab-tantangan-hamish-bisa-urus-sang-putri-tanpa-raisa-200408p.html">Jawab Tantangan, Hamish Bisa Urus Sang Putri Tanpa Raisa</a></h5>
-            <span class="date">Rabu, 8 April 2020</span>
+            <h5><a href="https://m.dream.co.id/parenting/ibu-dan-anak/bahaya-menyepelekan-serangan-cemas-pada-anak-2008198.html">Bahaya Menyepelekan Serangan Cemas Pada Anak</a></h5>
+            <span class="date">Kamis, 20 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="parenting/decor/3-perabot-yang-sebenarnya-tak-dibutuhkan-di-ruang-keluarga-2004083.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/08/133710/3-perabot-yang-sebenarnya-tak-dibutuhkan-di-ruang-keluarga-2004083.jpg" alt="3 Perabot yang Sebenarnya Tak Dibutuhkan di Ruang Keluarga"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/parenting/decor/pilihan-tanaman-rindang-yang-bisa-kurangi-kebisingan-200819d.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144793/pilihan-tanaman-rindang-yang-bisa-kurangi-kebisingan-200819d.jpg" alt="Pilihan Tanaman Rindang yang Bisa Kurangi Kebisingan"></a></figure>
         <div class="item__right description">
             <a class="link link-kategori">Decor</a>
-            <p><a href="parenting/decor/3-perabot-yang-sebenarnya-tak-dibutuhkan-di-ruang-keluarga-2004083.html">3 Perabot yang Sebenarnya Tak Dibutuhkan di Ruang Keluarga</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <p><a href="https://m.dream.co.id/parenting/decor/pilihan-tanaman-rindang-yang-bisa-kurangi-kebisingan-200819d.html">Pilihan Tanaman Rindang yang Bisa Kurangi Kebisingan</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="parenting/diy/cara-menjadi-orang-tua-baru-di-tengah-pandemi-covid-19-200407w.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/07/133620/cara-menjadi-orang-tua-baru-di-tengah-pandemi-covid-19-200407w-rev200408.jpg" alt="Panduan Penting Merawat Bayi Baru Lahir di Tengah Pandemi Covid-19"></a></figure>
-        <div class="item__right description">
-            <a class="link link-kategori">Artikel Trending</a>
-            <p><a href="parenting/diy/cara-menjadi-orang-tua-baru-di-tengah-pandemi-covid-19-200407w.html">Panduan Penting Merawat Bayi Baru Lahir di Tengah Pandemi Covid-19</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
-        </div>
-    </div>
-</li><li>
-    <div class="item">
-        <figure class="item__left"><a href="parenting/ibu-dan-anak/pilihan-alat-musik-yang-bisa-bantu-tingkatkan-kecerdasan-anak-200407x.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/07/133622/pilihan-alat-musik-yang-bisa-bantu-tingkatkan-kecerdasan-anak-200407x.jpg" alt="Pilihan Alat Musik yang Bisa Bantu Tingkatkan Kecerdasan Anak"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/parenting/diy/idai-ungkap-fakta-tingginya-kematian-anak-indonesia-karena-covid-19-2008198.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144789/idai-ungkap-fakta-tingginya-kematian-anak-indonesia-karena-covid-19-2008198.jpg" alt="IDAI Ungkap Fakta Tingginya Kematian Anak Indonesia karena Covid-19"></a></figure>
         <div class="item__right description">
             <a class="link link-kategori">Parenting</a>
-            <p><a href="parenting/ibu-dan-anak/pilihan-alat-musik-yang-bisa-bantu-tingkatkan-kecerdasan-anak-200407x.html">Pilihan Alat Musik yang Bisa Bantu Tingkatkan Kecerdasan Anak</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <p><a href="https://m.dream.co.id/parenting/diy/idai-ungkap-fakta-tingginya-kematian-anak-indonesia-karena-covid-19-2008198.html">IDAI Ungkap Fakta Tingginya Kematian Anak Indonesia karena Covid-19</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
+        </div>
+    </div>
+</li><li>
+    <div class="item">
+        <figure class="item__left"><a href="https://m.dream.co.id/parenting/ibu-dan-anak/islam-melarang-keras-memberi-julukan-jelek-pada-anak-2008198.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144784/islam-melarang-keras-memberi-julukan-jelek-pada-anak-2008198.jpg" alt="Islam Melarang Keras Memberi Julukan Jelek Pada Anak"></a></figure>
+        <div class="item__right description">
+            <a class="link link-kategori">Parenting</a>
+            <p><a href="https://m.dream.co.id/parenting/ibu-dan-anak/islam-melarang-keras-memberi-julukan-jelek-pada-anak-2008198.html">Islam Melarang Keras Memberi Julukan Jelek Pada Anak</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li>
@@ -677,47 +723,44 @@
 <!--EXC_IORG DFP SC-->
 <!--DFP SHOWCASE CODE--> 
 <div class="banner">
-    <div id='div-revive-ad-dream-sc' style="text-align: center; margin: 0 auto; width: 300px;">
-        <!-- Revive Adserver Asynchronous JS Tag - m.dream.co.id - Showcase -->
-        <ins data-revive-zoneid="45" data-revive-id="826a5a6d8734276706a6e7f9fac6fabb"></ins>
-    </div>
+    <div id='div-gpt-ad-dream-sc' style="text-align: center; margin: 0 auto; width: 300px;"></div>
 </div>
 <!--END DFP SHOWCASE CODE-->
 <!--END EXC_IORG DFP SC-->
 
-		
+
         <div class="col-article col-kategori">
     <h2 class="col-titlev2 col-titledark"><a href="video/index.html">Dream Video</a></h2>
     <div class="headline-item headline-item-kategori">
-        <figure class="icon-video"><a href="video/keponakan-ungkap-penyebab-meninggalnya-glenn-fredly-2004085.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/04/08/133795/keponakan-ungkap-penyebab-meninggalnya-glenn-fredly-2004085.jpg" alt="Keponakan Ungkap Penyebab Meninggalnya Glenn Fredly"></a></figure>
+        <figure class="icon-video"><a href="https://m.dream.co.id/video/cerita-jessica-mila-alami-kelainan-tulang-belakang-sejak-smp-200819x.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/08/19/144874/cerita-jessica-mila-alami-kelainan-tulang-belakang-sejak-smp-200819x.jpg" alt="Cerita Jessica Mila Alami Kelainan Tulang Belakang Sejak SMP"></a></figure>
         <div class="description">
-            <h6><a href="video/keponakan-ungkap-penyebab-meninggalnya-glenn-fredly-2004085.html">Keponakan Ungkap Penyebab Meninggalnya Glenn Fredly</a></h6>
+            <h6><a href="https://m.dream.co.id/video/cerita-jessica-mila-alami-kelainan-tulang-belakang-sejak-smp-200819x.html">Cerita Jessica Mila Alami Kelainan Tulang Belakang Sejak SMP</a></h6>
         </div>
     </div>
     <div class="article-swiper swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
     <div class="item">
-        <figure class="icon-video"><a href="video/video-tangis-histeris-karyawan-ramayana-depok-usai-di-phk-2004082.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133720/video-tangis-histeris-karyawan-ramayana-depok-usai-di-phk-2004082.jpg" alt="Video Tangis Histeris Karyawan Ramayana Depok Usai Di-PHK"></a></figure>
+        <figure class="icon-video"><a href="https://m.dream.co.id/video/sedih-alasan-didi-riyadi-berhenti-kejar-cinta-ayu-ting-ting-2008191.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144853/sedih-alasan-didi-riyadi-berhenti-kejar-cinta-ayu-ting-ting-2008191.jpg" alt="Sedih, Alasan Didi Riyadi Berhenti Kejar Cinta Ayu Ting Ting"></a></figure>
         <div class="description">
-            <a class="link link-kategori">PHK</a>
-            <p style="min-height: 68px;"><a href="video/video-tangis-histeris-karyawan-ramayana-depok-usai-di-phk-2004082.html">Video Tangis Histeris Karyawan Ramayana Depok Usai Di-PHK</a></p>
+            <a class="link link-kategori">Ayu Ting Ting</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/video/sedih-alasan-didi-riyadi-berhenti-kejar-cinta-ayu-ting-ting-2008191.html">Sedih, Alasan Didi Riyadi Berhenti Kejar Cinta Ayu Ting Ting</a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure class="icon-video"><a href="video/dian-sastro-duet-dengan-yura-suaranya-bikin-hati-meleleh-2004089.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133711/dian-sastro-duet-dengan-yura-suaranya-bikin-hati-meleleh-2004089.jpg" alt="Dian Sastro Duet dengan Yura, Suaranya Bikin Hati Meleleh!"></a></figure>
+        <figure class="icon-video"><a href="https://m.dream.co.id/video/gagal-ke-dpr-giring-ganesha-dikabarkan-maju-jadi-capres-2024-200819z.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144785/gagal-ke-dpr-giring-ganesha-dikabarkan-maju-jadi-capres-2024-200819z.jpg" alt="Gagal ke DPR, Giring Ganesha Dikabarkan Maju Jadi Capres 2024"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Yura Yunita</a>
-            <p style="min-height: 68px;"><a href="video/dian-sastro-duet-dengan-yura-suaranya-bikin-hati-meleleh-2004089.html">Dian Sastro Duet dengan Yura, Suaranya Bikin Hati Meleleh!</a></p>
+            <a class="link link-kategori">Giring Ganesha</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/video/gagal-ke-dpr-giring-ganesha-dikabarkan-maju-jadi-capres-2024-200819z.html">Gagal ke DPR, Giring Ganesha Dikabarkan Maju Jadi Capres 2024</a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure class="icon-video"><a href="video/nikita-mirzani-murka-rumahnya-didatangi-orang-minta-sumbangan-200407g.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/07/133648/nikita-mirzani-murka-rumahnya-didatangi-orang-minta-sumbangan-200407g.jpg" alt="Nikita Mirzani Murka Rumahnya Didatangi Orang Minta Sumbangan"></a></figure>
+        <figure class="icon-video"><a href="https://m.dream.co.id/video/potret-detik-detik-momen-dian-pelangi-melahirkan-anak-pertama--200818g.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/18/144763/potret-detik-detik-momen-dian-pelangi-melahirkan-anak-pertama--200818g.jpg" alt="Detik-detik Dian Pelangi Melahirkan Anak Pertama "></a></figure>
         <div class="description">
-            <a class="link link-kategori">Nikita Mirzani</a>
-            <p style="min-height: 68px;"><a href="video/nikita-mirzani-murka-rumahnya-didatangi-orang-minta-sumbangan-200407g.html">Nikita Mirzani Murka Rumahnya Didatangi Orang Minta Sumbangan</a></p>
+            <a class="link link-kategori">Dian Pelangi</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/video/potret-detik-detik-momen-dian-pelangi-melahirkan-anak-pertama--200818g.html">Detik-detik Dian Pelangi Melahirkan Anak Pertama </a></p>
         </div>
     </div>
 </div>
@@ -730,81 +773,76 @@
             <ul class="article-kategori">
                 <li>
     <div class="item">
-        <figure><a href="travel/news/8-hukum-unik-saat-kamu-mengunjungi-singapura-200407h.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/07/133628/8-hukum-unik-saat-kamu-mengunjungi-singapura-200407h.jpg" alt="8 Hukum Unik Saat Mengunjungi Singapura"></a></figure>
+        <figure><a href="https://m.dream.co.id/travel/news/bandara-ini-jadi-yang-tersibuk-di-dunia-selama-pandemi-covid-19-200819x.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144852/bandara-ini-jadi-yang-tersibuk-di-dunia-selama-pandemi-covid-19-200819x.jpg" alt="Bandara Ini Jadi yang Tersibuk di Dunia Selama Pandemi Covid-19"></a></figure>
         <div class=" description">
             
-            <h5><a href="travel/news/8-hukum-unik-saat-kamu-mengunjungi-singapura-200407h.html">8 Hukum Unik Saat Mengunjungi Singapura</a></h5>
-            <span class="date">Rabu, 8 April 2020</span>
+            <h5><a href="https://m.dream.co.id/travel/news/bandara-ini-jadi-yang-tersibuk-di-dunia-selama-pandemi-covid-19-200819x.html">Bandara Ini Jadi yang Tersibuk di Dunia Selama Pandemi Covid-19</a></h5>
+            <span class="date">Kamis, 20 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="travel/news/waspada-corona-terminal-2-bandara-changi-tutup-18-bulan-200407y.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/07/133599/waspada-corona-terminal-2-bandara-changi-tutup-18-bulan-200407y.jpg" alt="Waspada Corona, Terminal 2 Bandara Changi Tutup 18 Bulan"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/travel/news/sandal-jadi-fasilitas-penting-di-hotel-ini-alasannya-200818v.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/18/144772/sandal-jadi-fasilitas-penting-di-hotel-ini-alasannya-200818v.jpg" alt="Sandal Jadi Fasilitas Penting di Hotel, Ini Alasannya"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">Artikel Trending</a>
-            <p><a href="travel/news/waspada-corona-terminal-2-bandara-changi-tutup-18-bulan-200407y.html">Waspada Corona, Terminal 2 Bandara Changi Tutup 18 Bulan</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Travel</a>
+            <p><a href="https://m.dream.co.id/travel/news/sandal-jadi-fasilitas-penting-di-hotel-ini-alasannya-200818v.html">Sandal Jadi Fasilitas Penting di Hotel, Ini Alasannya</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="travel/news/4-tangga-paling-menakjubkan-yang-menarik-perhatian-wisatawan-dunia-200407v.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/07/133570/4-tangga-paling-menakjubkan-yang-menarik-perhatian-wisatawan-dunia-200407v.jpg" alt="4 Struktur Tangga Paling Menakjubkan di Dunia"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/travel/news/ingin-bepergian-coba-9-masker-ini-agar-lebih-nyaman-saat-diperjalanan-200814b.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/14/144539/ingin-bepergian-coba-9-masker-ini-agar-lebih-nyaman-saat-diperjalanan-200814b.jpg" alt="9 Masker Ini Bikin Nyaman Saat di Perjalanan"></a></figure>
         <div class="item__right description">
             <a class="link link-kategori">Artikel Trending</a>
-            <p><a href="travel/news/4-tangga-paling-menakjubkan-yang-menarik-perhatian-wisatawan-dunia-200407v.html">4 Struktur Tangga Paling Menakjubkan di Dunia</a></p>
-            <span class="date">Selasa, 7 April 2020</span>
+            <p><a href="https://m.dream.co.id/travel/news/ingin-bepergian-coba-9-masker-ini-agar-lebih-nyaman-saat-diperjalanan-200814b.html">9 Masker Ini Bikin Nyaman Saat di Perjalanan</a></p>
+            <span class="date">Selasa, 18 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="travel/news/artistik-kaca-patri-di-jendela-pesawat-ini-akan-menemani-travelingmu-2004063.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/06/133538/artistik-kaca-patri-di-jendela-pesawat-ini-akan-menemani-travelingmu-2004063.jpg" alt="Artistik Kaca Patri di Jendela Pesawat Ini Temani Travelingmu"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/travel/destination/inilah-penemuan-tempat-terbaik-untuk-melihat-bintang-dengan-jelas-200814p.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/14/144566/inilah-penemuan-tempat-terbaik-untuk-melihat-bintang-dengan-jelas-200814p.jpg" alt="Inilah Tempat Terbaik Menikmati Keindahan Bintang"></a></figure>
         <div class="item__right description">
             <a class="link link-kategori">Artikel Trending</a>
-            <p><a href="travel/news/artistik-kaca-patri-di-jendela-pesawat-ini-akan-menemani-travelingmu-2004063.html">Artistik Kaca Patri di Jendela Pesawat Ini Temani Travelingmu</a></p>
-            <span class="date">Selasa, 7 April 2020</span>
+            <p><a href="https://m.dream.co.id/travel/destination/inilah-penemuan-tempat-terbaik-untuk-melihat-bintang-dengan-jelas-200814p.html">Inilah Tempat Terbaik Menikmati Keindahan Bintang</a></p>
+            <span class="date">Senin, 17 Agustus 2020</span>
         </div>
     </div>
 </li>
             </ul>
         </div>
 
-                            <div class="artikel-box artikel-video">
-                        <amp-iframe width="854" height="480" layout="responsive" sandbox="allow-scripts allow-same-origin" frameborder="0" src="https://www.vidio.com/embed/1793599-tips-menikah-dengan-bule-ala-melanie-ricardo?sticky=false&autoplay=true&player_only=true&live_chat=false&mute=true"></amp-iframe>
-                        <h5>Tips Menikah dengan Bule Ala Melanie Ricardo</h5>
-                    </div>
-
         <div class="col-article col-kategori col-foto" style="margin-top: 50px;">
     <h2 class="col-titlev2 col-titledark"><a href="photo/index.html">Dream Foto</a></h2>
     <div class="headline-item headline-item-kategori">
-        <figure><a href="photo/kenangan-sang-istri-mutia-ayu-bersama-gleen-fredly-200408m.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/04/08/133790/kenangan-sang-istri-mutia-ayu-bersama-gleen-fredly-200408m.jpg" alt="Kenangan Sang Istri, Mutia Ayu Bersama Glenn Fredly"></a></figure>
+        <figure><a href="https://m.dream.co.id/photo/serius-bisnis-vape-intip-pesona-kecantikan-anya-geraldine-200819u.html"><img src="https://cdns.klimg.com/dream.co.id/resized/640x480/news/2020/08/19/144895/serius-bisnis-vape-intip-pesona-kecantikan-anya-geraldine-200819u.jpg" alt="Serius Bisnis Vape, Intip Pesona Kecantikan Anya Geraldine"></a></figure>
         <div class="description">
-            <h6><a href="photo/kenangan-sang-istri-mutia-ayu-bersama-gleen-fredly-200408m.html">Kenangan Sang Istri, Mutia Ayu Bersama Glenn Fredly</a></h6>
+            <h6><a href="https://m.dream.co.id/photo/serius-bisnis-vape-intip-pesona-kecantikan-anya-geraldine-200819u.html">Serius Bisnis Vape, Intip Pesona Kecantikan Anya Geraldine</a></h6>
         </div>
     </div>
     <div class="article-swiper swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
     <div class="item">
-        <figure><a href="photo/potret-shandy-purnamasari-viral-cantolkan-kerupuk-di-ferrari-2004080.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133718/potret-shandy-purnamasari-viral-cantolkan-kerupuk-di-ferrari-2004080.jpg" alt="Potret Shandy Purnamasari, Viral Cantolkan Kerupuk di Ferrari!"></a></figure>
+        <figure><a href="https://m.dream.co.id/photo/jarang-terekspos-intip-penampakan-mewahnya-rumah-umi-pipik-2008197.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144886/jarang-terekspos-intip-penampakan-mewahnya-rumah-umi-pipik-2008197.jpg" alt="Jarang Terekspos, Intip Penampakan Mewahnya Rumah Umi Pipik"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Crazy Rich</a>
-            <p><a href="photo/potret-shandy-purnamasari-viral-cantolkan-kerupuk-di-ferrari-2004080.html">Potret Shandy Purnamasari, Viral Cantolkan Kerupuk di Ferrari!</a></p>
+            <a class="link link-kategori">Umi Pipik</a>
+            <p><a href="https://m.dream.co.id/photo/jarang-terekspos-intip-penampakan-mewahnya-rumah-umi-pipik-2008197.html">Jarang Terekspos, Intip Penampakan Mewahnya Rumah Umi Pipik</a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure><a href="photo/tampil-berhijab-cantiknya-amanda-rawles-bikin-ingin-meminang-200407w.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/07/133677/tampil-berhijab-cantiknya-amanda-rawles-bikin-ingin-meminang-200407w.jpg" alt="Tampil Berhijab, Cantiknya Amanda Rawles Bikin Ingin Meminang"></a></figure>
+        <figure><a href="https://m.dream.co.id/photo/mimpi-ahmad-dhani-kumpulkan-artis-artis-rcm-bakal-terwujud-2008192.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144880/mimpi-ahmad-dhani-kumpulkan-artis-artis-rcm-bakal-terwujud-2008192.jpg" alt="Mimpi Ahmad Dhani Kumpulkan Artis-artis RCM Bakal Terwujud"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Amanda Rawles</a>
-            <p><a href="photo/tampil-berhijab-cantiknya-amanda-rawles-bikin-ingin-meminang-200407w.html">Tampil Berhijab, Cantiknya Amanda Rawles Bikin Ingin Meminang</a></p>
+            <a class="link link-kategori">Ahmad Dhani</a>
+            <p><a href="https://m.dream.co.id/photo/mimpi-ahmad-dhani-kumpulkan-artis-artis-rcm-bakal-terwujud-2008192.html">Mimpi Ahmad Dhani Kumpulkan Artis-artis RCM Bakal Terwujud</a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure><a href="photo/5-foto-editan-halu-artis-indonesia-dengan-aktor-korea-2004070.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/07/133625/5-foto-editan-halu-artis-indonesia-dengan-aktor-korea-2004070.jpg" alt="5 Foto Editan Halu Artis Indonesia dengan Aktor Korea"></a></figure>
+        <figure><a href="https://m.dream.co.id/photo/5-penyanyi-senior-banting-setir-jadi-presenter-pantaskah-2008183.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/18/144776/5-penyanyi-senior-banting-setir-jadi-presenter-pantaskah-2008183.jpg" alt="5 Penyanyi Senior Banting Setir Jadi Presenter, Cocok gak?"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Selebritis</a>
-            <p><a href="photo/5-foto-editan-halu-artis-indonesia-dengan-aktor-korea-2004070.html">5 Foto Editan Halu Artis Indonesia dengan Aktor Korea</a></p>
+            <a class="link link-kategori">Penyanyi Indonesia</a>
+            <p><a href="https://m.dream.co.id/photo/5-penyanyi-senior-banting-setir-jadi-presenter-pantaskah-2008183.html">5 Penyanyi Senior Banting Setir Jadi Presenter, Cocok gak?</a></p>
         </div>
     </div>
 </div>
@@ -817,38 +855,38 @@
             <ul class="article-kategori">
                 <li>
     <div class="item">
-        <figure><a href="dinar/bekerja-dari-rumah-lebih-melelahkan-daripada-di-kantor-ini-alasannya-200408g.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/08/133692/bekerja-dari-rumah-lebih-melelahkan-daripada-di-kantor-ini-alasannya-200408g.jpg" alt="Bekerja dari Rumah Lebih Melelahkan Daripada di Kantor, Ini Alasannya"></a></figure>
+        <figure><a href="https://m.dream.co.id/dinar/6-cara-menyimpan-uang-baru-rp-75-ribu-supaya-tidak-cepat-rusak-200819a.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/19/144884/6-cara-menyimpan-uang-baru-rp-75-ribu-supaya-tidak-cepat-rusak-200819a.jpg" alt="6 Cara Menyimpan Uang Baru Rp 75 Ribu Supaya Awet dan Tak Lecek"></a></figure>
         <div class=" description">
             
-            <h5><a href="dinar/bekerja-dari-rumah-lebih-melelahkan-daripada-di-kantor-ini-alasannya-200408g.html">Bekerja dari Rumah Lebih Melelahkan Daripada di Kantor, Ini Alasannya</a></h5>
-            <span class="date">Rabu, 8 April 2020</span>
+            <h5><a href="https://m.dream.co.id/dinar/6-cara-menyimpan-uang-baru-rp-75-ribu-supaya-tidak-cepat-rusak-200819a.html">6 Cara Menyimpan Uang Baru Rp 75 Ribu Supaya Awet dan Tak Lecek</a></h5>
+            <span class="date">Kamis, 20 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="dinar/hipmi-minta-kemnaker-tunda-pembahasan-thr-di-tengah-pandemi-corona-2004084.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/08/133700/hipmi-minta-kemnaker-tunda-pembahasan-thr-di-tengah-pandemi-corona-2004084.jpg" alt="HIPMI: Tunda Dulu Pembahasan THR di Tengah Pandemi Corona"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/dinar/hore-uang-baru-rp75000-bisa-didapat-di-bank-mandiri-1-oktober-2020-200819i.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144855/hore-uang-baru-rp75000-bisa-didapat-di-bank-mandiri-1-oktober-2020-200819i.jpg" alt="Hore! Uang Baru Rp75.000 Bisa Didapat di Bank Mandiri 1 Oktober 2020"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">Hipmi</a>
-            <p><a href="dinar/hipmi-minta-kemnaker-tunda-pembahasan-thr-di-tengah-pandemi-corona-2004084.html">HIPMI: Tunda Dulu Pembahasan THR di Tengah Pandemi Corona</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Pecahan Uang Baru</a>
+            <p><a href="https://m.dream.co.id/dinar/hore-uang-baru-rp75000-bisa-didapat-di-bank-mandiri-1-oktober-2020-200819i.html">Hore! Uang Baru Rp75.000 Bisa Didapat di Bank Mandiri 1 Oktober 2020</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="dinar/cara-dapat-token-listrik-gratis-selama-pandemi-200408d.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/08/133698/cara-dapat-token-listrik-gratis-selama-pandemi-200408d-rev200409.jpg" alt="Cara Dapat Token Listrik Gratis Selama Pandemi"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/dinar/hoaks-kabar-uang-pecahan-rp75-ribu-bukan-alat-tukar-200819f.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144840/hoaks-kabar-uang-pecahan-rp75-ribu-bukan-alat-tukar-200819f.jpg" alt="Hoaks Kabar Uang Pecahan Rp75 Ribu Bukan Alat Tukar"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">Artikel Trending</a>
-            <p><a href="dinar/cara-dapat-token-listrik-gratis-selama-pandemi-200408d.html">Cara Dapat Token Listrik Gratis Selama Pandemi</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Hoaks</a>
+            <p><a href="https://m.dream.co.id/dinar/hoaks-kabar-uang-pecahan-rp75-ribu-bukan-alat-tukar-200819f.html">Hoaks Kabar Uang Pecahan Rp75 Ribu Bukan Alat Tukar</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li><li>
     <div class="item">
-        <figure class="item__left"><a href="dinar/manis-kopi-kenangan-siapkan-dana-rp15-m-bantu-hadapi-corona-200408w.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/04/08/133694/manis-kopi-kenangan-siapkan-dana-rp15-m-bantu-hadapi-corona-200408w.jpg" alt="Gelontor Rp15 M Cegah Corona: Kopi Kenangan Tak PHK Pegawai, Pimpinan Digaji Rp1"></a></figure>
+        <figure class="item__left"><a href="https://m.dream.co.id/dinar/hati-hati-indonesia-jepang-dan-thailand-sudah-masuk-resesi-ekonomi-200819z.html"><img src="https://cdns.klimg.com/dream.co.id/resized/88x88/news/2020/08/19/144798/hati-hati-indonesia-jepang-dan-thailand-sudah-masuk-resesi-ekonomi-200819z.jpg" alt="Hati-Hati Indonesia! Jepang dan Thailand Sudah Masuk Resesi Ekonomi"></a></figure>
         <div class="item__right description">
-            <a class="link link-kategori">Virus Corona</a>
-            <p><a href="dinar/manis-kopi-kenangan-siapkan-dana-rp15-m-bantu-hadapi-corona-200408w.html">Gelontor Rp15 M Cegah Corona: Kopi Kenangan Tak PHK Pegawai, Pimpinan Digaji Rp1</a></p>
-            <span class="date">Rabu, 8 April 2020</span>
+            <a class="link link-kategori">Resesi Ekonomi</a>
+            <p><a href="https://m.dream.co.id/dinar/hati-hati-indonesia-jepang-dan-thailand-sudah-masuk-resesi-ekonomi-200819z.html">Hati-Hati Indonesia! Jepang dan Thailand Sudah Masuk Resesi Ekonomi</a></p>
+            <span class="date">Rabu, 19 Agustus 2020</span>
         </div>
     </div>
 </li>
@@ -860,34 +898,34 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
     <div class="item">
-        <figure><a href="community/taytb-live-stream-fest-temani-akhir-pekan-kamu-dirumahaja-200403b.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/03/133348/taytb-live-stream-fest-temani-akhir-pekan-kamu-dirumahaja-200403b.jpg" alt="#TAYTB Live Stream Fest Temani Akhir Pekan Kamu #DiRumahAja"></a></figure>
+        <figure><a href="https://m.dream.co.id/community/negosiasi-pengertian-tujuan-dan-tahapannya--200818d.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/18/144703/negosiasi-pengertian-tujuan-dan-tahapannya--200818d.jpg" alt="Negosiasi: Pengertian, Tujuan, dan Tahapannya  "></a></figure>
         <div class="description">
-            <a class="link link-kategori">Komunitas</a>
-            <p style="min-height: 68px;"><a href="community/taytb-live-stream-fest-temani-akhir-pekan-kamu-dirumahaja-200403b.html">#TAYTB Live Stream Fest Temani Akhir Pekan Kamu #DiRumahAja</a></p>
+            <a class="link link-kategori">Artikel Trending</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/community/negosiasi-pengertian-tujuan-dan-tahapannya--200818d.html">Negosiasi: Pengertian, Tujuan, dan Tahapannya  </a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure><a href="community/ikuti-dreamasakmasak-dirumahaja-berhadiah-pulsa-total-rp500-rb-200401j.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/04/01/133106/ikuti-dreamasakmasak-dirumahaja-berhadiah-pulsa-total-rp500-rb-200401j.jpg" alt="Ikuti #DREAMasakMasak #diRumahAja, Berhadiah Pulsa Total Rp500 rb"></a></figure>
+        <figure><a href="https://m.dream.co.id/community/rayakan-kemerdekaan-ri-dengan-banjir-promo-di-lazada-200813d.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/13/144379/rayakan-kemerdekaan-ri-dengan-banjir-promo-di-lazada-200813d.jpg" alt="Agustusan di Lazada, Banjir Promo Brand Ternama"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Kuliner</a>
-            <p style="min-height: 68px;"><a href="community/ikuti-dreamasakmasak-dirumahaja-berhadiah-pulsa-total-rp500-rb-200401j.html">Ikuti #DREAMasakMasak #diRumahAja, Berhadiah Pulsa Total Rp500 rb</a></p>
+            <a class="link link-kategori">Hari Kemerdekaan</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/community/rayakan-kemerdekaan-ri-dengan-banjir-promo-di-lazada-200813d.html">Agustusan di Lazada, Banjir Promo Brand Ternama</a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure><a href="community/kolaborasi-spektakuler-5-musisi-muda-mendoakan-dunia-di-jjf-2020-200302p.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/03/02/130594/kolaborasi-spektakuler-5-musisi-muda-mendoakan-dunia-di-jjf-2020-200302p.jpg" alt="Doa dari Panggung Java Jazz untuk Dunia"></a></figure>
+        <figure><a href="https://m.dream.co.id/community/12-puisi-hut-kemerdekaan-indonesia-untuk-mengenang-jasa-pahlawan-200810w.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/10/144047/12-puisi-hut-kemerdekaan-indonesia-untuk-mengenang-jasa-pahlawan-200810w.jpg" alt="12 Puisi HUT Kemerdekaan Indonesia untuk Mengenang Jasa Pahlawan"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Ardhito Pramono</a>
-            <p style="min-height: 68px;"><a href="community/kolaborasi-spektakuler-5-musisi-muda-mendoakan-dunia-di-jjf-2020-200302p.html">Doa dari Panggung Java Jazz untuk Dunia</a></p>
+            <a class="link link-kategori">Artikel Trending</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/community/12-puisi-hut-kemerdekaan-indonesia-untuk-mengenang-jasa-pahlawan-200810w.html">12 Puisi HUT Kemerdekaan Indonesia untuk Mengenang Jasa Pahlawan</a></p>
         </div>
     </div>
 </div><div class="swiper-slide">
     <div class="item">
-        <figure><a href="community/antusias-anak-anak-penderita-kanker-nobar-playmobil-the-movie-200302f.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/03/02/130578/antusias-anak-anak-penderita-kanker-nobar-playmobil-the-movie-200302f.jpg" alt="Antusias Anak Penderita Kanker Nobar 'Playmobil: The Movie'"></a></figure>
+        <figure><a href="https://m.dream.co.id/community/bagikan-kisah-begood-inspiratif-di-sekitar-kamu-200807h.html"><img src="https://cdns.klimg.com/dream.co.id/resized/308x204/news/2020/08/07/143917/bagikan-kisah-begood-inspiratif-di-sekitar-kamu-200807h-rev200808.jpg" alt="Bagikan Kisah #BeGood &amp; Inspiratif di Sekitar Kamu"></a></figure>
         <div class="description">
-            <a class="link link-kategori">Senayan City</a>
-            <p style="min-height: 68px;"><a href="community/antusias-anak-anak-penderita-kanker-nobar-playmobil-the-movie-200302f.html">Antusias Anak Penderita Kanker Nobar 'Playmobil: The Movie'</a></p>
+            <a class="link link-kategori">BeGood</a>
+            <p style="min-height: 68px;"><a href="https://m.dream.co.id/community/bagikan-kisah-begood-inspiratif-di-sekitar-kamu-200807h.html">Bagikan Kisah #BeGood &amp; Inspiratif di Sekitar Kamu</a></p>
         </div>
     </div>
 </div>
@@ -901,17 +939,17 @@
         <!--FOOTER-->
         <div class="footer">
     <div class="container">
-        <a href="index.html" class="logo"><img style="height:40px;" src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/new_dream_mobile.png" alt="dream.co.id logo"></a>
+        <a href="index.html" class="logo"><img style="height:40px;" src="https://cdns.klimg.com/a.dream.co.id/m-assets/img/redesign/dream_logo_dirumahaja.png" alt="dream.co.id logo"></a>
         <div class="footer__list">
             <a href="sim/index.html">Profil Masjid</a>
-            <a href="ketentuan-layanan/index.html">Ketentuan Layanan</a>
-            <a href="kode-etik/pedoman-pemberitaan-media-siber.html">Pedoman Media Siber</a>
-            <a href="privacy-policy/index.html">Privacy</a>
-            <a href="disclaimer/index.html">Disclaimer</a>
-            <a href="kode-etik/index.html">Kode Etik</a>
-            <a href="redaksi/index.html">Redaksi</a>
-            <a href="tentang-kami/index.html">Tentang Kami</a>
-            <a href="kontak-kami/index.html">Kontak Kami</a>
+            <a href="https://m.dream.co.id/ketentuan-layanan/">Ketentuan Layanan</a>
+            <a href="https://m.dream.co.id/kode-etik/pedoman-pemberitaan-media-siber.html">Pedoman Media Siber</a>
+            <a href="https://m.dream.co.id/privacy-policy/">Privacy</a>
+            <a href="https://m.dream.co.id/disclaimer/">Disclaimer</a>
+            <a href="https://m.dream.co.id/kode-etik/">Kode Etik</a>
+            <a href="https://m.dream.co.id/redaksi/">Redaksi</a>
+            <a href="https://m.dream.co.id/tentang-kami/">Tentang Kami</a>
+            <a href="https://m.dream.co.id/kontak-kami/">Kontak Kami</a>
         </div>
         <ul class="footer__sosmed">
             <!--<li><a href="https://plus.google.com/118058856308800387337/" target="_blank" class="gplus"></a></li>-->
@@ -1018,9 +1056,10 @@
         </style>
         <!--END KLY INFEED--> <!-- FROM FILE /data/gpt-git/m-dream.js -->
 <script>
-var gamDate = new Date(),
-gamNow = gamDate.getFullYear()  +"-"+ gamDate.getMonth()  +"-"+ gamDate.getDate() + " " + gamDate.getHours() +":"+ gamDate.getMinutes()  +":"+ gamDate.getSeconds();
-console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px;color:blue;text-shadow:1px 1px 0px red, 1px -1px 0px red,-1px 1px 0px red, -1px -1px 0px red;');
+var gpt_gam_ver = 'V-05 DK';
+gpt_gam_site = window.location.hostname.toUpperCase();
+gpt_gam_ver = (typeof gpt_gam_site !== 'undefined') ? gpt_gam_ver.toUpperCase() : 'V.0.1';
+console.log('%c GPT '+gpt_gam_site+' '+gpt_gam_ver ,'color:#d3d3d3; font-size:25px; font-weight: bold; -webkit-text-stroke: 1px black;');
 /*PROTOTYPE CUSTOM FILTERING*/
     String.prototype.klyFiltering = function(delimiter) {
         return this.replace(/[\"\']/g, "").trim().split(delimiter).map(function(t) {
@@ -1030,106 +1069,304 @@ console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px
         });
     };
 /*SET INTERVAL TO AUTO REFRESH BOTTOM FRAME ADS - NEW*/
+    window.dataLayer = window.dataLayer || [];
     window.GAMLibrary = {};
-    window.GAMLibrary.setGamBFInterval = function(active) {
-        if (!active) {
-            clearInterval(window.GAMLibrary.gamBFInterval);
-            return;
-        }
-        window.GAMLibrary.gamBFInterval = setInterval(function() {
-            googletag.pubads().refresh([window.GAMLibrary.refreshSlot]);
-        }, 60000);
+    window.GAMLibrary = {
+        dfpHeadline         : '/36504930/m.dream.co.id/dfp-hl',
+        dfpBottomframe      : '/36504930/m.dream.co.id/dfp-bottomfrm',
+        dfpTopframe         : '/36504930/m.dream.co.id/dfp-topfrm',
+        dfpSlideup          : '/36504930/m.dream.co.id/dfp-slideup',
+        dfpExposer1         : '/36504930/m.dream.co.id/dfp-exposer-slot1',
+        dfpExposer2         : '/36504930/m.dream.co.id/dfp-exposer-slot2',
+        scSlot              : '/36504930/m.dream.co.id/dfp-sc',
+        timedBottomFrm      :   null,
+        setGamBFInterval    :   function(active) {
+                                    if (!active) {
+                                        clearInterval(window.GAMLibrary.gamBFInterval);
+                                        return;
+                                    }
+                                    window.GAMLibrary.gamBFInterval = setInterval(function() {
+                                        document.querySelector("#dfp-spinads") && document.querySelector("#dfp-spinads").parentElement.remove();
+                                        googletag.pubads().refresh([window.GAMLibrary.refreshSlot]);
+                                    }, 60000);
+                                },
+        documentMeta        :   function (metaName) {
+                                    var metaResult = '';
+                                    var metas = document.getElementsByTagName('meta');
+                                    if (metas) {
+                                        for (var x = 0, y = metas.length; x < y; x++) {
+                                            if (metas[x].name.toLowerCase() == metaName) {
+                                                metaResult += metas[x].content;
+                                            }
+                                        }
+                                    }                   
+                                    return metaResult != '' ? metaResult : '';
+                                },
+        inArray             :   function (needle, haystack) {
+                                    var length = haystack.length;
+                                    for (var i = 0; i < length; i++) {
+                                        if (haystack[i] == needle) return true;
+                                    }
+                                    return false;
+                                },
+        arrToLowerCase      :   function (arr){
+                                    return arr.map(function(v,i){
+                                        return v.toLowerCase();
+                                    });
+                                },
+            lockScroll          :   {
+                                    timeout: 3000,
+                                    unset: function() {
+                                        (typeof unfreezePages === 'function') ? unfreezePages() : '';
+                                    },
+                                    set: function() {
+                                      let that = this;
+                                      let lockTime = new Date().getTime();
+                                      let startLoad = kly && kly.startLoad ? kly.startLoad : 0;
+                                      let diff = lockTime - startLoad;
+                                      let lockTimeStamp = Math.floor(diff / 1000 % 60);
+                                      this.eventTrackingLock(lockTimeStamp);
+                                      console.log('Scroll Freeze duration : '+lockTimeStamp);
+                                      setTimeout(function() {
+                                        that.unset();
+                                      }, that.timeout);
+                                    },
+                                    eventTrackingLock		: 	function(lockDuration){
+                                        window.dataLayer.push({
+                                          event: "impression",
+                                          feature_name: "load-scroll",
+                                          feature_location: lockDuration,
+                                          feature_position: "" 
+                                        });
+                                    }
+                                  },
+        scrollBottomFrame   :   function() {
+                                    this.scroll = function(){                        
+                                                        var scrollNode = document.scrollingElement || document.documentElement;
+                                                        var scrollTop = scrollNode.scrollTop;
+                                                        if (scrollTop >= "200") {
+                                                            //window.removeEventListener("scroll", scrollBottomFrame);
+                                                            this.timedBottomFrm = googletag.defineSlot(this.dfpBottomframe, [[320, 50],[320, 100]], 'div-gpt-ad-dream-bottomfrm').addService(googletag.pubads());
+                                                            window.removeEventListener("scroll", this.scrollHandler);
+                                                            googletag.display('div-gpt-ad-dream-bottomfrm');
+                                                            googletag.pubads().refresh([this.timedBottomFrm]);
+
+                                                            this.refreshSlot = this.timedBottomFrm;
+                                                            this.setGamBFInterval();
+                                                        }
+                                                    };
+                                    this.scrollHandler = this.scroll.bind(this);
+                                    window.addEventListener("scroll", this.scrollHandler);   
+                                },
+        initiateSCReadPage  :   function() {
+                                            var scContainer = '.paging-showcase',
+                                                parentElement = document.querySelector('.detail'),
+                                                arrShowcaseContainer = document.querySelectorAll(scContainer),
+                                                sumShowcaseContainer = document.querySelectorAll(scContainer).length;
+                                                showcaseId = 'div-gpt-ads-dream-showcase-',
+                                                gam_sc = null,
+                                                countShowcaseContainer = 0,
+                                                mo = null;
+                                
+                                            arrShowcaseContainer.forEach(function(value, key) {
+                                                value.setAttribute('id', showcaseId + (key + 1));
+                                            });
+                                
+                                            mo = new MutationObserver(function(mutations) {
+                                                mutations.forEach(function(el) {
+                                                    var target = el.target,
+                                                        isShown = target.getAttribute('data-pushed');
+                                
+                                                    if (isShown && el.attributeName === 'data-pushed') {
+                                                        countShowcaseContainer++;
+                                
+                                                        gam_sc = googletag.defineSlot('/36504930/m.dream.co.id/dfp-sc', [[300, 250],[250, 250],[200, 200]], showcaseId + countShowcaseContainer).addService(googletag.pubads()).setTargeting("position", [countShowcaseContainer.toString()]);
+                                                        googletag.display(showcaseId + countShowcaseContainer);
+                                                        googletag.pubads().refresh([gam_sc]);
+                                                        if (countShowcaseContainer === sumShowcaseContainer) {
+                                                            mo.disconnect();
+                                                        }
+                                                    }
+                                                });
+                                            });
+                                
+                                            parentElement && mo.observe(parentElement, {
+                                                childList: true,
+                                                attributes: true,
+                                                subtree: true,
+                                            });
+                                
+                                },
+        eventTrackingImpression		: 	function(subCat,auPath){
+                                            window.dataLayer.push({
+                                                    event: "impression",
+                                                    feature_name: "ads",
+                                                    feature_location: subCat,
+                                                    feature_position: auPath 
+                                            });
+                                        }
+    
     }
  
-    var PWT = {};
+    // var PWT = {};
+    // var googletag = googletag || {};
+    // googletag.cmd = googletag.cmd || [];
+    // /* START - LOAD PUBMATIC, GOOGLE ADS & REVIVE */
+    // PWT.jsLoaded = function() { //PubMatic pwt.js on load callback is used to load GPT
+    //     (function() {
+    //             var gads = document.createElement('script');
+    //             var rads = document.createElement('script'); // #1
+    //             var useSSL = 'https:' == document.location.protocol;
+    //             gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+    //             rads.src = (useSSL ? 'https:' : 'http:') + '//adserver.kl-youniverse.com/asyncjs.php'; // #2
+    //             rads.async = true; // #3
+    //             gads.async = true;
+    //             var node = document.getElementsByTagName('script')[0];
+    //             node.parentNode.insertBefore(gads, node);
+    //             node.parentNode.insertBefore(rads, node); // #4
+    //         })();
+    //     };
+    // /* END  - LOAD PUBMATIC, GOOGLE ADS & REVIVE */
+
+	// PWT.HookForPrebidRequestBids = function (adUnits) {
+    //   //console.log('HookForPrebidRequestBids: Original adUnits array :', adUnits);
+    //   adUnits.forEach(function (au) {
+    //       //console.log('HookForPrebidRequestBids: adding kadfloor to pubmatic');
+    //       au.bids.forEach(function (bid) {
+    //         	if (bid.bidder == 'spotx') {
+    //             	bid.params["outstream_function"] = function (bid) {
+    //                   //console.dir(bid);
+    //                   //const videoDiv = bid.adUnitCode;
+    //                   const videoDiv = bid.adUnitCode.split('@')[0];
+    //                   const playerWidth = 300;
+    //                   const playerHeight = 250;
+    //                   //window.console.log("[SPOTX][renderer] Handle SpotX custom outstream renderer");
+    //                   let script = window.document.createElement("script");
+    //                   script.type = "text/javascript";
+    //                   script.src = "//cdn.spotxcdn.com/website/integration_test/media/asia/EASIv2.js";
+    //                   script.setAttribute("data-spotx_channel_id","" + bid.channel_id);
+    //                   script.setAttribute("data-spotx_vast_url", "" + bid.vastUrl);
+    //                   script.setAttribute("data-spotx_content_width", playerWidth);
+    //                   script.setAttribute("data-spotx_content_height",playerHeight);
+    //                   script.setAttribute("data-spotx_content_page_url",bid.renderer.config.content_page_url);
+    //                   script.setAttribute("data-spotx_ad_unit", "incontent");
+    //                   script.setAttribute("data-spotx_autoplay", "1");
+    //                   script.setAttribute("data-spotx_continue_out_of_view", "1");
+    //                   script.setAttribute("data-spotx_content_container_id",videoDiv);
+    //                   var vid_contain = window.document.getElementById(videoDiv);
+    //                   vid_contain.style.cssText = "display: none; margin-bottom: 20px";
+    //                   vid_contain.appendChild(script);
+    //             	}
+    //         	}
+    //     	})
+    // 	})
+	// };
+
+    // (function() {
+    //     var purl = window.location.href;
+    //     var url = '//ads.pubmatic.com/AdServer/js/pwt/156536/457';
+    //     var profileVersionId = '';
+    //     if (purl.indexOf('pwtv=') > 0) {
+    //         var regexp = /pwtv=(.*?)(&|$)/g;
+    //         var matches = regexp.exec(purl);
+    //         if (matches.length >= 2 && matches[1].length > 0) {
+    //             profileVersionId = '/' + matches[1];
+    //         }
+    //     }
+    //     var wtads = document.createElement('script');
+    //     wtads.async = true;
+    //     wtads.type = 'text/javascript';
+    //     wtads.src = url + profileVersionId + '/pwt.js';
+    //     var node = document.getElementsByTagName('script')[0];
+    //     node.parentNode.insertBefore(wtads, node);
+    // })();
+    /* START  - LOAD PUBMATIC, GOOGLE ADS & REVIVE */
+    var PWT={}; //Initialize Namespace
     var googletag = googletag || {};
     googletag.cmd = googletag.cmd || [];
-    PWT.jsLoaded = function() { //PubMatic pwt.js on load callback is used to load GPT
-        (function() {
-            var gads = document.createElement('script');
-            var useSSL = 'https:' == document.location.protocol;
-            gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-            var node = document.getElementsByTagName('script')[0];
-            console.log(node);
-            node.parentNode.insertBefore(gads, node);
-            /* Criteo Section BEGIN */
-            var criteoLoader = document.createElement('script'),
-                initCriteo = document.createElement('script');
-            initCriteo.innerText = 'window.Criteo=window.Criteo||{},window.Criteo.events=window.Criteo.events||[];';
-            criteoLoader.setAttribute('async', 'async');
-            criteoLoader.setAttribute('type', 'text/javascript');
-            criteoLoader.setAttribute('src', 'https://static.criteo.net/js/ld/publishertag.js');
-            gads.parentNode.insertBefore(criteoLoader, gads);
-            gads.parentNode.insertBefore(initCriteo, gads);
-            /* Criteo Section END */
-        })();
+    var gptRan = false;
+    PWT.jsLoaded = function(){ //PubMatic pwt.js on load callback is used to load GPT
+        loadGPT();
     };
+    var loadGPT = function() {
+        // Check the gptRan flag
+        if (!gptRan) {
+            gptRan = true;
+            var gads = document.createElement('script');
+            var rads = document.createElement('script'); // #1
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js';
+            rads.src = (useSSL ? 'https:' : 'http:') + '//adserver.kl-youniverse.com/asyncjs.php'; // #2
+            gads.async = true; 
+            rads.async = true; // #3
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+            node.parentNode.insertBefore(rads, node); // #4
+        }
+    };
+    // Failsafe to call gpt
+    setTimeout(loadGPT, 500);
+
     (function() {
         var purl = window.location.href;
         var url = '//ads.pubmatic.com/AdServer/js/pwt/156536/457';
         var profileVersionId = '';
-        if (purl.indexOf('pwtv=') > 0) {
+        if(purl.indexOf('pwtv=')>0){
             var regexp = /pwtv=(.*?)(&|$)/g;
             var matches = regexp.exec(purl);
-            if (matches.length >= 2 && matches[1].length > 0) {
-                profileVersionId = '/' + matches[1];
+            if(matches.length >= 2 && matches[1].length > 0){
+                profileVersionId = '/'+matches[1];
             }
         }
         var wtads = document.createElement('script');
         wtads.async = true;
         wtads.type = 'text/javascript';
-        wtads.src = url + profileVersionId + '/pwt.js';
+        wtads.src = url+profileVersionId+'/pwt.js';
         var node = document.getElementsByTagName('script')[0];
         node.parentNode.insertBefore(wtads, node);
+
+
+        PWT.HookForPrebidRequestBids = function (adUnits) {
+            //console.log('HookForPrebidRequestBids: Original adUnits array :', adUnits);
+            adUnits.forEach(function (au) {
+                //console.log('HookForPrebidRequestBids: adding kadfloor to pubmatic');
+                au.bids.forEach(function (bid) {
+                    //if(bid.bidder == 'pubmatic') {
+                    //bid.params.wiid='hooksimpression';}
+                    if (bid.bidder == 'spotx') {
+                        var s_page_url = window.top!=window.parent?document.referrer:window.location.href
+                            bid.params["custom"] = {"page_url": s_page_url};
+                            bid.params["outstream_function"] = function (bid) {
+                            //console.dir(bid);
+                            //const videoDiv = bid.adUnitCode;
+                            const videoDiv = bid.adUnitCode.split('@')[0];
+                            const playerWidth = 300;
+                            const playerHeight = 250;
+                            //window.console.log("[SPOTX][renderer] Handle SpotX custom outstream renderer");
+                            let script = window.document.createElement("script");
+                            script.type = "text/javascript";
+                            script.src = "//cdn.spotxcdn.com/website/integration_test/media/asia/EASIv2.js";
+                            script.setAttribute("data-spotx_channel_id","" + bid.channel_id);
+                            script.setAttribute("data-spotx_vast_url", "" + bid.vastUrl);
+                            script.setAttribute("data-spotx_content_width", playerWidth);
+                            script.setAttribute("data-spotx_content_height",playerHeight);
+                            script.setAttribute("data-spotx_content_page_url",bid.renderer.config.content_page_url);
+                            script.setAttribute("data-spotx_ad_unit", "incontent");
+                            script.setAttribute("data-spotx_autoplay", "1");
+                            script.setAttribute("data-spotx_continue_out_of_view", "1");
+                            script.setAttribute("data-spotx_content_container_id",videoDiv);
+                            var vid_contain = window.document.getElementById(videoDiv);
+                            vid_contain.style.cssText = "display: none; margin-bottom: 20px";
+                            vid_contain.appendChild(script);
+                        }
+                    }
+                })
+            })
+        };
     })();
+    /* END  - LOAD PUBMATIC, GOOGLE ADS & REVIVE */
 
-    var blackListWords = new Array('matcont', 'aduhai', 'kelamin', 'vital', 'anal', 'belahan', 'bercinta', 'bergairah', 'gairah', 'intim', 'bikini', 'bokong', 'boob', 'bra', 'bugil', 'celana', 'ciuman', 'cleavage', 'dada', 'dewasa', 'diremas', 'doggie', 'ejakulasi', 'ereksi', 'erotis', 'foreplay', 'kiss', 'seks', 'gangbang', 'horny', 'hot', 'kamasutra', 'keperawanan', 'perawan', 'kondom', 'kontrasepsi', 'libido', 'lingerie', 'masturbasi', 'mature', 'menggairahkan', 'menggoda', 'mesra', 'miss-v', 'mr-p', 'nakal', 'naughty', 'nipple', 'nipples', 'onani', 'oral', 'oral seks', 'organ', 'orgasme', 'paha', 'pantat', 'panties', 'payudara', 'pelecehan', 'telanjang', 'penetrasi', 'penis', 'perkosa', 'perkosaan', 'pole', 'porno', 'pornoaksi', 'pornografi', 'telentang', 'provokatif', 'putting', 'ranjang', 'sex', 'penetratif', 'seksi', 'seksual', 'sensual', 'seronok', 'doll', 'toys', 'skandal', 'sperma', 'striptease', 'striptis', 'syur', 'terangsang', 'tiduri', 'topless', 'vagina', 'vibrator', 'lendir', 'prostitusi', 'homoseks', 'meraba-raba', 'mesum', 'memerkosa', 'rudapaksa', 'kemaluan', 'kasus asusila', 'pemerkosaan', 'hubungan seksual', 'hubungan intim', 'video porno', 'berita hoax', 'ternyata hoax', 'ahed tamimi', 'konflik palestina israel', 'konflik suriah', 'ujaran kebencian', 'g30s', 'kediktatoran arab saudi', 'konflik palestina-israel', 'fpi', 'penembakan', 'pelecehan seksual', 'tips seks', 'komunitas swinger', 'fenomena kelainan seksual', 'penyimpangan seks', 'posisi seks', 'obat kuat', 'bentuk payudara', 'implan payudara', 'chat firza-rizieq', 'anarkisme suporter sepakbola', 'bentrok suporter', 'pengeroyokan', 'penganiayaan', 'begal motor', 'kekerasan pada wartawan', 'pemerkosaan anak', 'pencabulan', 'bentrokan warga', 'bentrokan', 'kasus narkoba', 'akibat merokok', 'bahaya merokok', 'berhenti merokok', 'cara berhenti merokok', 'efek berhenti merokok', 'larangan merokok', 'tips berhenti merokok', 'rokok elektrik', 'pilpres 2019', 'koalisi pilpres 2019', 'koalisi prabowo', 'koalisi jokowi', 'prabowo-sandiaga', 'ratna sarumpaet', 'capres jokowi', 'capres prabowo', 'kebohongan ratna sarumpaet', 'prabowo subianto', 'jemaah ansharut daulah', 'aliran sesat', 'lia eden', 'kisah mualaf', 'penistaan agama', 'suporter tewas', 'gempa palu', 'gempa donggala', 'gempa sulawesi tengah', 'pembunuhan', 'tsunami palu', 'penemuan mayat', 'lion air jatuh di karawang', 'lion air jatuh', 'pembunuhan sadis', 'lion air hilang kontak', 'pesawat jatuh', 'pesawat hilang kontak', 'kecelakaan', 'kapal tenggelam di danau toba', 'kecelakaan bus', 'kapal tenggelam', 'kasus tabrak lari', 'bunuh diri', 'perselingkuhan', 'kisah perselingkuhan', 'razia pasangan mesum', 'seks bebas', 'gangguan jiwa', 'tes keperawanan', 'kontroversi hukuman mati', 'stres dan depresi', 'ahok gugat cerai veronica tan', 'Kanker', 'Impotensi', 'merokok', 'Perokok', 'Rokok', 'tembakau', 'Pelanggaran', 'Tablet', 'Overdosis', 'Jantung', 'Stroke', 'Cancer', 'Narkoba', 'Djarum', 'Ganja', 'BNN', 'Obesitas', 'Osteoporosis', 'Corona', 'Corona di indonesia', 'virus corona', 'virus-corona', 'covid-19', 'wabah corona', 'menewaskan', 'menewaskan orang', 'mengancam nyawa', 'meninggal', 'meninggal dunia', 'orang mati', 'orang tewas', 'pemakaman', 'petugas penyelamat', 'telah meninggal', 'terbunuh', 'tewas', 'tewaskan', 'tim penyelamat', 'wanita meninggal', 'autopsi', 'belasungkawa', 'bencana', 'bencana besar', 'bunuh orang', 'darurat bencana', 'dilaporkan tewas', 'dimakamkan', 'dipastikan tewas', 'ditemukan mati', 'ditemukan tewas', 'hilangnya nyawa', 'identitas korban', 'inalillahi', 'jasad korban', 'jasadnya', 'jenasah wanita', 'jenazah', 'jenazah pria', 'jenazah teridentifikasi', 'jasad', 'kehilangan hidupnya', 'kehilangan nyawa', 'kehilangan nyawanya', 'kematian', 'korban', 'korban jiwa', 'korban meninggal', 'korban tewas', 'mati', 'mayat', 'mayat korban', 'membunuh', 'membunuh istrinya', 'membunuh mereka', 'membunuh suaminya', 'menemui ajal', 'mengalami koma', 'menghembuskan nafas terakhir', 'menimbulkan korban', 'meninggal akibat sakit', 'menyebabkan kematian', 'meregang nyawa', 'meregggut nyawa', 'modar', 'nyawa hilang', 'nyawa melayang', 'penyebab kematian', 'tak bernyawa', 'tak sadarkan diri', 'terkapar', 'tidak bernyawa', 'tutup usia', 'wafat', 'kematian virus', 'kematian wabah', 'korban terinfeksi', 'virus menyerang', 'merenggut nyawa', 'pelayat', 'hilangkan nyawa', 'renggut nyawa', 'wabah', 'keadaan kritis', 'kehilangan darah', 'merenggut jiwa', 'telan nyawa', 'menelan nyawa', 'memakan nyawa', 'dinyatakan meninggal', 'nyawa tak tertolong', 'penyakit', 'sakit pernapasan', 'sesak', 'korona', 'corona', 'odp', 'pdp', 'virus', 'rumah sakit', 'Covid-19', 'virus korona', 'positif korona', 'COVID-19', 'terjangkit COVID-19', 'terinfeksi virus corona');
-
-    var urlPath = document.URL;
-    var urlArray = urlPath.split("/");
-    var dfp_Channel = window.location.host;
-    var alowedPath = new Array(
-        'news', 'dinar', 'lifestyle', 'fresh', 'orbit', 'your-story', 'jejak', 'community', 'photo', 'video', 'culinary', 'tag'
-    );
-    var urlSlot = '';
-    var nLevel = 1;
-    var isMatcont = false;
-    var dfp_Article = urlArray[urlArray.length - 1]; /* Custom targeting by article */
-    urlArray.forEach(function(sPath) {
-        if (inArray(sPath, alowedPath) && nLevel <= 1) {
-            urlSlot += sPath + '/';
-            nLevel++;
-        }
-    });
-
-    function inArray(needle, haystack) {
-        var length = haystack.length;
-        for (var i = 0; i < length; i++) {
-            if (haystack[i] == needle) return true;
-        }
-        return false;
-    }
-
-    function arrToLowerCase(arr){
-        return arr.map(function(v,i){
-            return v.toLowerCase();
-        });
-    }
-
-    function document_meta(metaName) {
-        var metaResult = '';
-        var metas = document.getElementsByTagName('meta');
-        if (metas) {
-            for (var x = 0, y = metas.length; x < y; x++) {
-                if (metas[x].name.toLowerCase() == metaName) {
-                    metaResult += metas[x].content;
-                }
-            }
-        }
-        return metaResult != '' ? metaResult : '';
-    }
-
-  	/* DMP CATEGORY LIST */
+	/* DMP CATEGORY LIST */
 	window.createDMPTracker = function(adsList, dfpTracker) {
 		var dmpEl, dmpON, dmpId = 1,
 			dmpList = ["fashion-events","acara-film","beauty-events","comedy-events","fan-conventions","lifestyle-events","musical-events","sporting-events","auto-shows","parenting-events","political-event","apartments","life-insurance","motor-insurance","health-insurance","education-insurance","travel-insurance","home-insurance","automotive","auto-racing","beauty","disasters","local-news","law","international-news","crime","national-news","elections","politics","government-business","business-and-finance","cloud-computing","content-channel","education","outdoor-decorating","consumer-electronics","esports","events","family-and-relationships","fashion-anak","mens-fashion","womens-fashion","fitness-and-exercise","fmcg-food-and-drink","fmcg-personal-care","console-games","pc-games","gaming","computer-peripherals","hatchback","health","healthy-and-wellness","home-and-garden","homeschooling","hotels-and-motels","pharmaceutical-industry","financial-industry","entertainment-industry","healthcare-industry","construction-industry","legal-services-industry","power-and-energy-industry","logistics-and-transportation-industry","food-industry","manufacturing-industry","media-industry","mechanical-and-industrial-engineering-industry","automotive-industry","education-industry","aviation-industry","hospitality-industry","advertising-industry","agriculture","real-estate-industry","retail-industry","technology-industry","telecommunications-industry","interior-decorating","internet","residentials-buy-sell-and-rentals","auto-buying-and-selling","credit-cards","household-supplies","injuries","pregnancy","childrens-health","adults-health","mental-health","reproductive-health","computing","bollywood-content","dangdut-content","movie-content","hijab-content","hollywood-content","korean-content","quiz-content","music-content","coffee","course-education","green-vehicles","frozen-foods","fast-foods","side-dishes","desserts-and-baking","snacks","healthy-cooking-and-eating","make-up","marketing-and-advertising","soft-drinks","mobil-cerdas","luxury-cars","budget-cars","performance-cars","mobile-apps","mpv","news-and-politics","nutrition","non-profit-organizations","business-expos-and-conferences","parenting","marketplace/ecommerce","weight-loss","early-childhood-education","alternative-medicine","chronic-disease","ailment","sports-equipment","skin-care","hair-care","body-care","facecare","home-appliances","personal-finance","houses","loans","fmcg-oral-care","fmcg-hair-care","fmcg-body-care","fmcg-face-care","milk-products","tickets-promo-and-vouchers","property","relationship","auto-rentals","sales-and-promotions","primary-education","online-education","private-school","soccer","motorcycles","auto-repair","shopping-and-ecommerce","smartphones","social-networking","computer-software-and-applications","auto-parts","sports","startups","style-and-fashion","suv","water-services","gas-and-electric","internet-service-providers","phone-services","technology-and-computing","television","physical-therapy","train-tickets","flight-tickets","online-transportation","travel","budget-travel","special-interest-tv","childrens-tv","animation-tv","news-tv","drama-tv","comedy-tv","music-tv","sports-tv","reality-tv","college-education","vaccines","wearable-technology","web-hosting","family-travel","culinary-travel","religious-tourism"];
@@ -1152,87 +1389,8 @@ console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px
 		});
 		parent.window.open(dfpTracker, '_blank');
 	};
-	function track_dmp() {
-		var kSegments = Krux.segments,
-			dmpTracker = {
-				"t132uuq5f": "https://bit.ly/kly-fashion-lovers-uss",
-				"t131yvou0": "https://bit.ly/kly-beauty-enthusiast-uss",
-				"t131llctq": "https://bit.ly/kly-woman-household-uss",
-				"t13zhj75p": "https://bit.ly/kly-mom-with-kids-uss",
-				"t13thh8b8": "https://bit.ly/kly-milenial-adult-uss",
-				"tzl02g0bl": "https://bit.ly/kly-beauty-bss",
-				"tzlz95r0n": "https://bit.ly/kly-lifestyle-tips-bss",
-				"tzlytf64c": "https://bit.ly/kly-lifestyle-culinary-bss",
-				"tzh1jktow": "https://bit.ly/kly-lifestyle-love-bss",
-				"tw1bejayz": "https://bit.ly/kly-lifestyle-bss",
-				"tw019h508": "https://bit.ly/kly-lifestyle-zodiak-bss",
-				"twotmzome": "https://bit.ly/kly-ticket-concert-bss",
-				"tsankogrh": "https://bit.ly/kly-sport-bss",
-				"tsanbbb5e": "https://bit.ly/kly-automotive-bss",
-				"tsam3knlf": "https://bit.ly/kly-soccer-bss",
-				"tsalg75jn": "https://bit.ly/kly-computer-electronics-bss",
-				"tsalarj4o": "https://bit.ly/kly-parentingv2-bss",
-				"tsak3623n": "https://bit.ly/kly-travel-and-culinary-bss",
-				"tsais9e6x": "https://bit.ly/kly-fashion-bss",
-				"tsahjm7yw": "https://bit.ly/kly-entertaint-bss",
-				"tsagy2m0m": "https://bit.ly/kly-health-bss",
-				"tsagk5a78": "https://bit.ly/kly-news-bss",
-				"tsafz8k0v": "https://bit.ly/kly-finance-bussines-bss",
-				"tr62t1fj2": "https://bit.ly/kly-traveller-bss",
-				"tr6z15p4s": "https://bit.ly/kly-ecommerce-bss",
-				"tjtop60dx": "https://bit.ly/kly-all-sites-v2",
-				"tqi6kmk44": "https://bit.ly/kly-male-dss",
-				"tqi6fygsx": "https://bit.ly/kly-female-dss",
-				"t754dx15h": "https://bit.ly/kly-vidio-news-bss",
-				"t75388hy0": "https://bit.ly/kly-vidio-finance-business-bss",
-				"t7534rm9z": "https://bit.ly/kly-vidio-automotive-bss",
-				"t753yw5w8": "https://bit.ly/kly-vidio-soccer-bss",
-				"t753jjhnb": "https://bit.ly/kly-vidio-sport-bss",
-				"t75wn0zo1": "https://bit.ly/kly-vidio-parenting-bss",
-				"t75wi8zsb": "https://bit.ly/kly-vidio-computer-electronics-bss",
-				"t75wagtfg": "https://bit.ly/kly-vidio-entertainment-bss",
-				"t75v3eefi": "https://bit.ly/kly-vidio-health-bss",
-				"t75vxdba2": "https://bit.ly/kly-vidio-ecommerce-bss",
-				"t75uql2cv": "https://bit.ly/kly-vidio-travel-bss",
-				"t75ugodsj": "https://bit.ly/kly-vidio-lifestyle-bss",
-				"t7p1vjdqs": "https://bit.ly/kly-vidio-fashion-bss",
-				"t7p1piz5g": "https://bit.ly/kly-vidio-love-bss",
-				"t7pxv5m22": "https://bit.ly/kly-vidio-culinary-bss",
-				"t7puhdq0d": "https://bit.ly/kly-vidio-beauty-bss",
-			},
-			dmpTrackerContainer = document.createElement("div");
-		dmpTrackerContainer.setAttribute("id", "dmp-tracker-container");
-		dmpTrackerContainer.setAttribute("style", "display:none;visibility:hidden;");
-		kSegments.forEach(function(entry, k) {
-			var isDmpTracker = dmpTracker[entry];
-			if (typeof isDmpTracker !== 'undefined') {
-				var dmpSetImg = parent.window.document.querySelector('#krux-dmp-tracker-' + k),
-					dmpTrackImg = document.createElement('img');
-				dmpSetImg ? dmpSetImg.remove() : '';
-				dmpTrackImg.src = isDmpTracker;
-				dmpTrackImg.setAttribute('style', 'display:none;visibility:hidden;');
-				dmpTrackImg.setAttribute('id', 'krux-dmp-tracker-' + k);
-				dmpTrackerContainer.appendChild(dmpTrackImg);
-			}
-		});
-		document.body.appendChild(dmpTrackerContainer);
-	}
 
-    /*MATURE CONTENT DEFINED VAR*/
-    if (!blackListWords) {
-        var blackListWords = new Array('matcont');
-    }
-
-    var isHomepage = urlPath == "https://m-dev.dream.co.id" || urlPath == "https://m-dev.dream.co.id/" || urlPath == "https://m-dev.dream.co.id/index.html" || urlPath.indexOf("https://m-dev.dream.co.id?") > -1;
-
-    /* CHECK PAGETYPE */
-    var isReadPage = false;
-    if (typeof kly !== "undefined") {
-        isReadPage = kly.pageType == "ReadPage";
-    } else {
-        isReadPage = document.URL.match(/html/g) !== null;
-    }
-
+    var isReadPage = kly.pageType === "ReadPage";
     if (!document.querySelector("div-gpt-ad-dream-insertion-oop") && isReadPage) {
         var gamInsertionEl = document.createElement("div");
         gamInsertionEl.id = "div-gpt-ad-dream-insertion-oop";
@@ -1240,421 +1398,139 @@ console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px
     }
 
     googletag.cmd.push(function() {
-
-        var oop_dfpHeadline = '/36504930/m.dream.co.id/dfp-hl';
-        var oop_dfpBottomframe = '/36504930/m.dream.co.id/dfp-bottomfrm';
-        var oop_dfpTopframe = '/36504930/m.dream.co.id/dfp-topfrm';
-        var dfpAds_sled = '/36504930/m.dream.co.id/dfp-sled';
-        var dfpAds_slideup = '/36504930/m.dream.co.id/dfp-slideup';
-        var exposer_slot1 = '/36504930/m.dream.co.id/dfp-exposer-slot1';
-        var exposer_slot2 = '/36504930/m.dream.co.id/dfp-exposer-slot2';
-        var nativeOut_slot1 = '/36504930/m.dream.co.id/dfp-nativeOut-slot1';
-        var nativeOut_slot2 = '/36504930/m.dream.co.id/dfp-nativeOut-slot2';
-        var nativeOut_slot3 = '/36504930/m.dream.co.id/dfp-nativeOut-slot3';
-        var dfp_pageTitle = urlArray[urlArray.length - 1];
-        var dfp_titles = dfp_pageTitle.klyFiltering("-");
-        var dfp_pageKeywords = document_meta("keywords");
+        var urlPath = document.URL;
+        var isMatcont = false;
+        var blackListWords = new Array('matcont', 'aduhai', 'kelamin', 'vital', 'anal', 'belahan', 'bercinta', 'bergairah', 'gairah', 'intim', 'bikini', 'bokong', 'boob', 'bra', 'bugil', 'celana', 'ciuman', 'cleavage', 'dada', 'dewasa', 'diremas', 'doggie', 'ejakulasi', 'ereksi', 'erotis', 'foreplay', 'kiss', 'seks', 'gangbang', 'horny', 'hot', 'kamasutra', 'keperawanan', 'perawan', 'kondom', 'kontrasepsi', 'libido', 'lingerie', 'masturbasi', 'mature', 'menggairahkan', 'menggoda', 'mesra', 'miss-v', 'mr-p', 'nakal', 'naughty', 'nipple', 'nipples', 'onani', 'oral', 'oral seks', 'organ', 'orgasme', 'paha', 'pantat', 'panties', 'payudara', 'pelecehan', 'telanjang', 'penetrasi', 'penis', 'perkosa', 'perkosaan', 'pole', 'porno', 'pornoaksi', 'pornografi', 'telentang', 'provokatif', 'putting', 'ranjang', 'sex', 'penetratif', 'seksi', 'seksual', 'sensual', 'seronok', 'doll', 'toys', 'skandal', 'sperma', 'striptease', 'striptis', 'syur', 'terangsang', 'tiduri', 'topless', 'vagina', 'vibrator', 'lendir', 'prostitusi', 'homoseks', 'meraba-raba', 'mesum', 'memerkosa', 'rudapaksa', 'kemaluan', 'kasus asusila', 'pemerkosaan', 'hubungan seksual', 'hubungan intim', 'video porno', 'berita hoax', 'ternyata hoax', 'ahed tamimi', 'konflik palestina israel', 'konflik suriah', 'ujaran kebencian', 'g30s', 'kediktatoran arab saudi', 'konflik palestina-israel', 'fpi', 'penembakan', 'pelecehan seksual', 'tips seks', 'komunitas swinger', 'fenomena kelainan seksual', 'penyimpangan seks', 'posisi seks', 'obat kuat', 'bentuk payudara', 'implan payudara', 'chat firza-rizieq', 'anarkisme suporter sepakbola', 'bentrok suporter', 'pengeroyokan', 'penganiayaan', 'begal motor', 'kekerasan pada wartawan', 'pemerkosaan anak', 'pencabulan', 'bentrokan warga', 'bentrokan', 'kasus narkoba', 'akibat merokok', 'bahaya merokok', 'berhenti merokok', 'cara berhenti merokok', 'efek berhenti merokok', 'larangan merokok', 'tips berhenti merokok', 'rokok elektrik', 'pilpres 2019', 'koalisi pilpres 2019', 'koalisi prabowo', 'koalisi jokowi', 'prabowo-sandiaga', 'ratna sarumpaet', 'capres jokowi', 'capres prabowo', 'kebohongan ratna sarumpaet', 'prabowo subianto', 'jemaah ansharut daulah', 'aliran sesat', 'lia eden', 'kisah mualaf', 'penistaan agama', 'suporter tewas', 'gempa palu', 'gempa donggala', 'gempa sulawesi tengah', 'pembunuhan', 'tsunami palu', 'penemuan mayat', 'lion air jatuh di karawang', 'lion air jatuh', 'pembunuhan sadis', 'lion air hilang kontak', 'pesawat jatuh', 'pesawat hilang kontak', 'kecelakaan', 'kapal tenggelam di danau toba', 'kecelakaan bus', 'kapal tenggelam', 'kasus tabrak lari', 'bunuh diri', 'perselingkuhan', 'kisah perselingkuhan', 'razia pasangan mesum', 'seks bebas', 'gangguan jiwa', 'tes keperawanan', 'kontroversi hukuman mati', 'stres dan depresi', 'ahok gugat cerai veronica tan', 'Kanker', 'Impotensi', 'merokok', 'Perokok', 'Rokok', 'tembakau', 'Pelanggaran', 'Tablet', 'Overdosis', 'Jantung', 'Stroke', 'Cancer', 'Narkoba', 'Djarum', 'Ganja', 'BNN', 'Obesitas', 'Osteoporosis', 'Corona', 'Corona di indonesia', 'virus corona', 'virus-corona', 'covid-19', 'wabah corona', 'menewaskan', 'menewaskan orang', 'mengancam nyawa', 'meninggal', 'meninggal dunia', 'orang mati', 'orang tewas', 'pemakaman', 'petugas penyelamat', 'telah meninggal', 'terbunuh', 'tewas', 'tewaskan', 'tim penyelamat', 'wanita meninggal', 'autopsi', 'belasungkawa', 'bencana', 'bencana besar', 'bunuh orang', 'darurat bencana', 'dilaporkan tewas', 'dimakamkan', 'dipastikan tewas', 'ditemukan mati', 'ditemukan tewas', 'hilangnya nyawa', 'identitas korban', 'inalillahi', 'jasad korban', 'jasadnya', 'jenasah wanita', 'jenazah', 'jenazah pria', 'jenazah teridentifikasi', 'jasad', 'kehilangan hidupnya', 'kehilangan nyawa', 'kehilangan nyawanya', 'kematian', 'korban', 'korban jiwa', 'korban meninggal', 'korban tewas', 'mati', 'mayat', 'mayat korban', 'membunuh', 'membunuh istrinya', 'membunuh mereka', 'membunuh suaminya', 'menemui ajal', 'mengalami koma', 'menghembuskan nafas terakhir', 'menimbulkan korban', 'meninggal akibat sakit', 'menyebabkan kematian', 'meregang nyawa', 'meregggut nyawa', 'modar', 'nyawa hilang', 'nyawa melayang', 'penyebab kematian', 'tak bernyawa', 'tak sadarkan diri', 'terkapar', 'tidak bernyawa', 'tutup usia', 'wafat', 'kematian virus', 'kematian wabah', 'korban terinfeksi', 'virus menyerang', 'merenggut nyawa', 'pelayat', 'hilangkan nyawa', 'renggut nyawa', 'wabah', 'keadaan kritis', 'kehilangan darah', 'merenggut jiwa', 'telan nyawa', 'menelan nyawa', 'memakan nyawa', 'dinyatakan meninggal', 'nyawa tak tertolong', 'penyakit', 'sakit pernapasan', 'sesak', 'korona', 'corona', 'odp', 'pdp', 'virus', 'rumah sakit', 'Covid-19', 'virus korona', 'positif korona', 'COVID-19', 'terjangkit COVID-19', 'terinfeksi virus corona');
+        /* POPULATE META DATA KEYWORDS */
+        var dfp_pageTitle = kly.article && kly.article.title.klyFiltering(' ');
+        var dfp_titles = (typeof dfp_pageTitle !== 'undefined' && dfp_pageTitle.length > 0 ) ? dfp_pageTitle: [];
+        var dfp_pageKeywords = GAMLibrary.documentMeta("keywords");
         var dfp_keyword = dfp_pageKeywords.klyFiltering(",");
-        var dfp_pageDesc = document_meta("description");
+        /* POPULATE META DATA DESC */
+        var dfp_pageDesc = GAMLibrary.documentMeta("description");
         var dfp_desc = dfp_pageDesc.klyFiltering(",");
-        var pageType = "FrontPage";
-        var dfp_adunitCount = 8;
-        var dfp_slotCount = 0;
-        var isMultipage = window.kly.article["isMultipage"].toString();
-        var dfp_Rubric = dfp_Channel + " - " + (urlSlot == "" ? "homepage" : urlSlot.replace('/', ''));
         var tagForAds = (typeof window.kly !== 'undefined') ? kly.gtm.tag.klyFiltering("|") : [];
         var dfp_keywords = dfp_keyword.concat(dfp_titles, dfp_desc, tagForAds);
-        /*set targetting to show stickersurvey or not*/
-        var bannedSurveyCookies = document.cookie.match(/dfp_banliftSurvey-([a-zA-Z0-9-]+)/gi);
-        var bannedSurveyCampaign = [];
-        var browserType = 'other';
-        if (dfp_Article.length > 0) {
-            pageType = "ReadPage";
-        } else {
-            pageType = (urlSlot == "") ? "FrontPage" : "ChannelPage";
-        }
 
-        blackListWords = arrToLowerCase(blackListWords);
+        /*MATURE CONTENT DEFINED VAR*/
+        if (!blackListWords) {
+            var blackListWords = new Array('matcont');
+        }
+        /*CONTENT FILTERING SCRIPT*/
+        blackListWords = GAMLibrary.arrToLowerCase(blackListWords);
         dfp_keywords.forEach(function(sKeyword) {
             sKeyword = sKeyword.toLowerCase();
             tagForAds.push(sKeyword);
-            if (inArray(sKeyword.trim(), blackListWords)) {
+            if (GAMLibrary.inArray(sKeyword.trim(), blackListWords)) {
                 isMatcont = true;
             }
         });
 
-        /*userAgent targeting based on browser type*/
-        if (navigator.userAgent.match(/Opera Mini/i) || navigator.userAgent.match(/OPR/i)) {
-            browserType = 'operamini';
-        } else if (navigator.userAgent.match(/^Mozilla\/5\.0 .+ Gecko\/$/) || navigator.userAgent.match(/UCBrowser/i)) {
-            browserType = 'ucbrowser';
-        }
-        /*End userAgent targeting based on browser type*/
-
-        /*set targetting to show stickersurvey or not*/
-        if (bannedSurveyCookies !== null) {
-            for (var i = 0; i < bannedSurveyCookies.length; i++) {
-                var bannedCampaign = bannedSurveyCookies[i].replace('dfp_banliftSurvey-', '');
-                if (bannedCampaign != '') bannedSurveyCampaign[i] = bannedCampaign;
-            }
-        }
-        /*End set targetting to show stickersurvey or not*/
-
-
-        googletag.defineSlot(oop_dfpHeadline, [
+        /*DEFINE ALL SLOT*/
+        googletag.defineSlot(GAMLibrary.dfpHeadline, [
             [320, 50],
             [320, 100]
         ], 'div-gpt-ad-dream-hl').addService(googletag.pubads());
-        googletag.defineSlot('/36504930/m.dream.co.id/dfp-sc', [300, 250], 'div-gpt-ad-dream-sc').addService(googletag.pubads());
-        googletag.defineSlot(exposer_slot1, [
+        googletag.defineSlot(GAMLibrary.scSlot, [
+          	[300, 250],
+          	[250, 250],
+          	[200, 200]
+        ], 'div-gpt-ad-dream-sc').addService(googletag.pubads());
+        googletag.defineSlot(GAMLibrary.dfpExposer1, [
             [300, 250],
             [300, 600],
-            [320, 480]
+            [320, 480],
+          	[160, 600],
+            [250, 250]
         ], 'div-gpt-ad-dream-dfp-exposer-slot1').addService(googletag.pubads());
 
         /*OUT OF PAGE SLOTS*/
-        googletag.defineOutOfPageSlot(oop_dfpTopframe, 'div-gpt-ad-dream-topfrm-oop').addService(googletag.pubads());
+        // googletag.defineOutOfPageSlot(GAMLibrary.dfpTopframe, 'div-gpt-ad-dream-topfrm-oop').addService(googletag.pubads());
+      	googletag.defineSlot(GAMLibrary.dfpTopframe, [1, 1], 'div-gpt-ad-dream-topfrm-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.dream.co.id/dfp-newsTag1', 'div-gpt-ad-dream-newsTag1-oop').addService(googletag.pubads());
         googletag.defineOutOfPageSlot('/36504930/m.dream.co.id/dfp-newsTag2', 'div-gpt-ad-dream-newsTag2-oop').addService(googletag.pubads());
-        googletag.defineOutOfPageSlot(dfpAds_sled, 'div-gpt-ad-dfp-liftads-oop').addService(googletag.pubads());
-        googletag.defineOutOfPageSlot(dfpAds_slideup, 'div-gpt-ad-dfp-slideup-oop').addService(googletag.pubads());
-        googletag.defineOutOfPageSlot(exposer_slot2, 'div-gpt-ad-dream-dfp-exposer-slot2').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(GAMLibrary.dfpSlideup, 'div-gpt-ad-dfp-overlay-oop').addService(googletag.pubads());
+        googletag.defineOutOfPageSlot(GAMLibrary.dfpExposer2, 'div-gpt-ad-dream-dfp-exposer-slot2').addService(googletag.pubads());
         if (isReadPage) {
             googletag.defineOutOfPageSlot('/36504930/m.dream.co.id/dfp-insertion', 'div-gpt-ad-dream-insertion-oop').addService(googletag.pubads());
         }
-       
-        //googletag.defineSlot(oop_dfpTopframe,[1,1], 'div-gpt-ad-dream-topfrm-oop').addService(googletag.pubads());
-        // googletag.defineSlot('/36504930/m.dream.co.id/dfp-newsTag1',[1,1], 'div-gpt-ad-dream-newsTag1-oop').addService(googletag.pubads());
-        // googletag.defineSlot('/36504930/m.dream.co.id/dfp-newsTag2',[1,1], 'div-gpt-ad-dream-newsTag2-oop').addService(googletag.pubads());
-        // googletag.defineSlot(dfpAds_sled, [1,1],'div-gpt-ad-dfp-liftads-oop').addService(googletag.pubads());
-        // googletag.defineSlot(dfpAds_slideup,[1,1], 'div-gpt-ad-dfp-slideup-oop').addService(googletag.pubads());
-        // googletag.defineSlot(exposer_slot2,[1,1], 'div-gpt-ad-dream-dfp-exposer-slot2').addService(googletag.pubads());
-        
-        // if (isReadPage) {
-        //     googletag.defineSlot('/36504930/m.dream.co.id/dfp-insertion',[1,1], 'div-gpt-ad-dream-insertion-oop').addService(googletag.pubads());
-        // }
 
-        dfp_isLiftAds_active = false;
-        dfp_isLiftSticker_active = false;
-        dfp_isPopup_active = false;
+        /*Bottom Frame Scrolling*/
+        GAMLibrary.scrollBottomFrame();
+        /*Bottom Frame Scrolling*/
 
         googletag.pubads().addEventListener('slotResponseReceived', function(event) {
             var dfp_slotDelivered = event.slot.getResponseInformation() ? 'block' : 'none'; /* check wheter there is ads or not*/
             var dfp_slotAdUnitPath = event.slot.getSlotId().getAdUnitPath(); /* get adunit path */
-            var dfp_slotAdUnitID = event.slot.getSlotId().getId(); /* get adunit container id*/
-            var dfp_SlotAdUnitIDname = event.slot.getSlotId()['m']; /* get adunit container id name*/
-            dfp_slotCount++;
-
+            
             /*check if native ads creative was delivered*/
             if (dfp_slotDelivered == 'block') {
-
-                if (dfp_slotAdUnitPath == dfpAds_sled) {
-                    dfp_isLiftAds_active = true;
-                    dfp_IsSledLive = !dfp_getCookieValue("dfp_overlayChecker");
+                /* tracking impression */
+                
+                ( "unik" === kly.gtm.subCategory ) ? GAMLibrary.eventTrackingImpression(kly.gtm.subCategory,dfp_slotAdUnitPath) : '' ;
+                  
+                if (dfp_slotAdUnitPath == GAMLibrary.dfpHeadline) {
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var myParam = JSON.parse(urlParams.get('interval'));
+                    headlineSticky(myParam);
                 }
-                if (dfp_slotAdUnitPath == dfpAds_slideup) {
-                    dfp_isLiftSticker_active = true;
-                }
-
-                /*check for topframe rendering process */
-                if (dfp_slotAdUnitPath == oop_dfpTopframe) {
-                    var LockScroll = {
-						status: false,
-						timeout: 3000,
-						unset: function() {
-							document.body.style.overflow = "initial";
-							document.body.style.position = "unset";
-							document.body.style.width = "unset";
-							this.status = false;
-						},
-						set: function() {
-							document.body.style.overflow = "hidden";
-							document.body.style.position = "fixed";
-							document.body.style.width = window.screen.width + "px";
-							this.status = true;
-							console.log('set');
-						}
-					};
-
-                    let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
-                    var that = LockScroll;
-                    LockScroll.set();
-
-                    if (LockScroll.status) {
-                        setTimeout(function() {
-                            that.unset();
-                        }, that.timeout);
-                    } else {
-                        LockScroll.unset();
-                    }
-                    if (deviceOrientation) {
-                        LockScroll.unset();
+				if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
+                    let deviceOrientation = window.matchMedia("(orientation: portrait)");
+                        console.log('Scroll Freeze start at :'+(new Date(kly.startLoad)));
+                    let that = GAMLibrary.lockScroll;
+                    if (!deviceOrientation.matches) {
+                        GAMLibrary.lockScroll.unset();
+                    }else{
+                        GAMLibrary.lockScroll.set();
                     }
                     window.addEventListener("resize", function() {
-                        let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
-                        if (deviceOrientation) {
-                            that.unset();
-                            console.log("unset")
+                        if (!deviceOrientation.matches) {
+                        that.unset();
                         }
                     });
-                    /*tweak oop iframe container*/
-                    scWidth = 0;
-                    if (self.innerHeight) {
-                        scWidth = self.innerWidth;
-                    }
-                    if (document.documentElement && document.documentElement.clientHeight) {
-                        scWidth = document.documentElement.clientWidth;
-                    }
-                    if (document.body) {
-                        scWidth = document.body.clientWidth;
-                    }
-                    if (((scWidth * 100) / 480) < 100) {
-                        scWidth = (scWidth * 100) / 480
-                    } else {
-                        scWidth = 100
-                    }
-                    document.getElementById("google_ads_iframe_" + dfp_slotAdUnitID) && document.getElementById("google_ads_iframe_" + dfp_slotAdUnitID).setAttribute("height", scWidth);
-                    document.getElementById("google_ads_iframe_" + dfp_slotAdUnitID) && document.getElementById("google_ads_iframe_" + dfp_slotAdUnitID).setAttribute("width", "100%");
                 }
-                /*check for bottomframe rendering process*/
-                if (dfp_slotAdUnitPath == oop_dfpBottomframe) {
-                    document.getElementById("dfp-bframe-cont-transparent") && document.getElementById("dfp-bframe-cont-transparent").setAttribute("style", "opacity: 0.7; position: fixed; bottom: 0; min-height: 50px; background-color: #ECECEC; width: 100%; text-align: center;");
+            }else{
+                if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
+                  GAMLibrary.lockScroll.unset();
+                  let lockTime = new Date().getTime();
+                  let startLoad = kly && kly.startLoad ? kly.startLoad : 0;
+                  console.log('Scroll Freeze start at :'+(new Date(startLoad)));
+                  let diff = lockTime - startLoad;
+                  let lockTimeStamp = Math.floor(diff / 1000 % 60);
+                  console.log('No Topframe campaign detected, freeze unlock duration :'+lockTimeStamp);                      
                 }
-
-            } else {
-                if (dfp_slotAdUnitPath == oop_dfpTopframe) {
-                    document.getElementById("google_ads_iframe_" + dfp_slotAdUnitID + "__container__") && document.getElementById("google_ads_iframe_" + dfp_slotAdUnitID + "__container__").setAttribute("style", "display: none;");
-                }
-            }
-            /*CHECK AND EXECUTE CAMPAIGN WICH ARE RUNNING ON SPECIFIC VIEW*/
-            if (dfp_slotCount == dfp_adunitCount) {
-                dfp_checkUserViewCount();
-            }
-        });
+            } 
+        });        
 
         /*INITIATE ADS ON CONTINOUS PAGE */
-        initiate_sc_readPage();
+        GAMLibrary.initiateSCReadPage();
 
-        /*DEPENDECIES FUNCTIONs*/
-        function dfp_getCookieValue(e) {
-            var n = document.cookie,
-                t = n.indexOf(" " + e + "=");
-            if (-1 == t && (t = n.indexOf(e + "=")), -1 == t) n = null;
-            else {
-                t = n.indexOf("=", t) + 1;
-                var i = n.indexOf(";", t); - 1 == i && (i = n.length), n = unescape(n.substring(t, i))
-            }
-            return n
-        }
-
-        function dfp_setCookie(e, n, t, i) {
-            n = escape(n);
-            var o = extractDomain();
-            if ("" == i) {
-                var r = new Date;
-                r.setHours(r.getHours(), r.getMinutes() + 10), i = r.toGMTString()
-            }
-            "" != t && (t = ";Path=" + t), document.cookie = e + "=" + n + ";expires=" + i + t + ";Domain=" + o
-        }
-
-        function extractDomain() {
-            var e, n = window.location.href;
-            return e = n.indexOf("://") > -1 ? n.split("/")[2] : n.split("/")[0], e = e.split(":")[0]
-        }
-
-
-        function initiate_LiftAds() {
-            var divWrapper = (function() {
-                var div = document.createElement('div');
-
-                return function(el, id) {
-                    var oDiv = div.cloneNode(false);
-                    oDiv.id = id;
-                    el.parentNode.insertBefore(oDiv, el);
-                    oDiv.appendChild(el);
-                }
-            }());
-            ////console.log("Sled executed");
-            document.getElementById("div-gpt-ad-dfp-overlay-oop").setAttribute("id", "div-gpt-ad-dfp-liftads-oop");
-
-            //additional script for tilt ads
-            var divContainer = parent.document.getElementById("div-gpt-ad-dfp-liftads-oop");
-            divWrapper(divContainer, 'tilt-relative');
-
-            var divContainer = parent.document.getElementById("tilt-relative");
-            divWrapper(divContainer, 'tilt-box');
-
-            var divContainer = parent.document.getElementById("tilt-box");
-            divWrapper(divContainer, 'tilt-content');
-
-            var divContainer = parent.document.getElementById("tilt-content");
-            divWrapper(divContainer, 'ads-tilt');
-
-            googletag.cmd.push(function() {
-                googletag.display('div-gpt-ad-dfp-liftads-oop');
-            });
-
-            return 1;
-        }
-
-        function initiate_LiftSticker() {
-            document.getElementById("div-gpt-ad-dfp-overlay-oop") && document.getElementById("div-gpt-ad-dfp-overlay-oop").setAttribute("id", "div-gpt-ad-dfp-slideup-oop");
-
-            googletag.cmd.push(function() {
-                googletag.display('div-gpt-ad-dfp-slideup-oop');
-            });
-            return 3;
-        }
-
-        function dfp_checkUserViewCount() {
-            if (!navigator.userAgent.match(/Opera Mini/i) /*&& !navigator.userAgent.match(/UCWEB/i) && !navigator.userAgent.match(/UCBrowser/i)*/ ) {
-                var dfp_CookieName = "dfp_overlayChecker";
-                var dfp_OverlayChecker = dfp_getCookieValue(dfp_CookieName);
-
-                if (dfp_OverlayChecker == "" || dfp_OverlayChecker == null) dfp_OverlayChecker = "0_0";
-
-                var dfp_OverlayCheckerParam = dfp_OverlayChecker.split("_");
-                var dfp_Counter = typeof dfp_OverlayCheckerParam[1] != "undefined" ? parseInt(dfp_OverlayCheckerParam[1]) + 1 : 1;
-                var dfp_PageView = typeof dfp_OverlayCheckerParam[0] != "undefined" ? parseInt(dfp_OverlayCheckerParam[0]) + 1 : 1;
-                console.log('[DFP] dfp_OverlayChecker PV : ' + dfp_PageView + ' Counter : ' + dfp_Counter);
-                console.log('[DFP] dfp_isLiftAds_active : ' + dfp_isLiftAds_active);
-                console.log('[DFP] dfp_isLiftSticker_active : ' + dfp_isLiftSticker_active);
-
-                if (dfp_Counter <= 3) {
-                    dfp_Counter = viewOrder_format12(dfp_Counter);
-                    dfp_setCookie(dfp_CookieName, dfp_PageView + "_" + dfp_Counter, "/", "");
-                }
-            }
-        }
-
-        /*Check view counter with combination : 
-            1: liftads [AND] exposer
-            2: liftsticker [AND] exposer
-        */
-        function viewOrder_format12(dfp_Counter) {
-            console.log('[DFP] Counter format 1-2');
-            if (dfp_Counter == 1) {
-
-                if (dfp_isLiftAds_active) {
-
-                    initiate_LiftAds();
-
-
-                    dfp_Counter = 2;
-
-                } else if (dfp_isLiftSticker_active) {
-
-                    dfp_Counter = initiate_LiftSticker();
-
-                }
-
-            } else if (dfp_Counter == 2 || dfp_Counter == 3) {
-
-                if (dfp_isLiftSticker_active) dfp_Counter = initiate_LiftSticker();
-            }
-
-            return dfp_Counter;
-        }
-
-
-
-
-        /*initiate sc in readpage Mobile*/
-        function initiate_sc_readPage() {
-            var scContainer = '.paging-showcase',
-                parentElement = document.querySelector('.detail'),
-                arrShowcaseContainer = document.querySelectorAll(scContainer),
-                sumShowcaseContainer = document.querySelectorAll(scContainer).length;
-            showcaseId = 'div-gpt-ads-dream-showcase-',
-                gam_sc = null,
-                countShowcaseContainer = 0,
-                mo = null;
-
-            arrShowcaseContainer.forEach(function(value, key) {
-                value.setAttribute('id', showcaseId + (key + 1));
-            });
-
-            mo = new MutationObserver(function(mutations) {
-                mutations.forEach(function(el) {
-                    var target = el.target,
-                        isShown = target.getAttribute('data-pushed'),
-                        container;
-                    if (isShown && el.attributeName === 'data-pushed') {
-                        countShowcaseContainer++;
-
-                        gam_sc = googletag.defineSlot('/36504930/m.dream.co.id/dfp-sc', [300, 250], showcaseId + countShowcaseContainer).addService(googletag.pubads()).setTargeting("position", [countShowcaseContainer.toString()]);
-                        googletag.display(showcaseId + countShowcaseContainer);
-                        googletag.pubads().refresh([gam_sc]);
-                        if (countShowcaseContainer === sumShowcaseContainer) {
-                            mo.disconnect();
-                        }
-                    }
-                });
-            });
-
-            parentElement && mo.observe(parentElement, {
-                childList: true,
-                attributes: true,
-                subtree: true,
-            });
-
-        }
-
-
-        /* KRUX and DMP TRACKING */
+        googletag.pubads().setTargeting("dummy", "1");
+        
+        /*  START TARGETING BLOCK   */
+        if (isMatcont) {googletag.pubads().setTargeting("isMatcont", ["1"]);}
         if (typeof Krux !== "undefined") {
-            track_dmp();
             googletag.pubads().setTargeting('ksg', Krux.segments);
             googletag.pubads().setTargeting('kuid', Krux.user);
         }
-
-        /* Criteo Section BEGIN */
-        googletag.pubads().disableInitialLoad();
-        Criteo.events.push(function() {
-            Criteo.RequestBidsOnGoogleTagSlots(3467, function() {
-                Criteo.SetDFPKeyValueTargeting();
-                googletag.pubads().refresh();
-            }, 2000);
-        });
-        /* Criteo Section END */
-
-        if (isMatcont) {
-            googletag.pubads().setTargeting("isMatcont", ["1"]);
-        }
-
-        if (bannedSurveyCookies !== null) {
-            googletag.pubads().setTargeting('bannedSurvey', bannedSurveyCampaign);
-        }
-
-        googletag.pubads().setTargeting('browsertype', browserType);
-        googletag.pubads().setTargeting("tags", tagForAds)
-        googletag.pubads().setTargeting("rubric", [dfp_Rubric]);
-        googletag.pubads().setTargeting("page_url", [dfp_Article]);
-        googletag.pubads().setTargeting("PageType", [pageType]);
+        googletag.pubads().setTargeting("tags",tagForAds);
         googletag.pubads().setTargeting("currentUrl", urlPath);
-        googletag.pubads().setTargeting("isMultipage",[isMultipage]);
+        googletag.pubads().setTargeting("type", kly.gtm.type);
+        googletag.pubads().setTargeting("pageType", kly.pageType);
+        googletag.pubads().setTargeting("channel", kly.gtm.subCategory);
+        googletag.pubads().setTargeting("audience", typeof (audience = kly.gtm.audience && kly.gtm.audience.split("|")) === "undefined" ? "false" : audience);
+        googletag.pubads().setTargeting("isAdvertorial", typeof (isAdvertorial = kly.article && kly.article.isAdvertorial.toString()) === "undefined" ? "false" :  isAdvertorial);   
+        googletag.pubads().setTargeting("isMultipage", typeof (isMultipage = kly.article && kly.article.isMultipage.toString()) === "undefined" ? "false" : isMultipage );
+        googletag.pubads().setTargeting("articleId", kly.gtm.articleId.toString());
+        googletag.pubads().setTargeting("pagingNum", typeof (pageParam = kly.gtm.pageParam && kly.gtm.pageParam.toString()) === "undefined" ? "false" : pageParam );
+        googletag.pubads().setTargeting("newExp",typeof (newExp = kly.gtm.new_exp) === "undefined" ? "false" : kly.gtm.new_exp.toString());
+        /*  END TARGETING BLOCK   */
+
         googletag.pubads().setCentering(true);
         googletag.pubads().enableSingleRequest();
         googletag.pubads().collapseEmptyDivs();
         googletag.enableServices();
 
-        /*Bottom Frame Scrolling*/
-        var timedBottomFrm = null;
-        window.addEventListener("scroll", scrollBottomFrame);
-
-        function scrollBottomFrame() {
-            var scrollNode = document.scrollingElement || document.documentElement;
-            var scrollTop = scrollNode.scrollTop;
-            if (scrollTop >= "200") {
-                window.removeEventListener("scroll", scrollBottomFrame);
-                timedBottomFrm = googletag.defineSlot(oop_dfpBottomframe, [320, 50], 'div-gpt-ad-dream-bottomfrm').addService(googletag.pubads());
-                googletag.display('div-gpt-ad-dream-bottomfrm');
-                googletag.pubads().refresh([timedBottomFrm]);
-
-                window.GAMLibrary.refreshSlot = timedBottomFrm;
-                window.GAMLibrary.setGamBFInterval();
-            }
-        }
     });
 
     googletag.cmd.push(function() {
@@ -1683,9 +1559,17 @@ console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px
             googletag.display('div-gpt-ad-dream-insertion-oop');
         });
     }
+    googletag.cmd.push(function() {
+        googletag.display('div-gpt-ad-dfp-overlay-oop');
+    });
+
     var gptDreamStyle = document.createElement('style');
     gptDreamStyle.textContent = '#div-gpt-ad-dream-hl{-webkit-transition:margin .5s;transition:margin .5s;margin-top:0}.dfp-hl-sticky{position:fixed;top:0;min-height:50px;left:50%;margin-left:-160px!important;z-index:99999}';
     document.body.appendChild(gptDreamStyle);
+
+    /* ===== HEADLINESTICKY METHOD - DEFAULT 3s ===== */
+    var headlineStickyInterval=3,headlineStickyStatus=!1;function headlineSticky(e){null!=e&&(headlineStickyInterval=e),console.log(headlineStickyInterval);var n=document.getElementById("div-gpt-ad-dream-hl"),t=document.createElement("div");t.setAttribute("id","div-gpt-ad-dream-hl-shadow"),n.parentElement.insertBefore(t,n),injectStickyStyleAndAnimation(),window.addEventListener("scroll",headlineStickyScrollEevent)}function headlineStickyScrollEevent(){var e=document.getElementById("div-gpt-ad-dream-hl"),n=document.getElementById("div-gpt-ad-dream-hl-shadow").getBoundingClientRect().top;document.querySelector(".layout__nav-content"),document.documentElement.scrollTop||document.body.scrollTop;headlineStickyStatus?n<=0||(window.removeEventListener("scroll",headlineStickyScrollEevent),removeStickyHeadline(e,!1)):n<=0&&(e.classList.add("hl-active-sticky"),e.style="",removeStickyHeadline(e,!0),headlineStickyStatus=!0)}function removeStickyHeadline(e,n){var t=setInterval(function(){headlineStickyInterval<=0?(e.classList.remove("hl-active-sticky"),e.classList.remove("hl-navbar-hanging"),e.style.margin="10px 0",clearInterval(t),window.removeEventListener("scroll",headlineStickyScrollEevent)):headlineStickyInterval--},1e3);n||(clearInterval(t),e.classList.remove("hl-active-sticky"),e.classList.remove("hl-navbar-hanging"),e.style.margin="10px 0")}function injectStickyStyleAndAnimation(){var e=document.createElement("style");e.textContent="\n            .hl-active-sticky {\n                position: fixed;\n                top: -100%;\n                z-index: 9999;\n                left: 50%;\n                transform: translateX(-50%);\n                margin: 0;\n                transition : margin-top .5s ease;\n                animation: hlSlideDown .5s forwards;\n            }\n    \n            .hl-navbar-hanging{\n                margin-top : 50px !important;\n            }\n    \n            @keyframes hlSlideDown{\n                0%{top : -100px;}\n                100%{top : 0px;}\n            }\n            ",document.head.appendChild(e)}
+    /* ===== HEADLINESTICKY METHOD ===== */
 </script>
 
         <script>
@@ -1734,23 +1618,6 @@ console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px
         </script>
 
         
-
-        <!--CRITEO MUSLIMARKET-->
-        <script
-            type="text/javascript"
-            src="https://static.criteo.net/js/ld/ld.js"
-            async="true"
-        ></script>
-        <script type="text/javascript">
-            window.criteo_q = window.criteo_q || [];
-            window.criteo_q.push(
-                { event: 'setAccount', account: 24883 },
-                { event: 'setSiteType', type: 'm' },
-                { event: 'viewHome' }
-            );
-        </script>
-        <!--END CRITEO MUSLIMARKET-->
-
         <!-- Begin comScore Tag -->
         <script>
             var _comscore = _comscore || [];
@@ -1771,7 +1638,5 @@ console.log('%c GPT KLY.V.01 ~ DK ' + gamNow ,'font-weight:bold; font-size: 15px
                 src="https://b.scorecardresearch.com/p?c1=2&c2=12418281&cv=2.0&cj=1"
         /></noscript>
         <!-- End comScore Tag -->
-        <!-- REVIVE LOADER -->
-        <script async src="//adserver.kl-youniverse.com/asyncjs.php"></script>
     </body>
 </html>
