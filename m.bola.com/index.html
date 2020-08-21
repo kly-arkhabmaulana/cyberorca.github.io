@@ -753,7 +753,7 @@ if(window.kmklabs.pageType === "ReadPage") {
                                 var scrollTop = scrollNode.scrollTop;
                                 if (scrollTop >= "200") {
                                 //   console.log('testing scroll',scrollTop,this.timedBottomFrm);
-                                  this.timedBottomFrm = googletag.defineSlot(this.dfpBottomFrame, [320, 50], 'div-gpt-ad-bolacom-bottomfrm').addService(googletag.pubads());
+                                  this.timedBottomFrm = googletag.defineSlot(this.dfpBottomFrame, [[320, 50],[320, 100]], 'div-gpt-ad-bolacom-bottomfrm').addService(googletag.pubads());
                                   window.removeEventListener("scroll", this.scrollHandler);
                                   googletag.display('div-gpt-ad-bolacom-bottomfrm');
                                   googletag.pubads().refresh([this.timedBottomFrm]);
