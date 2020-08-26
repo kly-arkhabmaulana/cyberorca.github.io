@@ -742,35 +742,34 @@ dable('sendLogOnce');
 			});
 		parent.window.open(dfpTracker, '_blank');
 	};
-    /* DMP CATEGORY LIST */
-	window.createDFPTracker = function(adsList,dfpTracker){
-		var dmpEl,dmpON,dmpId = 1,_cat,_axel,_cb;
-      dmpList=["6460964079","6461623895","6461155891","6461172313","6461521110","6461649644","6461654066","6461653739","6461524191","6461655056","6461524974","6461176675","6461524062","6461655263","6461176663","6461526378","6461525109","6461177623","6461177629","6461178385","6461178493","6461179378","6461179381","6461178961"];
-      Array.isArray(adsList) && dmpList.forEach(function(v,k){
-				adsList.forEach(function(l,e){
-          _axel = Math.random() + '';
-          _cb = _axel * 10000000000000;
-				   if(v === l){
-            console.log("INI => ",v);
-					  _cat = v;
-					  dmpEl = document.createElement('img');
-					  dmpON = parent.window.document.querySelector('#dmp-tracker-'+dmpId);
-					  dmpON ? dmpON.remove() : '';
-					  dmpEl.setAttribute('src','https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';dc_seg='+ _cat +'?');
-					  dmpEl.setAttribute('width','0');
-					  dmpEl.setAttribute('height','0');
-					  dmpEl.setAttribute('id','dmp-tracker-'+dmpId);
-					  parent.window.document.body.appendChild(dmpEl);
-					  dmpId++;     
-					} 
-				});
-			});
-		parent.window.open(dfpTracker, '_blank');
-	};
+  
+  window.createDFPTracker = function(adsList,dfpTracker){
+    var dmpEl,dmpON,dmpId = 1;
+    fetch('https://www.newshub.id/api/category-management/&token=06c0cb9bc610871859140e9c1c04808c').then(response => response.json()).then(
+      data => data.data.filter(function(_val){
+        adsList.forEach(function(l,e){
+          var _axel = Math.random() + '',
+            _cb = _axel * 10000000000000;
+            if(l == _val.category){
+              console.log('https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';pixelCat='+ _val.category_code+';dc_seg='+ _val.parent_id +'?', dmpId);
+              dmpEl = document.createElement('img');
+              dmpON = parent.window.document.querySelector('#gam-tracker-'+dmpId);
+              dmpON ? dmpON.remove() : '';
+              dmpEl.setAttribute('src','https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';pixelCat='+ _val.category_code+';dc_seg='+ _val.parent_id +'?');
+              dmpEl.setAttribute('width','0');
+              dmpEl.setAttribute('height','0');
+              dmpEl.setAttribute('id','gam-tracker-'+dmpId);
+              parent.window.document.body.appendChild(dmpEl);
+              dmpId++;  
+            }  
+        });
+      })
+    )
+    parent.window.open(dfpTracker, '_blank');
+  };
+  createDFPTracker(["Acara Film","Acara Musik"],"https://m.kapanlagi.com");
 
-  createDFPTracker(["6461155891","6461172313"],"https://m.kapanlagi.com");
-
-    googletag.cmd.push(function() {
+  googletag.cmd.push(function() {
         /* IF CHANNEL NOT EQUAL TO ADUNIT LIST */
         var urlPath = document.URL,
             isMatcont = false,
