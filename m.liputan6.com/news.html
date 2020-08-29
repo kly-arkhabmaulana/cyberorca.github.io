@@ -745,17 +745,247 @@ dable('sendLogOnce');
   
   window.createDFPTracker = function(adsList,dfpTracker){
     var dmpEl,dmpON,dmpId = 1;
-    fetch('https://www.newshub.id/api/category-management/&token=06c0cb9bc610871859140e9c1c04808c').then(response => response.json()).then(
-      data => data.data.filter(function(_val){
+    //fetch('https://www.newshub.id/api/category-management/&token=06c0cb9bc610871859140e9c1c04808c').then(response => response.json()).then(
+    //data => 
+      data = {
+                "data": [
+                    {
+                        "id": 273,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Fashion",
+                        "category_code": "fashion-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 531,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Film",
+                        "category_code": "acara-film",
+                        "created_at": "2019-11-28 10:48:41",
+                        "updated_at": null,
+                        "status": "1"
+                    },
+                    {
+                        "id": 283,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Kecantikan",
+                        "category_code": "beauty-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 279,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Komedi",
+                        "category_code": "comedy-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 281,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Komunitas",
+                        "category_code": "fan-conventions",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 285,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Lifestyle",
+                        "category_code": "lifestyle-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 274,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Musik",
+                        "category_code": "musical-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 277,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Olahraga",
+                        "category_code": "sporting-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 220,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Otomotif",
+                        "category_code": "auto-shows",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 286,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Parenting",
+                        "category_code": "parenting-events",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 276,
+                        "parent": "EVENTS",
+                        "parent_id": 144,
+                        "pixel_id": null,
+                        "category": "Acara Politik",
+                        "category_code": "political-event",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 402,
+                        "parent": "PROPERTY",
+                        "parent_id": 183,
+                        "pixel_id": null,
+                        "category": "Apartemen & Hotel",
+                        "category_code": "apartments",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 390,
+                        "parent": "PERSONAL FINANCE",
+                        "parent_id": 175,
+                        "pixel_id": null,
+                        "category": "Asuransi Jiwa",
+                        "category_code": "life-insurance",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 391,
+                        "parent": "PERSONAL FINANCE",
+                        "parent_id": 175,
+                        "pixel_id": null,
+                        "category": "Asuransi Kendaraan",
+                        "category_code": "motor-insurance",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 388,
+                        "parent": "PERSONAL FINANCE",
+                        "parent_id": 175,
+                        "pixel_id": null,
+                        "category": "Asuransi Kesehatan",
+                        "category_code": "health-insurance",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 538,
+                        "parent": "PERSONAL FINANCE",
+                        "parent_id": 175,
+                        "pixel_id": null,
+                        "category": "Asuransi Pendidikan",
+                        "category_code": "education-insurance",
+                        "created_at": "2019-11-28 11:07:59",
+                        "updated_at": null,
+                        "status": "1"
+                    },
+                    {
+                        "id": 392,
+                        "parent": "PERSONAL FINANCE",
+                        "parent_id": 175,
+                        "pixel_id": null,
+                        "category": "Asuransi Perjalanan",
+                        "category_code": "travel-insurance",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 389,
+                        "parent": "PERSONAL FINANCE",
+                        "parent_id": 175,
+                        "pixel_id": null,
+                        "category": "Asuransi Rumah",
+                        "category_code": "home-insurance",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    },
+                    {
+                        "id": 131,
+                        "parent": "",
+                        "parent_id": 0,
+                        "pixel_id": null,
+                        "category": "AUTOMOTIVE",
+                        "category_code": "automotive",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-27 12:59:20",
+                        "status": "1"
+                    },
+                    {
+                        "id": 418,
+                        "parent": "SPORTS",
+                        "parent_id": 185,
+                        "pixel_id": null,
+                        "category": "Balap Motor\/Mobil",
+                        "category_code": "auto-racing",
+                        "created_at": "2019-11-19 00:00:00",
+                        "updated_at": "2019-11-19 00:00:00",
+                        "status": "1"
+                    }
+                ],
+                "attributes": {
+                    "total_result": 20,
+                    "next_page": 2,
+                    "next_url": "https:\/\/www.newshub.id\/api\/category-management\/&token=06c0cb9bc610871859140e9c1c04808c&page=2"
+                }
+             };
+      data.data.filter(function(_val){
         adsList.forEach(function(l,e){
           var _axel = Math.random() + '',
             _cb = _axel * 10000000000000;
             if(l == _val.category){
-              console.log('https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';pixelCat='+ _val.category_code+';dc_seg='+ _val.parent_id +'?', dmpId);
+              console.log('https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';pixelCat='+ _val.category_code+';dc_seg='+ _val.pixel_id +'?', dmpId); /*pixel id*/
               dmpEl = document.createElement('img');
               dmpON = parent.window.document.querySelector('#gam-tracker-'+dmpId);
               dmpON ? dmpON.remove() : '';
-              dmpEl.setAttribute('src','https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';pixelCat='+ _val.category_code+';dc_seg='+ _val.parent_id +'?');
+              dmpEl.setAttribute('src','https://pubads.g.doubleclick.net/activity;dc_iu=/36504930/DFPAudiencePixel;ord=' + _cb + ';pixelCat='+ _val.category_code+';dc_seg='+ _val.pixel_id +'?');
               dmpEl.setAttribute('width','0');
               dmpEl.setAttribute('height','0');
               dmpEl.setAttribute('id','gam-tracker-'+dmpId);
@@ -764,7 +994,8 @@ dable('sendLogOnce');
             }  
         });
       })
-    )
+
+    //)
     parent.window.open(dfpTracker, '_blank');
   };
   createDFPTracker(["Acara Film","Acara Musik"],"https://m.kapanlagi.com");
