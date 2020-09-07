@@ -330,6 +330,11 @@ a.trending-tags__item-link {
       }</script>
       
 <script type="text/javascript"> 
+var url = new URL(location.href),
+_sp = new URLSearchParams(url.search),
+_age = _sp.get('age'),
+_gen = _sp.get('gen');
+
 window.kmklabs = {};
 window.kmklabs.env = 'production';
 window.kmklabs.baseAssetsUrl = 'https://cdn-production-assets-kly.akamaized.net/assets';
@@ -364,8 +369,8 @@ window.kmklabs.gtm = {
     "isLiveReport": false,
     "liveReportTag": "",
     "audience": "",
-    "age":16,
-    "gender":"male"
+    "age":_age ? _age : '17',
+    "gender":_gen ? _gen : 'male'
 };
 window.kmklabs.platform = 'Mobile';
 window.kmklabs.pageType = 'ChannelPage';
@@ -856,10 +861,15 @@ dable('sendLogOnce');
             _axel = Math.random() + '',
             _cb = _axel * 10000000000000,
             _data = {
-                      6462011356 : _kly.gtm.age ? _kly.gtm.age : false,
-                      6462011359 : _kly.gtm.gender ? _kly.gtm.gender : false,
-                    };
-
+              6462011359 : _kly.gtm.gender ? (_kly.gtm.gender == 'male' ? true : false ) : false,
+              6471721027 : _kly.gtm.gender ? (_kly.gtm.gender == 'female' ? true : false ) : false,
+              6462011356 : _kly.gtm.age ? (parseInt(_kly.gtm.age) >= 13 && parseInt(_kly.gtm.age) <= 17 ? true : false) : false,//13-17
+              6471943328 : _kly.gtm.age ? (parseInt(_kly.gtm.age) >= 18 && parseInt(_kly.gtm.age) <= 24 ? true : false) : false,//18-24
+              6471725761 : _kly.gtm.age ? (parseInt(_kly.gtm.age) >= 25 && parseInt(_kly.gtm.age) <= 34 ? true : false) : false,//25-34
+              6471943331 : _kly.gtm.age ? (parseInt(_kly.gtm.age) >= 35 && parseInt(_kly.gtm.age) <= 44 ? true : false) : false,//35-44
+              6471943613 : _kly.gtm.age ? (parseInt(_kly.gtm.age) > 44 ? true : false) : false,//44+
+            }
+            
         Object.entries(_data).forEach( function( _val, _key ) {
           if( _val.indexOf( false ) < 0 ) {
             console.log(_val);
