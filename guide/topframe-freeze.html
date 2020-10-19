@@ -40,7 +40,7 @@
 </head>
 <body>
 <div class="container">
-<ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
+<!-- <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
         <a class="nav-link active" id="merdeka-tab" data-toggle="tab" href="#merdeka" role="tab" aria-controls="merdeka" aria-selected="true">m.merdeka.com</a>
     </li>
@@ -65,7 +65,19 @@
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="liputan6-tab" data-toggle="tab" href="#liputan6" role="tab" aria-controls="liputan6" aria-selected="false">m.liputan6.com</a>
     </li>
-</ul>
+</ul> -->
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="merdeka-tab" data-toggle="tab" href="#merdeka" role="tab" aria-controls="merdeka" aria-selected="true">m.merdeka.com</a>
+        <a class="nav-item nav-link" id="otosia-tab" data-toggle="tab" href="#otosia" role="tab" aria-controls="otosia" aria-selected="true">m.otosia.com</a>
+        <a class="nav-item nav-link" id="kapanlagi-tab" data-toggle="tab" href="#kapanlagi" role="tab" aria-controls="kapanlagi" aria-selected="false">m.kapanlagi.com</a>
+        <a class="nav-item nav-link" id="dream-tab" data-toggle="tab" href="#dream" role="tab" aria-controls="dream" aria-selected="false">m.dream.co.id</a>
+        <a class="nav-item nav-link" id="bolanet-tab" data-toggle="tab" href="#bolanet" role="tab" aria-controls="bolanet" aria-selected="false">m.bola.net</a>
+        <a class="nav-item nav-link" id="fimela-tab" data-toggle="tab" href="#fimela" role="tab" aria-controls="fimela" aria-selected="false">m.fimela.com</a>
+        <a class="nav-item nav-link" id="bolacom-tab" data-toggle="tab" href="#bolacom" role="tab" aria-controls="bolacom" aria-selected="false">m.bola.com</a>
+        <a class="nav-item nav-link" id="liputan6-tab" data-toggle="tab" href="#liputan6" role="tab" aria-controls="liputan6" aria-selected="false">m.liputan6.com</a>
+    </div>
+</nav>
 <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="merdeka" role="tabpanel" aria-labelledby="merdeka-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Merdeka</h3>
@@ -144,7 +156,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="otosia" role="tabpanel" aria-labelledby="otosia-tab">
+    <div class="tab-pane fade show" id="otosia" role="tabpanel" aria-labelledby="otosia-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Otosia</h3>
         <pre><code class="html">
                     &lt;script&gt;
@@ -221,7 +233,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="kapanlagi" role="tabpanel" aria-labelledby="kapanlagi-tab">
+    <div class="tab-pane fade show" id="kapanlagi" role="tabpanel" aria-labelledby="kapanlagi-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Kapanlagi</h3>
         <pre><code class="html">
                     &lt;script&gt;
@@ -298,7 +310,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="dream" role="tabpanel" aria-labelledby="dream-tab">
+    <div class="tab-pane fade show" id="dream" role="tabpanel" aria-labelledby="dream-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Dream</h3>
         <pre><code class="html">
                     &lt;script&gt;
@@ -375,7 +387,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="bolanet" role="tabpanel" aria-labelledby="bolanet-tab">
+    <div class="tab-pane fade show" id="bolanet" role="tabpanel" aria-labelledby="bolanet-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Bola.net</h3>
         <pre><code class="html">
                     &lt;script&gt;
@@ -452,7 +464,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="fimela" role="tabpanel" aria-labelledby="fimela-tab">
+    <div class="tab-pane fade show" id="fimela" role="tabpanel" aria-labelledby="fimela-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Tambahkan block script & Style berikut di Header - Fimela</h3>
             <pre><code class="html">
                         &lt;style&gt;body,html {position: fixed;width: 100%;height: 100%}&lt;/style&gt;
@@ -506,7 +518,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="bolacom" role="tabpanel" aria-labelledby="bolacom-tab">
+    <div class="tab-pane fade show" id="bolacom" role="tabpanel" aria-labelledby="bolacom-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Bola.com</h3>
         <pre><code class="html">
                     &lt;script&gt;
@@ -584,7 +596,7 @@
                 </code></pre>
 
     </div>
-    <div class="tab-pane fade show active" id="liputan6" role="tabpanel" aria-labelledby="liputan6-tab">
+    <div class="tab-pane fade show" id="liputan6" role="tabpanel" aria-labelledby="liputan6-tab">
         <h3 style="background-color:#181914;color:#ffb03b;padding:10px">Hapus block script berikut di Header - Liputan6.com</h3>
         <pre><code class="html">
                     &lt;script&gt;
