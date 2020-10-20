@@ -321,7 +321,10 @@ p.bola-net--item__title {
       }</script><script type="text/javascript"> window.kmklabs = {};  window.kmklabs.env = 'production';  window.kmklabs.baseAssetsUrl = 'https://cdn-production-assets-kly.akamaized.net/assets';  window.kmklabs.gtm = {"articleId":"","articleTitle":"","category":"ChannelPage","editors":"","editorialType":"","embedVideo":"","pageTitle":"home","publicationDate":"","publicationTime":"","subCategory":"root","subSubCategory":"","tag":"","authors":{"type":"","names":""},"numberOfWords":0,"enabled":true,"log":false,"imageCreation":false,"type":"","videos":[],"photos":[],"partner":"","isSEO":false,"reporters":"","photographers":"","isLiveReport":false,"liveReportTag":"","audience":""};  window.kmklabs.platform = 'Mobile';  window.kmklabs.pageType = 'ChannelPage';  window.kmklabs.site = 'bola.com';  window.kmklabs.dmpSegments = [];window.gaPrefix = "Latest";
  window.kmklabs.channel = {"id":417,"name":"Bola","full_slug":""}; window.kmklabs.category = {"id":417,"name":"Bola","full_slug":""}; window.kmklabs.toggle = {"disableVirtualpvPhoto":false,"lip6DelayPaging":true}; 
  kmklabs.startLoad = new Date().getTime();
- 
+
+let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
+let lockTimeStamp = Math.floor(startLoad / 1000 % 60);
+console.log("%c PUBLISHING LOCK - " + lockTimeStamp,'color:red; font-size:25px; font-weight: bold;');
  
  </script><script>window.dataLayer = window.dataLayer || [];</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -495,12 +498,12 @@ if(window.kmklabs.pageType === "ReadPage") {
 <style>
           .gam-freeze-3s{
             overflow:hidden;
-            position:fixed;
             width:100%;
           }
 </style>
 <script>	
     var gaPushed = false;
+   
 		var gamFreeze3s = setTimeout(function(){
 			document.body.classList.remove('gam-freeze-3s');
       let lockTime = new Date().getTime();
@@ -658,21 +661,25 @@ if(window.kmklabs.pageType === "ReadPage") {
                                   let diff = lockTime - startLoad;
                                   let lockTimeStamp = Math.floor(diff / 1000 % 60);
                                   document.body.classList.remove('gam-freeze-3s');
-                                  ( ga ) ? this.eventTrackingLock(lockTimeStamp) : '';
+                                  //( ga ) ? this.eventTrackingLock(lockTimeStamp) : '';
                                   console.log('%c GPT UNLOCK : '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                 },
                                 set: function() {
                                   let that = this;
+                                  let lockTime = new Date().getTime();
+                                  let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
+                                  let diff = lockTime - startLoad;
+                                  let lockTimeStamp = Math.floor(diff / 1000 % 60);
                                   document.body.classList.add('gam-freeze-3s');  
                                   setTimeout(function() {
                                     that.unset(1);
                                   }, that.timeout);
-                                  console.log('%c GPT LOCK ','color:lime; font-size:25px; font-weight: bold;');
+                                  console.log('%c GPT LOCK - '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                 },
                                 eventTrackingLock		: 	function(lockDuration){
                                     window.dataLayer.push({
                                       event: "impression",
-                                      feature_name: "lock-scroll",
+                                      feature_name: "load-scroll",
                                       feature_location: lockDuration,
                                       feature_position: "" 
                                     });
@@ -799,6 +806,9 @@ if(window.kmklabs.pageType === "ReadPage") {
             }
 
             if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
+
+              console.log("test",event.sourceAgnosticCreativeId);
+              
               let deviceOrientation = window.matchMedia("(orientation: portrait)");
               let that = GAMLibrary.lockScroll;
               if (!deviceOrientation.matches) {
@@ -807,8 +817,7 @@ if(window.kmklabs.pageType === "ReadPage") {
                 GAMLibrary.lockScroll.set();
               }
               window.addEventListener("resize", function() {
-                let deviceOrientation = (window.innerHeight < window.innerWidth ? 1 : 0);
-                if (deviceOrientation) {
+                if (!deviceOrientation.matches) {
                   that.unset(0);
                 }
               });

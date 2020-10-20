@@ -500,15 +500,13 @@
                 height: 100%
               }
     </style>
-    <script>
-    
-    </script>
+
     <script>	
         var gamFreeze3s = null;
         function haltScroll(e) {
             e.preventDefault();
         }
-        function freezePages(){
+        function freezePages(){ 
           let startLoad2 = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
           let lockTime2 = new Date().getTime();
           let diff2 = lockTime2 - startLoad2;
@@ -518,8 +516,6 @@
           
           console.log("%c PUBLISHING LOCK - " + lockTimeStamp2 + " ( " + lt2 + " - " + sl2 + " )",'color:red; font-size:25px; font-weight: bold;');
           
-          //document.addEventListener("touchmove", haltScroll, { passive: false });
-
           gamFreeze3s = setTimeout(function(){
                 unfreezePages();
                 let lockTime = new Date().getTime();
@@ -680,13 +676,12 @@
                                   },
           lockScroll          :   {
                                     timeout: 3000,
-                                    unset: function(ga) {
+                                    unset: function() {
                                       let lockTime = new Date().getTime();
                                       let startLoad = kmklabs && kmklabs.startLoad ? kmklabs.startLoad : 0;
                                       let diff = lockTime - startLoad;
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
-                                      (ga) ? this.eventTrackingLock(lockTimeStamp) : '';
-                                      unfreezePages();
+                                      (typeof unfreezePages === 'function') ? unfreezePages() : '';
                                       console.log('%c GPT UNLOCK : '+lockTimeStamp,'color:lime; font-size:25px; font-weight: bold;');
                                     },
                                     set: function() {
@@ -696,6 +691,7 @@
                                       let diff = lockTime - startLoad;
                                       let lockTimeStamp = Math.floor(diff / 1000 % 60);
                                       this.eventTrackingLock(lockTimeStamp);
+                                      // (typeof freezePages === 'function') ? freezePages() : '';
                                       setTimeout(function() {
                                         that.unset();
                                       }, that.timeout);
@@ -831,6 +827,7 @@
                 }
     
                 if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
+                  console.log("test",event.slot.getResponseInformation());
                   let deviceOrientation = window.matchMedia("(orientation: portrait)");
                   let that = GAMLibrary.lockScroll;
                   if (!deviceOrientation.matches) {
@@ -847,7 +844,7 @@
                 
               }else{
                 if (dfp_slotAdUnitPath == GAMLibrary.dfpTopFrame) {
-                  GAMLibrary.lockScroll.unset(1);
+                  GAMLibrary.lockScroll.unset();
                 }
               }
       
