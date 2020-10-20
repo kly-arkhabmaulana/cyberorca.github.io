@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <div class="product">
+        <div class="product-image">
+            <a :href="url" target="_blank">
+                <span style="color: red;font-weight: bolder;font-size: larger;" v-if="onSale && inventory > 0">ON SALE!</span>
+                <br/>
+                <img :src="image" :alt="altText" :width="width" :height="height"/>
+            </a>
+            <p v-if="inventory > 10">[{{ inventory }}] In Stock</p>
+            <p v-else-if="inventory <=10 && inventory > 0">[{{ inventory }}] Almost Sold Out! </p>
+            <p v-else>Out Of Stock</p>
+        </div>    
+        <div class="product-info">
+            <h1> {{ product }} </h1>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>

@@ -1,0 +1,163 @@
+"<!DOCTYPE HTML>
+    <html lang=""en-us"">
+        <head>
+            <meta name=""viewport"" content=""width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"">
+            <meta http-equiv=""Content-type"" content=""text/html; charset=utf-8"">
+            <title>Pubmatic basic wrapper tag</title>
+            <style type=""text/css"">
+            </style>
+
+            <script type=""text/javascript"">
+                var PWT={}; //Initialize Namespace
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                var gptRan = false;
+                PWT.jsLoaded = function(){ //PubMatic pwt.js on load callback is used to load GPT
+                    loadGPT();
+                };
+                var loadGPT = function() {
+                    // Check the gptRan flag
+                    if (!gptRan) {
+                        gptRan = true;
+                        var gads = document.createElement('script');
+                        var useSSL = 'https:' == document.location.protocol;
+                        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+                        var node = document.getElementsByTagName('script')[0];
+                        node.parentNode.insertBefore(gads, node);
+                    }
+                };
+                // Failsafe to call gpt
+                setTimeout(loadGPT, 500);
+            </script>
+
+            <script type=""text/javascript"">
+            (function() {
+                var purl = window.location.href;
+                var url = 'https://ads.pubmatic.com/AdServer/js/pwt/156536/{PROFILE_ID}';
+                var profileVersionId = '';
+                if(purl.indexOf('pwtv=')>0){
+                    var regexp = /pwtv=(.*?)(&|$)/g;
+                    var matches = regexp.exec(purl);
+                    if(matches.length >= 2 && matches[1].length > 0){
+                        profileVersionId = '/'+matches[1];
+                    }
+                }
+                var wtads = document.createElement('script');
+                wtads.async = true;
+                wtads.type = 'text/javascript';
+                wtads.src = url+profileVersionId+'/pwt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(wtads, node);
+            })();
+            </script>
+
+            <!-- Defining DFP AdUnit /36504930/m.liputan6.com/dfp-sc -->
+            <script type=""text/javascript"">
+                var urlPath = document.URL;
+
+
+                googletag.cmd.push(function() {
+                    
+                    googletag.defineSlot('/36504930/m.liputan6.com/dfp-headline', [[320,50],[320,100]], 'div-gpt-ad-liputan6-hl').addService(googletag.pubads());
+                    googletag.defineSlot('/36504930/m.liputan6.com/dfp-sc', [[300,250],[250,250],[200,200]], 'div-gpt-ad-liputan6-sc').addService(googletag.pubads());
+                    googletag.defineSlot('/36504930/m.liputan6.com/dfp-exposer', [[300,250],[300,600],[320,480],[160,600],[250,250]], 'div-gpt-ad-liputan6-dfp-exposer-oop').addService(googletag.pubads());
+                    googletag.defineSlot('/36504930/m.liputan6.com/dfp-bottomfrm', [[320,50],[320,100]], 'div-gpt-ad-liputan6-bottomfrm').addService(googletag.pubads());
+                    
+                    /*  START TARGETING BLOCK   */
+                        googletag.pubads().setTargeting(""currentUrl"", urlPath);
+                        googletag.pubads().setTargeting(""channel"", 'news');
+                        googletag.pubads().setTargeting(""site"", 'liputan6');
+                    /*  END TARGETING BLOCK   */
+
+                    googletag.enableServices();
+                });
+            </script>
+
+        </head>
+
+        <body>
+            <!-- Rendering AdUnit /36504930/m.liputan6.com/dfp-sc -->
+            <div id=""div-gpt-ad-liputan6-sc"">
+              <script type=""text/javascript"">
+                  googletag.cmd.push(function() {
+                      googletag.display(""div-gpt-ad-liputan6-sc"");
+                  });
+              </script>
+            </div>
+            <hr />
+            <!-- Rendering AdUnit /36504930/m.liputan6.com/dfp-headline -->
+            <div id=""div-gpt-ad-liputan6-hl"">
+                <script type=""text/javascript"">
+                    googletag.cmd.push(function() {
+                        googletag.display(""div-gpt-ad-liputan6-hl"");
+                    });
+                </script>
+            </div>
+            <hr />
+            <!-- Rendering AdUnit /36504930/m.liputan6.com/dfp-exposer -->
+            <div id=""div-gpt-ad-liputan6-dfp-exposer-oop"">
+                <script type=""text/javascript"">
+                    googletag.cmd.push(function() {
+                        googletag.display(""div-gpt-ad-liputan6-dfp-exposer-oop"");
+                    });
+                </script>
+            </div>
+            <hr />
+            <!-- Rendering AdUnit /36504930/m.liputan6.com/dfp-bottomfrm -->
+            <div id=""div-gpt-ad-liputan6-bottomfrm"">
+                <script type=""text/javascript"">
+                    googletag.cmd.push(function() {
+                        googletag.display(""div-gpt-ad-liputan6-bottomfrm"");
+                    });
+                </script>
+            </div>
+        </body>
+    </html>"									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									

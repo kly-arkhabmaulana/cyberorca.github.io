@@ -1,0 +1,399 @@
+
+30/06/20 2.16.10 PM - ERROR: Download of "http://planet.local.merdeka.com/inspira/sederet-fakta-armand-hartono-bos-bca-yang-tak-malu-pakai-sepatu-jebol.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.11 PM - ERROR: Download of "http://planet.local.merdeka.com/hotnews/sederet-kesaksian-korban-selamat-hingga-saksi-mata-kecelakaan-maut-di-tol-cipularang.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.11 PM - ERROR: Download of "http://planet.local.merdeka.com/selebrity/19-tahun-diam-meski-dicap-pelakor-mayangsari-akhirnya-buka-suara-soal-nyinyiran-netizen5d8b1.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.11 PM - ERROR: Download of "http://planet.local.merdeka.com/selebrity/terbukti-punya-fragmen-dna-dari-10-negara-berbeda-najwa-shihab-ternyata-keturunan-langsung-nabi-muhammad-saw.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.11 PM - ERROR: Download of "http://planet.local.merdeka.com/metro/kesaksian-pekerja-proyek-di-sekitar-lokasi-kecelakaan-maut-di-tol-cipularang.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.12 PM - ERROR: Download of "http://planet.local.merdeka.com/metro/seorang-karyawati-minimarket-diseret-hingga-disuruh-buka-baju-oleh-perampok.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.12 PM - ERROR: Download of "http://planet.local.merdeka.com/metro/detik-detik-kecelakaan-maut-beruntun-di-tol-cipularang-sopir-dump-truk-sempat-telepon.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.12 PM - ERROR: Download of "http://planet.local.merdeka.com/metro/kronologi-kecelakaan-maut-beruntun-di-tol-cipularang-yang-tewaskan-9-orang.html",
+	referenced from "http://planet.local.merdeka.com/",
+	failed with error code -1100 (File does not exist.)
+30/06/20 2.16.27 PM - ERROR: Download of "https://planet.local.merdeka.com/robots.txt"
+	failed with error code -1202 (The certificate for this server is invalid. You might be connecting to a server that is pretending to be “planet.local.merdeka.com” which could put your confidential information at risk.)
+
+---------------------
+
+02/07/20 10.24.14 AM - ERROR: Parsing of document "m.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.15 AM - ERROR: Parsing of document "m.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.15 AM - ERROR: Parsing of document "m.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.16 AM - ERROR: Parsing of document "m.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.16 AM - ERROR: Parsing of document "m.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.17 AM - ERROR: Parsing of document "m.liputan6.com/news.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.18 AM - ERROR: Parsing of document "m.liputan6.com/showbiz.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.18 AM - ERROR: Parsing of document "m.liputan6.com/bola.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.18 AM - ERROR: Parsing of document "m.liputan6.com/photo.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.19 AM - ERROR: Parsing of document "m.liputan6.com/tekno.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.19 AM - ERROR: Parsing of document "m.liputan6.com/cek-fakta.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+02/07/20 10.24.20 AM - ERROR: Parsing of document "m.liputan6.com/video.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+02/07/20 2.16.41 PM - ERROR: Download of "https://www.liputan6.com/ads.txt"
+	failed with error code -1001 (The request timed out.)
+
+---------------------
+
+09/07/20 10.05.31 AM - ERROR: Parsing of document "m.staging.liputan6.com/index.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.31 AM - ERROR: Parsing of document "m.staging.liputan6.com/index.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.31 AM - ERROR: Parsing of document "m.staging.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.31 AM - ERROR: Parsing of document "m.staging.liputan6.com/login.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.31 AM - ERROR: Parsing of document "m.staging.liputan6.com/login.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.31 AM - ERROR: Parsing of document "m.staging.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/latest.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/latest.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/popular.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/popular.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/recommended.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/recommended.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/recommended.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.33 AM - ERROR: Parsing of document "m.staging.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.34 AM - ERROR: Parsing of document "m.staging.liputan6.com/news.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.34 AM - ERROR: Parsing of document "m.staging.liputan6.com/news.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.34 AM - ERROR: Parsing of document "m.staging.liputan6.com/news.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.34 AM - ERROR: Parsing of document "m.staging.liputan6.com/showbiz.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.34 AM - ERROR: Parsing of document "m.staging.liputan6.com/showbiz.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.34 AM - ERROR: Parsing of document "m.staging.liputan6.com/showbiz.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/bola.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/bola.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/bola.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/cek-fakta.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/cek-fakta.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/cek-fakta.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/photo.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/photo.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.35 AM - ERROR: Parsing of document "m.staging.liputan6.com/photo.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/hot.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/hot.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/hot.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/surabaya.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/surabaya.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/surabaya.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/tekno.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/tekno.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.36 AM - ERROR: Parsing of document "m.staging.liputan6.com/tekno.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+09/07/20 10.05.37 AM - ERROR: Parsing of document "m.staging.liputan6.com/disabilitas.html"
+	failed because the closing ">" for the "=" tag could not be found
+09/07/20 10.05.37 AM - ERROR: Parsing of document "m.staging.liputan6.com/disabilitas.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+09/07/20 10.05.37 AM - ERROR: Parsing of document "m.staging.liputan6.com/disabilitas.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+15/07/20 9.10.52 AM - ERROR: Parsing of document "m.liputan6.com/showbiz/read/4230233/melaney-ricardo-sudah-satu-bulan-lebih-berpisah-dengan-suaminya.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.53 AM - ERROR: Parsing of document "m.liputan6.com/showbiz/read/4277337/suami-melaney-ricardo-akan-kembali-ke-indonesia-setelah-berpisah-3-bulan.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.53 AM - ERROR: Parsing of document "m.liputan6.com/showbiz/read/4244799/sedih-anak-kedua-melaney-ricardo-ultah-tanpa-dihadiri-sang-ayah.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.53 AM - ERROR: Parsing of document "m.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.53 AM - ERROR: Parsing of document "m.liputan6.com/showbiz/read/4299321/5-bulan-pisah-suami-melaney-ricardo-nangis-bertemu-istri-dan-anak.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.54 AM - ERROR: Parsing of document "m.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.54 AM - ERROR: Parsing of document "m.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.55 AM - ERROR: Parsing of document "m.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.55 AM - ERROR: Parsing of document "m.liputan6.com/showbiz.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.55 AM - ERROR: Parsing of document "m.liputan6.com/recommended.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.55 AM - ERROR: Parsing of document "m.liputan6.com/news.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+15/07/20 9.10.55 AM - ERROR: Parsing of document "m.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+19/07/20 11.04.15 AM - ERROR: Download of "https://m-local.bola.net/bundesliga/",
+	referenced from "https://m-local.bola.net/",
+	failed with error code -1100 (File does not exist.)
+19/07/20 11.04.16 AM - ERROR: Download of "https://m-local.bola.net/manifest.json",
+	referenced from "https://m-local.bola.net/",
+	failed with error code -1100 (File does not exist.)
+19/07/20 11.04.16 AM - ERROR: Download of "https://m-local.bola.net/bundesliga/bundesliga-team-of-the-decade-siapa-pemain-jagoan-bolaneters-f6ceeb.html",
+	referenced from "https://m-local.bola.net/",
+	failed with error code -1100 (File does not exist.)
+19/07/20 11.04.17 AM - ERROR: Download of "https://m-local.bola.net/bundesliga/gol-gol-terbaik-bundesliga-spieltag-27-e0b9a3.html",
+	referenced from "https://m-local.bola.net/",
+	failed with error code -1100 (File does not exist.)
+
+---------------------
+
+29/07/20 3.47.35 PM - ERROR: Parsing of document "m.liputan6.com/news/read/4130233/ini-sosok-beruntung-pemenang-kuis-cek-fakta-liputan6-berhadiah-iphone-11-pro.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+29/07/20 3.47.35 PM - ERROR: Parsing of document "m.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+29/07/20 3.47.36 PM - ERROR: Parsing of document "m.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+29/07/20 3.47.36 PM - ERROR: Parsing of document "m.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+29/07/20 3.47.37 PM - ERROR: Parsing of document "m.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+29/07/20 3.47.37 PM - ERROR: Parsing of document "m.liputan6.com/recommended.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+20/08/20 6.34.13 PM - ERROR: Download of "https://m.bola.net/editorial/ada-evan-dimas-ini-5-kandidat-kapten-timnas-indonesia-asuhan-shin-tae-yong-56aabb.html",
+	referenced from "https://m.bola.net/",
+	failed with error code -1100 (File does not exist.)
+
+---------------------
+
+20/08/20 6.34.31 PM - ERROR: Parsing of document "m.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.32 PM - ERROR: Parsing of document "m.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.33 PM - ERROR: Parsing of document "m.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.33 PM - ERROR: Parsing of document "m.liputan6.com/recommended.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.33 PM - ERROR: Parsing of document "m.liputan6.com/news.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.34 PM - ERROR: Parsing of document "m.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.34 PM - ERROR: Parsing of document "m.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.34 PM - ERROR: Parsing of document "m.liputan6.com/showbiz.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.35 PM - ERROR: Parsing of document "m.liputan6.com/bola.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.35 PM - ERROR: Parsing of document "m.liputan6.com/video.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+20/08/20 6.34.35 PM - ERROR: Parsing of document "m.liputan6.com/photo.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+20/08/20 6.34.43 PM - ERROR: Parsing of document "m.fimela.com/index.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.44 PM - ERROR: Parsing of document "m.fimela.com/parenting.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.44 PM - ERROR: Parsing of document "m.fimela.com/fashion-style.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.44 PM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.44 PM - ERROR: Parsing of document "m.fimela.com/photo.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/beauty-health.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/login.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/tag/bangga-indonesia.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/video.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/info/terms.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/info/about.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.45 PM - ERROR: Parsing of document "m.fimela.com/tag/fimela-lady-boss.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.46 PM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4335578/update-corona-20-agustus-total-pasien-covid-19-sembuh-capai-100-ribu.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.46 PM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4335555/berani-berubah-keberhasilan-artotel-clean-dimulai-dari-kepedulian-pada-karyawan.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.46 PM - ERROR: Parsing of document "m.fimela.com/fashion-style/read/4330342/gucci-fake-not-sindiran-alessandro-michele-untuk-produk-imitasi-pada-gucci-autumnwinter-2020-2021-mens-fashion-show.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.46 PM - ERROR: Parsing of document "m.fimela.com/tag/ramalan-zodiak.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.46 PM - ERROR: Parsing of document "m.fimela.com/tag/fimela-beauty-review.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.46 PM - ERROR: Parsing of document "m.fimela.com/tag/new-normal.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.47 PM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4333760/4-tips-menghilangkan-rasa-kesepian-saat-menjadi-single.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.47 PM - ERROR: Parsing of document "m.fimela.com/fashion-style/read/4334190/styling-sweater-50-varian-warna-isyana-sarasvati-sara-fajira-sebarkan-bahagia.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+20/08/20 6.34.47 PM - ERROR: Parsing of document "m.fimela.com/beauty-health/read/4331827/fimela-lady-boss-kecintaan-pada-dunia-kecantikan-buat-lizzie-parra-sukses-ciptakan-blp.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+
+---------------------
+
+02/10/20 10.23.29 AM - ERROR: Download of "https://m.kapanlagi.com/tag/keluarga_selebriti_indonesia.html",
+	referenced from "https://m.kapanlagi.com/amp/showbiz/selebriti/anniversary-ke-19-erick-meijer-beri-kejutan-manis-buat-maudy-koesnaedi-b04804.html",
+	failed with error code -1100 (File does not exist.)
+02/10/20 10.23.29 AM - ERROR: Download of "https://m.kapanlagi.com/tag/keluarga_selebriti.html",
+	referenced from "https://m.kapanlagi.com/amp/showbiz/selebriti/anniversary-ke-19-erick-meijer-beri-kejutan-manis-buat-maudy-koesnaedi-b04804.html",
+	failed with error code -1100 (File does not exist.)
+
+---------------------
+
+13/10/20 10.13.49 AM - ERROR: Parsing of document "m.fimela.com/index.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.49 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.49 AM - ERROR: Parsing of document "m.fimela.com/fashion-style.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/photo.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/beauty-health.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/parenting.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/login.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/video.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/info/terms.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.50 AM - ERROR: Parsing of document "m.fimela.com/tag/fimela-lady-boss.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/tag/fimela-fest-2020.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/info/about.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/tag/be-a-super-lady-boss-at-home.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380606/peringkat-selingkuh-berdasarkan-zodiak-dan-alasan-di-baliknya.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380054/kisah-inspiratif-seorang-perempuan-meminjamkan-gaun-pengantin-secara-gratis.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380102/menu-hari-ini-serba-terong-sambal-terong-teri-terong-teriyaki-dan-terong-goreng-telur.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.51 AM - ERROR: Parsing of document "m.fimela.com/tag/fimela-beauty-review.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.52 AM - ERROR: Parsing of document "m.fimela.com/tag/change-maker.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.52 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380826/cara-membuat-bolu-gulung-jeruk-yang-lembut.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.52 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4375851/bahaya-meninggalkan-makanan-dalam-mobil-ini-alasannya.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.52 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380456/peduli-kanker-payudara-jangan-lupa-untuk-lakukan-pemeriksaan-rutin.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.52 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380784/fimela-fest-2020-4-cara-keluar-dari-toxic-relationship-yang-merenggut-kebahagiaanmu.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+13/10/20 10.13.52 AM - ERROR: Parsing of document "m.fimela.com/lifestyle-relationship/read/4380485/fimela-fest-2020-tips-menumbuhkan-keberanian-untuk-menciptakan-perubahan.html"
+	failed because the closing ">" for the "iframeTop)" tag could not be found
+
+---------------------
+
+13/10/20 10.15.29 AM - ERROR: Parsing of document "m.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.30 AM - ERROR: Parsing of document "m.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.30 AM - ERROR: Parsing of document "m.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.31 AM - ERROR: Parsing of document "m.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.31 AM - ERROR: Parsing of document "m.liputan6.com/recommended.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.31 AM - ERROR: Parsing of document "m.liputan6.com/news.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.31 AM - ERROR: Parsing of document "m.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.32 AM - ERROR: Parsing of document "m.liputan6.com/photo.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+13/10/20 10.15.32 AM - ERROR: Parsing of document "m.liputan6.com/video.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+16/10/20 8.42.36 AM - ERROR: Parsing of document "m.liputan6.com/news/read/4130233/ini-sosok-beruntung-pemenang-kuis-cek-fakta-liputan6-berhadiah-iphone-11-pro.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.37 AM - ERROR: Parsing of document "m.liputan6.com/index.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.37 AM - ERROR: Parsing of document "m.liputan6.com/login.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.37 AM - ERROR: Parsing of document "m.liputan6.com/recommended.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.37 AM - ERROR: Parsing of document "m.liputan6.com/news.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.37 AM - ERROR: Parsing of document "m.liputan6.com/popular.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.37 AM - ERROR: Parsing of document "m.liputan6.com/latest.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.39 AM - ERROR: Parsing of document "m.liputan6.com/photo.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.40 AM - ERROR: Parsing of document "m.liputan6.com/tekno.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.40 AM - ERROR: Parsing of document "m.liputan6.com/cek-fakta.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.40 AM - ERROR: Parsing of document "m.liputan6.com/bisnis.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+16/10/20 8.42.40 AM - ERROR: Parsing of document "m.liputan6.com/bola.html"
+	failed because the closing ">" for the "sURLVariables.length;" tag could not be found
+
+---------------------
+
+20/10/20 11.17.33 AM - ERROR: Download of "https://m.bola.com/me/Tjatur-Wiharyo",
+	referenced from "https://m.bola.com/indonesia/read/3035486/specs-perkenalkan-sepatu-futsal-seri-ultra-violet",
+	failed with error code -1100 (File does not exist.)
+
+---------------------

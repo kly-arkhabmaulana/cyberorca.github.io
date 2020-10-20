@@ -1,0 +1,40 @@
+DESKTOP
+<!-- Composite Start -->
+<div id="M550863ScriptRootC1005504">
+</div>
+<script src="https://jsc.mgid.com/d/r/dream.co.id.1005504.js" async></script>
+<!-- Composite End -->
+
+<script>
+var mgidParentEl = document.createElement('div'),
+mgidContainer = parent.document.querySelector(".detail-column .tag-detail"),
+mgidScript = document.createElement('script');
+
+mgidParentEl.id = 'M550863ScriptRootC1005504';
+mgidScript.src = 'https://jsc.mgid.com/d/r/dream.co.id.1005504.js';
+mgidScript.setAttribute('async',true);
+
+mgidContainer.insertAdjacentElement("afterEnd",mgidParentEl);
+mgidContainer.insertAdjacentElement("afterEnd",mgidScript);
+</script>
+
+
+
+<!-- Composite Start -->
+<div id="M550863ScriptRootC1005479">
+</div>
+<script src="https://jsc.mgid.com/d/r/dream.co.id.1005479.js" async></script>
+<!-- Composite End -->
+
+<script>
+var mgidParentEl = document.createElement('div'),
+mgidContainer = parent.document.querySelector(".list-article-berita"),
+mgidScript = document.createElement('script');
+
+mgidParentEl.id = 'M550863ScriptRootC1005479';
+mgidScript.src = 'https://jsc.mgid.com/d/r/dream.co.id.1005479.js';
+mgidScript.setAttribute('async',true);
+
+mgidContainer.insertAdjacentElement("beforeBegin",mgidParentEl);
+mgidContainer.insertAdjacentElement("beforeBegin",mgidScript);
+</script>

@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: left;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        div#cs-ads{
+            max-width: 440px;
+            overflow-x: hidden;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        div#cs-ads .bl-header {
+            position: relative;
+            width: 100%;
+            display: block;
+            height: 20px;
+            margin: 10px 0;
+        }
+
+        div#cs-ads .bl-header img.bl-logo {
+            float: left;
+            height: 20px;
+        }
+
+        div#cs-ads .bl-header p.bl-user {
+            float: right;
+            margin: 0;
+            font-size: 14px;
+            color: #cf1b1b;
+        }
+
+        #cs-ads .bl-item {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            margin: 0 5px;
+        }
+
+        #cs-ads .bl-item img.bl-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #cs-ads .bl-item  p.bl-title {
+            position: relative;
+            width: 100%;
+            margin: 0px;
+            font-size: 13px;
+            height: 50px;
+            white-space: break-spaces;
+        }
+
+        #cs-ads .bl-item p.bl-price {
+            padding: 0px;
+            margin: 0px;
+            font-size: 16px;
+            color: #cf1b1b;
+            font-weight: bold;
+
+        }
+
+        #cs-ads .bl-item a.bl-lp {
+            font-size: 12px;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            display: block;
+            margin: 5px 0;
+            color: #fff;
+            background: #cf1b1b;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        div#cs-ads p.bl-nodata {
+            position: relative;
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-size: 2em;
+            color: #a5a5a5;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id="cs-ads" class="swiper-container"></div>
+    <script>
+        var _gdata = null;
+
+        function blads(targetid, payload) {
+            var _target = document.getElementById(targetid);
+            var q = '';
+            _target.innerHTML = ``;
+
+            var keys = Object.keys(payload);
+            for (var i = 0; i < keys.length; i++) {
+                if (i == 0) {
+                    q += `/${payload[keys[i]]}`;
+                } else {
+                    q += `/${payload[keys[i]]}`;
+                }
+            }
+       
+            fetch('http://spa-lara-vue.test/api/cart' + q)
+                .then(res => res.json())
+                .then(json => _generateUiAds(json, _target));
+
+        }
+
+
+        function _generateUiAds(data, _target) {
+            setCookie("visitor_id", data.visitor_id);
+            var item = `
+                <div class="bl-header">
+                    <img class="bl-logo" src="https://www.bukalapak.com/images/logo-new/bukalapak-primary-logo.png"/> 
+                    <p class="bl-user">{{ data.nama }}</p>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" v-for="el in data.item">
+                        <div class="bl-item">
+                            <img class="bl-img" :src="el.thumb"/> 
+                            <p class="bl-title">{{ el.name }}</p>
+                            <p class="bl-price">{{ el.price }}</p>
+                            <a :href="el.url" class="bl-lp" target="_blank">lihat koleksi</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            _target.innerHTML = item ;
+
+            var csAds = new Vue({
+                el: '#cs-ads',
+                data: {
+                    data: data,
+                }
+            });
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: false,
+                slidesPerView: 4,
+                spaceBetween: 5,
+            })
+        }   
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            console.log(name + "=" + (value || "") + expires + "; path=/");
+        }
+
+        var _payload = {
+            "klyId": "9-09-099087as",
+            "visitorId": "9-09-099087as",
+            "kriteria": "food,drink",
+        }
+
+        blads("cs-ads", _payload);   
+    </script>
+
+    <br>
+    <br>
+    <br>
+    flow 
+    <br>
+    <br>
+    <br>
+    client : send data menggunakan function blads(target-adunit, payload)
+    <br>
+    server : receive data dan send response
+    <br>
+    client : render response ke html tag
+
+</body>
+</html>

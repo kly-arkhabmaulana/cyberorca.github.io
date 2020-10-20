@@ -1,0 +1,11 @@
+@media (min-width: 1111px) {
+    .form-search {
+        width: 400px;
+    }
+    .navbar-brand {
+        height: 100%;
+    }
+    .group-header {
+        padding: 26px 0;
+    }
+}

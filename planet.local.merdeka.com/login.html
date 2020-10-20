@@ -1,0 +1,451 @@
+<br />
+<b>Warning</b>:  MongoCollection::count() expects parameter 1 to be array, boolean given in <b>/data/merdeka/ireporters/Models/Mireporters.php</b> on line <b>287</b><br />
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="Planet Merdeka">
+        <meta name="description" content="Let's Be Smart - Kirimkan berita Anda ke Planet Merdeka">
+        <meta name="keyword" content="Let's, Be, Smart, Kirimkan, berita, Anda, ke, Planet, Merdeka">
+        <meta property="og:title" content="Planet Merdeka"/>
+        <meta property="og:description" content="Let's Be Smart - Kirimkan berita Anda ke Planet Merdeka"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content="https://cdns.klimg.com/merdeka.com/i/w/ireporters/2020/03/11/ipicture/thumb/670x335/5e6841fd026332a0548e4180090202.jpg"/>
+        <meta property="og:site_name" content="http://planet.local.merdeka.com/"/>
+        <meta property="fb:app_id" content="551398235040938"/>
+        <meta http-equiv="Pragma" content="no-cache" />
+		<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+		<link rel="icon" type="image/png" href="https://cdns.klimg.com/merdeka.com/media/i/a/planet/favicon-pmdk.png">
+                <title>Planet Merdeka</title>
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
+<!--
+        <link rel="stylesheet" href="http://planet.local.merdeka.com/assets/css/main.css">
+-->
+		<link rel="stylesheet" href="http://planet.local.merdeka.com/assets/css/main.css">
+		<!-- <link rel="stylesheet" href=""> -->
+		<!-- <link rel="stylesheet" href=""> <!--20171004-->
+        <link rel="stylesheet" href="assets/css/filedrop.css">
+        <link rel="stylesheet" href="assets/css/vendor/cropper.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/token-input.css">
+        <link rel="stylesheet" href="assets/css/vendor/token-input-facebook.css">
+        <link rel="stylesheet" href="http://planet.local.merdeka.com/assets/css/logo-planet.css">
+        <style>
+			.videoWrapper{
+				overflow:scroll;
+			}
+		</style>
+        <link rel="stylesheet" href="http://planet.local.merdeka.com/assets/css/loginpage/iloginpage.css">
+		        
+        			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-77161824-10', 'auto');
+				ga('send', 'pageview');
+				
+				ga('create', 'UA-71410836-2', 'auto', 'KLNMerdeka');
+				ga('KLNMerdeka.send', 'pageview');
+			</script>        
+        		<script src="assets/js/vendor/plugin.js"></script>
+	
+		<style>
+		/*** START of Google Optimize Desktop ****/ 
+		.async-hide { opacity: 0 !important}
+		/*** END of Google Optimize Desktop ****/
+		</style>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+    	<script type="text/javascript">(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date; h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')}; (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c; })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-WP65G3Z':true}); (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-108534636-2', 'auto', {allowLinker: true, cookieDomain: 'planet.merdeka.com'}); ga('require', 'linkid', 'linkid.js'); ga('require', 'displayfeatures'); ga('require', 'GTM-WP65G3Z');</script>
+    </head>
+    <body>
+										<nav class="navbar-planet">
+						<div class="container">	
+							<div class="navbar-newsite clearfix">	
+			                    <a class="navbar-brand" href="https://planet.merdeka.com/">
+									<img class="planet" src="https://cdns.klimg.com/merdeka.com/media/i/a/planet/planet-merdeka-rev02.png" width="185px">
+								</a>
+			                    <div class="group-header">
+			                    	<div class="group-left">
+										<form class="form-inline" method="post" action="http://planet.local.merdeka.com/posts">
+											<div class="form-search input-group">
+												<input type="text" name="ititle" class="form-control" placeholder="Find your articles...">
+												<span class="input-group-btn">
+													<button class="btn" type="submit"><img src="https://cdns.klimg.com/merdeka.com/media/i/a/planet/search-icon.png"></button>
+												</span>
+			                               </div>
+			                            </form>
+			                        </div>
+			                        <div class="group-right">
+			                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			                                <span class="sr-only">Toggle navigation</span>
+			                                <img src="https://cdns.klimg.com/merdeka.com/media/i/a/planet/menu.png" width="39">
+			                            </button>
+			                        </div>
+			                        <div class="navbar-menu">
+			                            <div id="navbar" class="navbar-collapse collapse">
+			                                <ul class="nav">
+			                                	<li><a href="index.html"><span class="icon home"></span></a></li>
+			                                    <li>
+													<a href="postinput.html"><span class="icon edit"></span></a>
+												</li>
+			                                    <li><a href="posts.html"><span class="icon cp"></span></a></li>
+			                                    <li><a href="settings.html"><span class="icon setting"></span></a></li>
+			                                    <li><a href="bugreport.html"><span class="icon info"></span></a></li>
+			                                    <li><a href="login.html#planetlogin"><span class="icon sign-in"></a></li>
+			                                    <!--<li id="nav-exception">-->
+			                                    <li>
+								                     <div id="planetnotif">
+														<img src="https://planet.merdeka.com/assets/img/segitiga.png">
+													    Hai  tulis sesuatu disini!						    
+													 </div>								                    
+								                </li>
+			                                 </ul>			                                 
+										</div>
+			                        </div>
+			                    </div>
+		                    </div>
+						</nav>
+                    
+		<!--container-->
+        <div class="section-content container planet-min-height">
+							<div class="section-content container">	
+					<div class="row">
+						<div class="section-account section-join clearfix"> 
+	<h3>Kesempatan karyamu dilihat jutaan orang!</h3>
+	<ul class="list-join list-unstyled clearfix">
+		<li class="col-sm-4">
+			<div class="img-block">
+				<img src="https://cdns.klimg.com/merdeka.com/media/i/a/planet/img-planet-front-1.png">
+			</div>
+			<p>Karya yang berupa artikel, gambar atau video akan dimuat di merdeka.com bersama dengan karya jurnalis profesional</p>
+		</li>
+		<li class="col-sm-4">
+			<div class="img-block">
+				<img src="https://cdns.klimg.com/merdeka.com/media/i/a/planet/img-planet-front-2.png">
+			</div>
+			<p>Sebelum dimuat, karya yang dikirim akan di-review oleh jurnalis nasional merdeka.com</p>
+		</li>
+		<li class="col-sm-4">
+			<div class="img-block">
+				<img src="https://cdns.klimg.com/merdeka.com/media/i/a/planet/img-planet-front-3.png">
+			</div>
+			<p>Karya yang dimuat akan dilihat oleh jutaan pembaca merdeka.com</p>
+		</li>
+	</ul>
+</div>
+<div class="section-account section-form clearfix">
+	<div class="alert alert-danger" role="alert">asdfsf</div>	<div id="planetlogin" class="form-login col-md-4">
+		<h3>LOGIN</h3>
+		<form action="http://planet.local.merdeka.com/logingateway" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Email</label>
+				<div class="col-sm-9">
+					<input type="email" name="username" id="username" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Password</label>
+				<div class="col-sm-9">
+					<input type="password" class="form-control" name="password" id="password">
+					<a href="http://app.kapanlagi.com/account/forgot.php" class="link-forgot">Lupa Password?</a> 
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-3 col-sm-9">
+					<button type="submit" class="btn btn-login">LOGIN</button>
+				</div>
+			</div>
+		</form>
+		<div class="or"></div>
+		<div class="other-login">
+			<a href="login.html#" id="gplusBtn" onclick="login()"></a>
+			<a href="login.html#" id="fb-button" onclick="fb_login(); return false;"></a>
+		</div>
+	</div>
+	<div class="form-daftar col-md-8 clearfix">
+		<h3>DAFTAR</h3>
+				<form action="http://planet.local.merdeka.com/registergateway" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Email</label>
+				<div class="col-sm-9">
+					<input type="email" name="iemail" id="iemail" class="form-control" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Nama Lengkap</label>
+				<div class="col-sm-9">
+					<input type="text" name="iname" id="iname" class="form-control" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Username</label>
+				<div class="col-sm-9">
+					<input type="text" name="iusername" id="iusername" class="form-control" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Password</label>
+				<div class="col-sm-9">
+					<input  type="password" name="ipassword" id="ipassword" class="form-control" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-3 control-label">Ulangi Password</label>
+				<div class="col-sm-9">
+					<input type="password" name="ipasswordcheck" id="ipasswordcheck" class="form-control" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Tanggal Lahir</label>
+				<div class="col-sm-9">
+					<div class="row-select clearfix">
+						<div class="form-tanggal">
+						<select name="dday" id="dday" class="form-control">
+							<option>Tanggal</option>
+							<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>						</select>
+						</div>
+						<div class="form-tanggal">
+						<select name="dmonth" id="dmonth" class="form-control">
+							<option>Bulan</option>
+							<option value="01">Januari</option><option value="02">Februari</option><option value="03">Maret</option><option value="04">April</option><option value="05">Mei</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">Agustus</option><option value="09">September</option><option value="10">Oktober</option><option value="11">November</option><option value="12">Desember</option>						</select>
+						</div>
+						<div class="form-tanggal">
+						<select name="dyear" id="dyear" class="form-control">
+							<option>Tahun</option>
+							<option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option>						</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">Jenis Kelamin</label>
+				<div class="col-sm-9">
+					<div class="radio">
+												<label>
+							<input type="radio" name="igender" id="blankRadio1" value="m" aria-label="..." checked="checked"> Pria
+						</label>
+						<label>
+							<input type="radio" name="igender" id="blankRadio1" value="f" aria-label="..."> Wanita
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group form-col">
+				<label class="col-sm-3 control-label">Provinsi</label>
+				<div class="col-sm-4">
+					<select name="iprovince" id="iprovince" class="form-control">
+						<option>Pilih Provinsi</option>
+						<option value="Banten">Banten</option><option value="Lampung">Lampung</option>					</select>
+				</div>
+				<label class="col-sm-1 control-label">Kota</label>
+				<div class="col-sm-4">
+					<select name="icity" id="icity" class="form-control">
+						<option>Pilih Kota</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label">No Telepon</label>
+				<div class="col-sm-9">
+					<input type="text" name="iphone" id="iphone" class="form-control" value="">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-3 col-sm-8">
+					<button type="submit" class="btn btn-login">DAFTAR</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script>
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      greetAuthorizedUser();
+    } 
+  }
+  
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+	  FB.init({
+	    appId      : '551398235040938',
+	    cookie     : true,  // enable cookies to allow the server to access 
+	                        // the session
+	    xfbml      : true,  // parse social plugins on this page
+	    version    : 'v2.5' // use graph api version 2.5
+	  });
+	  FB.getLoginStatus(function(response) {
+	    statusChangeCallback(response);
+	  });
+  };
+  
+  function fb_login(){
+	FB.login(function(response) {
+		if (response.status === 'connected'){
+            FB.api('/me',{locale: 'en_US', fields: 'name, email,first_name,last_name,gender'},
+            function(response) {
+                console.log(JSON.stringify(response));
+				//alert(response.email);
+				setCookie("facebookresp", JSON.stringify(response), 1);
+				window.location = ireporter_base_url + "facebookgateway";
+            });
+            
+        } else {
+            //user hit cancel button
+            console.log('User cancelled login or did not fully authorize.');
+
+        }
+    }, {
+        scope: 'public_profile,email',
+        return_scopes: true
+    });
+  }	
+ 	
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  
+  function greetAuthorizedUser() {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me',{locale: 'en_US', fields: 'name, email,first_name,last_name,gender'},function(response) {
+       console.log(JSON.stringify(response));
+       setCookie("facebookresp", JSON.stringify(response), 1);
+     });
+   }
+   <!---GOOGLE + LOGIN API FUNCTION---->		
+   (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+    
+    
+    function onLoadCallback()
+	{
+	    gapi.client.setApiKey('AIzaSyCvsZx_1UenuDKrkN7ELMeuWyKoASyG8uU'); //set your API KEY
+	    gapi.client.load('plus', 'v1',function(){});//Load Google + API
+	}
+	
+	function login() 
+	{
+	  var myParams = {
+		'clientid' : '596659141692-3ppb7kbf2r9qfdnl0lhd2a19m6r570av.apps.googleusercontent.com', //You need to set client id
+		'cookiepolicy' : 'single_host_origin',
+		'callback' : 'loginCallback', //callback function
+		'approvalprompt':'force',
+		'scope' : 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read'
+	  };
+	  gapi.auth.signIn(myParams);
+	}
+	
+	function loginCallback(result)
+	{
+	    if(result['status']['signed_in'])
+	    { 
+	        //---------------
+	        var request = gapi.client.plus.people.get(
+			{
+				'userId': 'me'
+			});
+			request.execute(function (resp)
+			{
+				setCookie("gplusidentifier", JSON.stringify(resp), 1);
+				//console.log(JSON.stringify(resp));
+				window.location = ireporter_base_url + "gplusgateway";
+			});
+	        //---------------
+	    }   
+	}
+</script>
+<!----END OF COPY AND PASTE---->
+					</div>	
+				</div>
+						
+         </div>
+        <!--/container-->
+        
+        <!--footer-->
+        <footer class="mdk-footer">
+            <div class="footer-links">
+            	<span>
+					<!-- <a href="https://planet.merdeka.com/hotnews/syarat-dan-ketentuan-umum.html">DISCLAIMER</a>&nbsp;|&nbsp;
+					<a href="https://planet.merdeka.com/hotnews/syarat-dan-ketentuan-umum.html">SYARAT&nbsp;&amp;&nbsp;KETENTUAN</a>&nbsp;|&nbsp;
+					<a href="https://planet.merdeka.com/hotnews/syarat-dan-ketentuan-umum.html">PRIVACY</a>&nbsp;|&nbsp;
+					<a href="https://planet.merdeka.com/hotnews/petunjuk-penggunaan-umum.html">PETUNJUK&nbsp;PENGGUNAAN</a>&nbsp;|&nbsp;
+					<a href="#">FAQ</a>&nbsp;|&nbsp;
+					<a href="mailto:humas@merdeka.com?Subject=[PLANET MERDEKA]%20BANTUAN" target="_blank">BANTUAN</a> -->
+					<a href="https://planet.merdeka.com/hotnews/syarat-dan-ketentuan-umum.html">DISCLAIMER</a>
+					<a href="https://planet.merdeka.com/hotnews/syarat-dan-ketentuan-umum.html">SYARAT&nbsp;&amp;&nbsp;KETENTUAN</a>
+					<a href="https://planet.merdeka.com/hotnews/syarat-dan-ketentuan-umum.html">PRIVACY</a>
+					<a href="https://planet.merdeka.com/hotnews/petunjuk-penggunaan-umum.html">PETUNJUK&nbsp;PENGGUNAAN</a>
+					<a href="login.html#">FAQ</a>
+					<a href="mailto:humas@merdeka.com?Subject=[PLANET MERDEKA]%20BANTUAN" target="_blank">BANTUAN</a>
+            	</span>
+            </div>
+            <div class="footer-copyright">
+            	<span>
+					Copyright &copy; 2019 merdeka.com KLY KapanLagi Youniverse All Right Reserved.
+            	</span>
+            </div>
+        </footer>
+        <!--/footer-->
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="http://planet.local.merdeka.com/assets/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript">
+			window.fd = {logging: false};
+		</script>
+        <script src="http://planet.local.merdeka.com/assets/js/vendor/filedrop-min.js"></script>
+        <script src="http://planet.local.merdeka.com/assets/js/vendor/cropper.min.js"></script>
+        <script src="http://planet.local.merdeka.com/assets/js/vendor/jquery.tokeninput.js"></script>
+		<script src="http://planet.local.merdeka.com/assets/js/main.js"></script>
+		<script type="text/javascript" src="https://cdns.klimg.com/planet/assets/js/social.js"></script> 
+		
+		<script>
+			var pluginurl = $('meta[property="og:url"]').attr('content');
+			var fixedurl = pluginurl.replace("planet-dev","planet");
+			$(document).ready(function() {
+				$('#kl-social-mobile').klnsosial({
+				url:fixedurl,
+				comment_count:-1,
+				twitter_user: 'merdekadotcom'
+				});
+			});
+		</script>
+		<link rel="stylesheet" href="https://a.kapanlagi.com/v5/css/m/social.css?11">
+        <script src="http://planet.local.merdeka.com/assets/js/ireporters/iwelcome.js?1593501400"></script>
+		
+        <script>
+			$(document).ready(function(){
+				$(".del-postlist").click(function(e){
+					e.preventDefault();
+					var loc = $(this).data('href');
+					var title = $(this).data('title');
+					
+					var conf = confirm('Apakah anda yakin ingin menghapus artikel dengan judul '+title+' ?');
+					if(conf){
+						window.location = loc;
+					}
+				});
+			});
+		</script>
+
+    </body>
+</html>

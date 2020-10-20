@@ -1,0 +1,41 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <div class="product">
+        <h1> Variants </h1>
+            <div v-for="variant in variants">
+                <p @mouseover="updateProduct(variant.variantImage)" :style="{color: variant.variantColor, border:'1px solid red', fontWeight: 'bolder', width:'200px'}">
+                    {{ variant.variantColor }}
+                </p>
+            </div>
+            <br/><hr>
+        <div class="product-image">
+            <a :href="url" target="_blank">
+                <span style="color: red;font-weight: bolder;font-size: larger;" v-if="onSale && inventory > 0">ON SALE!</span>
+                <br/>
+                <img :src="image" :alt="altText" :width="width" :height="height"/>
+            </a>
+            <p v-if="inventory > 10">[{{ inventory }}] In Stock</p>
+            <p v-else-if="inventory <=10 && inventory > 0">[{{ inventory }}] Almost Sold Out! </p>
+            <p v-else>Out Of Stock</p>
+            <div class="cart">
+                <p>Cart({{ cart }})</p>
+            </div>
+            <button v-on:click="addToCart">Add to cart</button>
+            <button v-on:click="removeFromCart">Remove from cart</button>
+        </div>    
+        <div class="product-info">
+            <h1> Sizes</h1>
+            <ul>
+                <li v-for="size in sizes"> {{ size }} </li>
+            </ul>
+            
+            <h1> {{ product }} </h1>
+            <ul>
+                <li v-for="detail in details"> {{ detail }} </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>

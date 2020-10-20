@@ -1,0 +1,75 @@
+/*
+ * Bismillahirrahmanirrahim..					Malang, 20 of August 2015  
+ * */
+.make-center{ 
+	text-align:center;
+}
+.make-right{
+	text-align:right;
+}
+.ipublishlink:hover,.previewpost:hover{
+	text-decoration:none;
+}
+.ipublishlink:focus,.previewpost:focus{
+	text-decoration:none;
+}
+.imgbigpreview{
+	cursor:pointer;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 100%;*/
+	width: 100%;
+	max-width:670px;
+	height: 100%;
+}
+
+#postingModal .modal-body {
+	max-height: 500px;
+	overflow:scroll;
+}
+
+.navbar-brand{
+	padding:5px;
+}
+
+td:last-child {overflow:hidden; white-space:nowrap}
+
+.btn-lock{
+	border: 1px solid #CCC;
+	background: #CCC;
+	color: #FFF;
+}
+.btn-lock:hover{
+	color:#FFF;
+}
+
+.left-column{
+	padding-left:0px;
+}
+.right-column{
+	padding-right:0px;
+	padding-left:22px;
+}
+.photoarticle{
+	width:382px;
+	height:280px;
+	margin-bottom:5px;
+	color:#35B4EB;
+}
+.photoarticle .title{
+	margin-top:10px;
+	font-size:18px;
+}
+.photoarticle .title a, .photoarticle .title a:hover {
+	color:#35B4EB;
+}

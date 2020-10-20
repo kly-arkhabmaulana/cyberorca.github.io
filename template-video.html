@@ -1,0 +1,800 @@
+<script>
+    var landingPage = "%%CLICK_URL_ESC%%%%DEST_URL%%";
+    var exposerId = "%%ADUNIT%%".split("/").pop();
+    var imageExposer = "%%FILE:ImageExposer%%";
+    var imageExpand = "%%FILE:ImageExposer%%";
+    var expandTracker = "https://cdns.klimg.com/d.kapanlaginetwork.com/banner/asset/img/pixel.png";
+    var videoMarginTop = "430";
+    var exposerVideoURL= "https://www.youtube.com/watch?v=yXpMhsqKlpA&?controls=1&modestbranding=1";
+    var youtubeSettings={
+        "modestbranding": 1,
+        "playsinline" : 1,
+        "ytControls": 1,
+        "enablejsapi": 1,
+        "iv_load_policy":3, 
+        "rel":0,
+        "showinfo":0,
+          "fs" : 0,
+    };
+    var exposerVideodataset ='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "'+exposerVideoURL+'"}], "youtube": '+JSON.stringify(youtubeSettings)+'}';
+    
+    var css = "<style id=\"exposer-css\" media=\"screen\">\
+                .artikel-list-img  .exposer-bucket.still{\
+                        margin-left: -5px;\
+                }\
+                .main-detail-paging .artikel-list-img  .exposer-bucket.still{\
+                        margin-left: -10px;\
+                }\
+                .main-kl.main-detail .deskrip-img .exposer-bucket.still{\
+                    margin-left: -15px;\
+                }\
+                #mdk-body .exposer-bucket.still{\
+                    margin-left: -10px;\
+                    margin-right: -10px;\
+                }\
+                #mdk-body .exposer {\
+                    right: 0px;\
+                }\
+                #div-gpt-ad-dream-dfp-exposer-slot1{\
+                    margin-left: -15px;\
+                }\
+                .rm01 #main_mid_headline .exposer-bucket.still{margin-left: -13px;}\
+                /*.mdk-container div:nth-child(2){z-index: 2 !important;}*/\
+                </style>\
+                <style>\
+                .exposer-bucket *, .exposer-bucket *:before, .exposer-bucket *:after {\
+                    box-sizing: initial!important;\
+                }\
+        \
+                .exposer-bucket * {\
+                    width: 100%;\
+                    height: auto;\
+                    float: none;\
+                    visibility: visible;\
+                    font-family: arial;\
+                    margin: 0;\
+                    padding: 0;\
+                    line-height: normal;\
+                    border: 0;\
+                    box-sizing: border-box;\
+                    /*position: static;\
+                    opacity: 1.0;*/\
+                    background: none;\
+                    font-size: 100%;\
+                    text-decoration: none;\
+                    background-repeat: no-repeat;\
+                    vertical-align: baseline;\
+                    color: inherit;\
+                    font-weight: inherit;\
+                    letter-spacing: inherit;\
+                    -webkit-tap-highlight-color: rgba(0,0,0,0);\
+                }\
+        \
+                .exposer-bucket {\
+                    /*height: 200px!important;*/\
+                    /*padding: 17px 0px;*/\
+                    left: 0;\
+                    top: 0;\
+                    margin: 0;\
+                    position: relative;\
+                    display: block;\
+                    z-index:  999999;\
+                }\
+        \
+                .exposer-bucket.still {\
+                    z-index:  999;\
+                }\
+        \
+                .exposer-bucket.still, .exposer-bucket.exp-close, .exposer-wrapper {\
+                    -webkit-transition: width 1s, height 1s, top 1s, left 1s, margin 1s;\
+                    -moz-transition: width 1s, height 1s, top 1s, left 1s, margin 1s;\
+                    -ms-transition: width 1s, height 1s, top 1s, left 1s, margin 1s ;\
+                    transition: width 1s, height 1s, top 1s, left 1s, margin 1s;\
+                }\
+        \
+                .exposer-bucket .exposer-top-text {\
+                    color: #fff;\
+                    text-transform: uppercase;\
+                    font: normal 9px arial;\
+                    left: 0px;\
+                    margin: 0px;\
+                    width: 100%;\
+                    height: 18px;\
+                    line-height: 20px;\
+                    background: #696868;\
+                    letter-spacing: 1.01px;\
+                    text-align: center;\
+                }\
+        \
+                .exposer-bucket .exposer {\
+                    width: 100%;\
+                    height: 100%;\
+                    z-index: 1;\
+                    position: relative;\
+                    min-width: 0px;\
+                }\
+        \
+                .exposer-bucket .exposer-wrapper {\
+                    overflow: hidden;\
+                    display: block;\
+                    width: 100%;\
+                    position: relative;\
+                    left: 0px;\
+                    right: auto;\
+                    top: 0px;\
+                    bottom: auto;\
+                    height: 200px;\
+                    background: #000;\
+                }\
+        \
+                .exposer-bucket .exposer-fix {\
+                    position: absolute;\
+                    top: 0;\
+                    left: 0;\
+                    bottom: 0;\
+                    right: 0;\
+                    width: 100%;\
+                    height: 100%;\
+                    margin: 0px;\
+                    padding: 0px;\
+                    clip: rect(auto auto auto auto);\
+                    -webkit-clip-path: inset(0px 0px 0px 0px);\
+                    background: #000;\
+                }\
+        \
+                .exposer-bucket .exposer-banner {\
+                    position: fixed;\
+                    top: 0px;\
+                    left: 0px;\
+                    width: 100%;\
+                    height: 100%;\
+                    margin: 0px;\
+                    padding: 0px;\
+                    transform: translateZ(0px);\
+                }\
+        \
+                .exposer-bucket .exposer-data {\
+                    overflow: hidden;\
+                    display: block;\
+                    width: 100%;\
+                    height: 100%;\
+                    position: absolute;\
+                    left: 0px;\
+                    right: auto;\
+                    top: 0px;\
+                    bottom: auto;\
+                    background-size: contain;\
+                    background-color: #000000;\
+                }\
+                .exposer-bucket .exposer-bottom-text {\
+                    line-height: 1;\
+                    width: 100%;\
+                    font: bold 13px arial;\
+                    color: #fff;\
+                    z-index: 9;\
+                    text-align: left;\
+                    z-index: 9;\
+                    position: absolute;\
+                    height: 42px;\
+                    line-height: 41px;\
+                    left: 0;\
+                    bottom: 0px;\
+                    text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px rgba(0,0,0,0.5);\
+                    text-transform: uppercase;\
+                    -webkit-transform: translate3d(0, 0, 0);\
+                }\
+                .exposer-bucket .exposer-bottom-text .pulse_holder {\
+                    display: block;\
+                    position: absolute;\
+                    top: 14px;\
+                    left: 20px;\
+                }\
+                .exposer-bucket .exposer-bottom-text .pulse_holder .pulse_marker {\
+                    width: 12px;\
+                    height: 12px;\
+                    background: #fff;\
+                    border-radius: 12px;\
+                    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);\
+                    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);\
+                    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);\
+                    position: relative;\
+                }\
+                .exposer-bucket .exposer-bottom-text .pulse_holder .pulse_rays {\
+                    margin: 0 auto;\
+                    border-radius: 100px;\
+                    position: absolute;\
+                    right: -22px;\
+                    top: -22px;\
+                    z-index: 10;\
+                    background-color: transparent;\
+                    opacity: 0.1;\
+                    width: 52px;\
+                    height: 52px;\
+                    border: 2px solid #fff;\
+                    -webkit-border-radius: 100px;\
+                    -moz-border-radius: 100px;\
+                    -o-border-radius: 100px;\
+                    -ms-border-radius: 100px;\
+                    border-radius: 100px;\
+                    -webkit-animation: aff-inc-pulse 1.3s linear infinite;\
+                    -moz-animation: aff-inc-pulse 1.3s linear infinite;\
+                    border-image: initial;\
+                    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);\
+                    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);\
+                    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);\
+                }\
+        \
+                .main-kl .artikel-detail-headline #div-gpt-ad-kapanlagi-dfp-exposer-slot1 {\
+                        margin-top: -40px;\
+                        padding-bottom: 20px;\
+                }\
+                .exposer-bucket .exposer-bottom-text .click-expose {\
+                    position: absolute;\
+                    left: 50px;\
+                    bottom: 13px;\
+                }\
+                @-webkit-keyframes aff-inc-pulse{\
+                    0%{\
+                        transform:scale(0);opacity:0\
+                    }\
+                    8%{\
+                        transform:scale(0);opacity:0\
+                    }\
+                    15%{\
+                        transform:scale(0.1);opacity:1\
+                    }\
+                    30%{\
+                        transform:scale(0.3);opacity:1\
+                    }\
+                    100%{\
+                        opacity:0;-webkit-transform:scale(0.7)\
+                    }\
+                }\
+        \
+                .exposer-close{\
+                    width: 30px !important;\
+                    height: 30px !important;\
+                    position: absolute !important;\
+                    margin-top: -11px !important;\
+                    top: 20px;\
+                    right: 10px;\
+                    z-index: 999999;\
+                    display: none;\
+                }\
+        \
+                .exposer-link{\
+                    z-index: 9999;\
+                    display: none;\
+                    position: fixed;\
+                    width: 100%;\
+                    height: 100%;\
+                    top: 0px;\
+                }\
+        \
+                .exposer-img-a{\
+                    width: 100% !important;\
+                    height: auto;\
+                    z-index: 99;\
+                    position: absolute;\
+                    opacity: 0;\
+                    top: 0;\
+                    left: 0;\
+                }\
+                .exposer-img-b{\
+                    width: 100% !important;\
+                    height: auto;\
+                    z-index: 999;\
+                    position: absolute;\
+                    top: 0;\
+                    left: 0;\
+                    opacity: 1;\
+                }\
+                .fadeOut{\
+                    animation: fadeOut .5s ease-in 1 forwards;\
+                }\
+                @keyframes fadeOut {\
+                    to {\
+                        opacity: 0;\
+                    }\
+                }\
+                .fadeIn{\
+                    animation: fadeIn .5s ease-in 1 forwards;\
+                }\
+                @keyframes fadeIn {\
+                    to {\
+                        opacity: 1;\
+                    }\
+                }\
+        \
+                @media screen and (orientation:landscape){\
+                    body.exposer-native {\
+                        position: static !important;\
+                    }\
+                    body {\
+                        overflow: visible !important;\
+                    }\
+                    #exposer-ad, #exposer-ad * {\
+                        height: 1px;\
+                        visibility: hidden;\
+                    }\
+                    .exposer-img-a{\
+                        display: none;\
+                    }\
+                    .exposer-bucket.still, .exposer-bucket{\
+                        display: none;\
+                    }\
+                }\
+        \
+                /****** Style for Exposer Video******/\
+                  #exposer-video{\
+                      display: inline-block;\
+                      z-index:99999;\
+                      background: #000;\
+                      width: 100%;\
+                      height: 100%;\
+                      -webkit-overflow-scrolling:touch;\
+                  }\
+                  #exposer-video-wrapper{\
+                    position: absolute;\
+                    top:0;\
+                    width: 100%;\
+                    height: 100%;\
+                    text-align: center;\
+                  }\
+                  #exposer-video-container{\
+                    position: relative;\
+                    display: inline-block;\
+                    vertical-align: middle;\
+                    background: #000;\
+                  }\
+                  #exposer-video-wrapper .vjs-big-play-button{\
+                    display:none !important;\
+                  }\
+                  #exposer-video-wrapper .vjs-big-play-button:before{\
+                    font-size: 1.25em;\
+                  }\
+                  #exposer-video-wrapper .vjs-ended .vjs-big-play-button{\
+                    display: block;\
+                  }\
+                  #exposer-video-wrapper .vjs-ended .vjs-poster{\
+                    display: block;\
+                  }\
+                  #exposer-video-wrapper .vjs-ended .vjs-control-bar{\
+                    display: none;\
+                  }\
+                  #exposer-video-wrapper .vjs-remaining-time-display{\
+                    padding-top:8px;\
+                  }\
+                  #exposer-video-wrapper .video-js .vjs-fullscreen-control{\
+                    display: none;\
+                  }\
+                  #exposer-video-wrapper .video-js .vjs-mute-control, .video-js .vjs-volume-menu-button{\
+                    display: block !important;\
+                  }\
+                  #exposer-video-wrapper.uc .vjs-control-bar{\
+                    display: none !important;\
+                  }\
+                  #exposer-video-wrapper .vjs-loading-spinner{\
+                    display: none !important;\
+                  }\
+                  #exposer-video-wrapper .vjs-volume-menu-button.vjs-menu-button-inline {\
+                    width: 12em;\
+                  }\
+                  #exposer-video-wrapper .vjs-volume-menu-button.vjs-menu-button-inline .vjs-menu {\
+                    opacity: 1;\
+                  }\
+                </style>\
+                <link href=\"https://cdns.klimg.com/d.kapanlaginetwork.com/banner/asset/img/video-js.css\" rel=\"stylesheet\"></link>";
+    
+    var template = '<div id="' + exposerId + '" class="exposer-bucket still"><div class="exposer-top-text">Commercial Break</div>\
+        <div class="exposer">\
+            <div class="exposer-wrapper">\
+                <div class="exposer-bottom-text">\
+                    <div class="pulse_holder">\
+                        <div class="pulse_marker">\
+                            <div class="pulse_rays"></div>\
+                        </div>\
+                    </div>\
+                    <div class="click-expose">Watch Now</div>\
+                </div>\
+                <div class="exposer-fix">\
+                    <img class="exposer-close" src="https://cdns.klimg.com/d.kapanlaginetwork.com/banner/preview/2017/07/21/exposer/close-button.png" alt="">\
+                    <div class="exposer-banner">\
+                        <div class="exposer-data">\
+                            <img class="exposer-img-a" src="'+ imageExpand + '">\
+                            <img class="exposer-img-b" src="' + imageExposer +'">\
+                            <a class="exposer-link" target="_blank"></a>\
+                        </div>\
+                        <div id="exposer-video-wrapper">\
+                            <div id="exposer-video-container"></div>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </div>';
+    
+    var script = "(function() {\
+    \
+        var body = document.getElementsByTagName('body')[0];\
+        var fakeClick;\
+        var fakeClose;\
+    \
+        var lastScrollPosition = 0;\
+    \
+        var exposerBucket;\
+        var exposer;\
+        var exposerBox;\
+        var exposerFix;\
+        var exposerBanner;\
+        var exposerLink;\
+        var exposerClose;\
+        var exposerBottomText;\
+        var exposerTopText;\
+        var exposerImageA;\
+        var exposerImageB;\
+        var scrollNode = document.scrollingElement || document.documentElement;\
+        var videoContainer;\
+        var videoPlayer;\
+    \
+        reRenderExposer();\
+    \
+        var isAlreadyExpand = false;\
+        var isAlreadyFreeze = false;\
+    \
+        var ua = navigator.userAgent;\
+        var isNative = (ua.indexOf('SamsungBrowser') > -1) || (ua.indexOf('LMY471') > -1) || (ua.indexOf('LMY47I') > -1);\
+        var isOldIphone = (ua.indexOf('iPhone OS') > -1) && screen.width <= 320;\
+        var transitionEvent = whichTransitionEvent();\
+    \
+        var close = false;\
+        var iterTotalTime = 0;\
+        var iterValUp = 0;\
+        var iterValDown = 0;\
+        var isIOS = (ua.indexOf('iPhone OS') > -1 );\
+        var isChrome = (ua.indexOf('CriOS') > -1 );\
+        \
+        var dfp_videoMarginTop='"+videoMarginTop+"';\
+        var maxExposerAdsWidth=720;\
+        var exposerVideoWrapper = document.getElementById('exposer-video-wrapper');\
+        var exposerVideoContainer = document.getElementById('exposer-video-container');\
+        var exposerImageSize = document.getElementsByClassName('exposer-img-b')[0];\
+        var videojsURL= \"https://cdns.klimg.com/d.kapanlaginetwork.com/banner/asset/img/video.js\";\
+        var videoPaused=null;\
+        var videoIsFullScreen=null;\
+        var videoAutoplay=null;\
+    \
+        if (isNative) body.className += \" exposer-native\";\
+    \
+        exposerBucket.addEventListener('click', expandExposer);\
+    \
+        if(screen.width > screen.height) {\
+                exposerBucket.style.width = screen.height + \"px\";\
+                exposerImageA.style.height = screen.width + \"px\";\
+        }else {\
+                exposerBucket.style.width = screen.width + \"px\";\
+                exposerImageA.style.height = screen.height + \"px\";\
+       }\
+    \
+        function closeExposer() {\
+    \
+            exposerBucket.className += \" exp-close\";\
+            var rect = exposerBucket.getBoundingClientRect();\
+    \
+            body.className = body.className.replace(' exposer-native', '');\
+    \
+            if (isNative) {\
+    \
+                body.style.position = \"static\";\
+                window.scrollTo(0, lastScrollPosition);\
+                exposerBucket.style.position = \"relative\";\
+                fakeClick.style.display = \"none\";\
+                fakeClose.style.display = \"none\";\
+    \
+            } else {\
+    \
+                exposerBucket.style.top = (rect.height / 2) + \"px\";\
+                exposerBucket.style.height = \"0px\";\
+                exposerBox.style.height = \"0px\";\
+            }\
+    \
+            setTimeout(function(){ document.getElementById('exposer-ad-" + exposerId + "').style.display = 'none'; }, 1000);\
+            window.removeEventListener(\"orientationchange\", onOrientationChange);\
+            if (isIOS && isChrome) window.removeEventListener(\"focus\", onExposerFocus);\
+            body.style.overflow = \"visible\";\
+            hideExposerVideo();\
+        }\
+    \
+        function expandExposer() {\
+    \
+            if (!isAlreadyExpand) {\
+    \
+                isAlreadyExpand = true;\
+    \
+                lastScrollPosition = scrollNode.scrollTop;\
+    \
+                var rect = exposerBucket.getBoundingClientRect();\
+                exposerBucket.style.top = (0 - rect.top) + \"px\";\
+                exposerBucket.style.height = screen.height + \"px\";\
+                exposerBox.style.height = screen.height + \"px\";\
+    \
+                exposerTopText.parentNode.removeChild(exposerTopText);\
+                exposerBottomText.parentNode.removeChild(exposerBottomText);\
+    \
+                if (!isNative) exposerImageA.className += \" fadeIn\";\
+                exposerImageB.className += \" fadeOut\";\
+    \
+    \
+                transitionEvent && exposerBucket.addEventListener(transitionEvent, freezeExposer);\
+            }\
+        }\
+        function quickExpandExposer() {\
+            exposerBucket.className = exposerBucket.className.replace('still', '');\
+            exposerBucket.style.top = \"0px\";\
+            exposerBucket.style.height = \"100%\";\
+            exposerBucket.style.position = \"fixed\";\
+            body.style.overflow = \"hidden\";\
+            freezeExposer();\
+        }\
+    \
+    \/* Exposer Video Function *\/\
+        function generateExposerVideo(){\
+            exposerVideo = document.createElement(\"video\");\
+            exposerVideo.id = \"exposer-video\";\
+            adjustVideoContainer();\
+            addClass(exposerVideo,\"video-js vjs-default-skin vjs-big-play-centered\");\
+            exposerVideo.setAttribute('webkit-playsinline', \"\");\
+            exposerVideo.setAttribute('playsinline', \"\");\
+            exposerVideo.dataset.setup='"+exposerVideodataset+"';\
+            exposerVideoContainer.appendChild(exposerVideo);\
+            exposerVideo = videojs(\"exposer-video\");\
+            if (navigator.userAgent.match(/MMB29M/i) || navigator.userAgent.match(/Miui/i)) {\
+                exposerVideo.muted(false);\
+            }\
+            else {\
+                exposerVideo.muted(true);\
+            }\
+            exposerVideo.controls(true);\
+            exposerVideo.preload(true);\
+            exposerVideo.load();\
+            exposerVideo.on(\"ready\",videoReady);\
+            exposerVideo.on(\"ended\", videoEnded);\
+        }\
+        function adjustVideoContainer(){\
+          if(dfp_videoMarginTop==\"center\"){\
+            addClass(exposerVideoWrapper,\"center\");\
+          }else{\
+            exposerVideoContainer.style.marginTop=window.innerWidth/maxExposerAdsWidth*dfp_videoMarginTop+\"px\";\
+          }\
+           exposerVideoContainer.style.width=exposerImageSize.clientWidth-30+\"px\";\
+           exposerVideoContainer.style.height=56.25/100*parseFloat(exposerVideoContainer.style.width,10)+\"px\";\
+        }\
+        function autoplayVideo(){\
+            if(videoAutoplay){\
+                exposerVideo.muted(false);\
+                exposerVideo.play();\
+                videoAutoplay=false;\
+            }\
+        }\
+        function videoReady(){\
+            console.log(\"video ready\");\
+            if(exposerVideo.paused()){\
+                exposerVideo.posterImage.hide();\
+                exposerVideo.bigPlayButton.hide();\
+                exposerVideo.muted(true);\
+                exposerVideo.play();\
+            }\
+            videoAutoplay=true;\
+        }\
+        function hideExposerVideo(){\
+          if(exposerVideo){\
+            exposerVideo.pause();\
+            exposerVideoContainer.style.display=\"none\";\
+          }\
+        }\
+        function reShowVideo(){\
+            if(exposerVideo){\
+                exposerVideo.play();\
+                exposerVideoContainer.style.display=\"inline-block\";\
+            }\
+        }\
+        function videoEnded(){\
+            exposerVideo.posterImage.show();\
+            exposerVideo.bigPlayButton.show();\
+            exposerVideo.currentTime(0);\
+        }\
+            function hasClass(ele,cls) {\
+            return new RegExp('(\\\\s|^)'+cls+'(\\\\s|$)').test(ele.className)? true : false;\
+        }\
+        \
+        function removeClass(ele,cls) {\
+                if (hasClass(ele,cls)) {\
+                    var reg = new RegExp('(\\\\s|^)'+cls+'(\\\\s|$)');\
+                    ele.className=ele.className.replace(reg,' ');\
+                }\
+        }\
+        function addClass(ele,cls){\
+                if(!hasClass(ele,cls)){\
+                    ele.className+=\" \"+cls;\
+                }\
+        }\
+        function freezeExposer() {\
+    \
+            if (!isAlreadyFreeze) {\
+    \
+                trackExpand();\
+    \
+                isAlreadyFreeze = true;\
+                generateExposerVideo();\
+    \
+                if (isNative) {\
+    \
+                    exposerImageA.style.opacity = 1;\
+                    exposerImageA.style.zIndex = \"9\";\
+    \
+                    exposerBucket.innerHTML = exposerBucket.innerHTML;\
+    \
+                    reRenderExposer();\
+    \
+                    fakeClick = document.createElement(\"a\");\
+                    fakeClick.href = \"" + landingPage + "\";\
+                    fakeClick.target = \"_blank\";\
+                    fakeClick.style.display = \"block\";\
+                    fakeClick.style.width = \"100%\";\
+                    fakeClick.style.height = \"100%\";\
+                    fakeClick.style.position = \"fixed\";\
+                    fakeClick.style.top = \"0\";\
+                    fakeClick.style.zIndex = \"999998\";\
+                    exposerBucket.parentNode.appendChild(fakeClick);\
+    \
+                    fakeClose = document.createElement(\"a\");\
+                    fakeClose.innerHTML = exposerClose.outerHTML;\
+                    fakeClose.onclick = closeExposer;\
+                    fakeClose.style.width = \"50px\";\
+                    fakeClose.style.height = \"50px\";\
+                    fakeClose.style.top = \"20px\";\
+                    fakeClose.style.right = \"10px\";\
+                    fakeClose.style.display = \"block\";\
+                    fakeClose.style.position = \"fixed\";\
+                    fakeClose.style.zIndex = \"999999\";\
+                    exposerBucket.parentNode.appendChild(fakeClose);\
+    \
+                    body.style.position = \"fixed\";\
+                }\
+    \
+                exposerImageB.style.display = \"none\";\
+    \
+                exposerBucket.className = exposerBucket.className.replace('still', '');\
+                exposerBucket.style.top = \"0px\";\
+                exposerBucket.style.height = \"100%\";\
+                exposerBucket.style.position = \"fixed\";\
+                body.style.overflow = \"hidden\";\
+    \
+            if (isIOS && isChrome) window.onfocus = onExposerFocus;\
+    \	    \
+                exposerBucket.parentNode.parentNode.parentNode.style.margin = \"0px\";\
+                exposerBucket.parentNode.parentNode.style.height = \"0px\";\
+    \
+                exposerBucket.removeEventListener(\"click\", expandExposer);\
+    \
+                if (isOldIphone) exposerLink.style.marginTop = \"40px\";\
+    \
+                exposerClose.style.display = \"block\";\
+                exposerClose.ontouchclick = closeExposer;\
+                exposerClose.ontouchmove = closeExposer;\
+                exposerClose.onclick = closeExposer;\
+    \
+                exposerLink.setAttribute('href', \"" + landingPage + "\");\
+                exposerLink.style.display = \"block\";\
+                exposerLink.ontouchmove = function(event) {\
+                    event.preventDefault();\
+                };\
+            }\
+        }\
+    \
+        function onExposerFocus() {\
+            exposerClose.style.top = \"80px\";\
+        }\
+    \
+        function trackExpand() {\
+            var expandTrackerImg = document.createElement(\"img\");\
+            expandTrackerImg.setAttribute(\"width\", \"0\");\
+            expandTrackerImg.setAttribute(\"height\", \"0\");\
+            expandTrackerImg.setAttribute(\"src\", \"" + expandTracker + "\");\
+            expandTrackerImg.setAttribute(\"id\", \"exposer_expand_beacon_%%CACHEBUSTER%%\");\
+            expandTrackerImg.style.visibility = \"hidden\";\
+            exposerBucket.appendChild(expandTrackerImg);\
+        }\
+        function whichTransitionEvent() {\
+            var t;\
+            var el = document.createElement('fakeelement');\
+            var transitions = {\
+                'transition': 'transitionend',\
+                'OTransition': 'oTransitionEnd',\
+                'MozTransition': 'transitionend',\
+                'WebkitTransition': 'webkitTransitionEnd'\
+            };\
+    \
+            for (t in transitions) {\
+                if (el.style[t] !== undefined) {\
+                    return transitions[t];\
+                }\
+            }\
+        }\
+    \
+        function reRenderExposer() {\
+    \
+            exposerBucket = document.getElementById(\"" + exposerId  + "\");\
+            exposer = exposerBucket.getElementsByClassName('exposer')[0];\
+            exposerBox = exposerBucket.getElementsByClassName('exposer-wrapper')[0];\
+            exposerFix = exposerBucket.getElementsByClassName('exposer-fix')[0];\
+            exposerBanner = exposerBucket.getElementsByClassName('exposer-banner')[0];\
+            exposerLink = exposerBucket.getElementsByClassName('exposer-link')[0];\
+            exposerClose = exposerBucket.getElementsByClassName('exposer-close')[0];\
+            exposerBottomText = exposerBucket.getElementsByClassName('exposer-bottom-text')[0];\
+            exposerTopText = exposerBucket.getElementsByClassName('exposer-top-text')[0];\
+            exposerImageA = exposerBucket.getElementsByClassName('exposer-img-a')[0];\
+            exposerImageB = exposerBucket.getElementsByClassName('exposer-img-b')[0];\
+        }\
+    \
+       function onOrientationChange() {\
+            if (isAlreadyExpand) {\
+              if (window.orientation == 90 || window.orientation == -90) {\
+                            hideExposerVideo();\
+                  setTimeout(function() {\
+                      window.scrollTo(0, lastScrollPosition);\
+                  }, 1000);\
+              } else {\
+                                reShowVideo();\
+                  if(isAlreadyExpand && !isAlreadyFreeze) {\
+                      quickExpandExposer();\
+                  }\
+              }\
+            }\
+        }\
+    \
+        window.addEventListener(\"orientationchange\", onOrientationChange, false);\
+    })();";
+    
+    /*get frame*/
+    var iframeEl            = window.frameElement;
+    
+    //get frame parent
+    var iframeParentEl      = iframeEl.parentElement;
+    
+    if(parent.document.getElementById("css-exposer") == null) template = css + template;
+    
+    //create popup element to containing skinad template
+    var containerEl         = document.createElement('div');
+    containerEl.setAttribute("id", "exposer-ad-" + exposerId);
+    containerEl.innerHTML = template;
+    
+    //Check If Video JS source already exist
+    var videoJsScript  = document.createElement('script');
+    videoJsScript.setAttribute('src','https://cdns.klimg.com/d.kapanlaginetwork.com/banner/asset/img/video.js?123');
+    iframeParentEl.appendChild(videoJsScript);
+    
+    //add exposer element to parent frame
+    iframeParentEl.appendChild(containerEl);
+    iframeEl.style.display = "none";
+    
+    //create container for exposer script
+    var containerScript     = document.createElement('script');
+    containerScript.setAttribute('type', 'text/javascript');
+    
+    //assign script to script container, note in firefox innerText not available so use textContent instead
+    if( typeof containerScript.innerText == 'undefined') {
+    
+        containerScript.textContent = script;
+    
+    } else
+        containerScript.innerText = script;
+    
+    //add popup script  container to skinad element
+    containerEl.appendChild(containerScript);
+    </script>
+    
+    <div id="beacon_%%CACHEBUSTER%%" style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+             <img src="%%VIEW_URL_ESC%%https://cdns.klimg.com/d.kapanlaginetwork.com/banner/asset/img/pixel.png" style="visibility:hidden;" width="0" height="0" />
+    </div>
+    

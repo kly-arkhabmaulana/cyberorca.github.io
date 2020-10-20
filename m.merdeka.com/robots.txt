@@ -1,0 +1,3 @@
+User-agent: *
+Disallow : /webdev
+Sitemap: https://www.merdeka.com/sitemap.xml

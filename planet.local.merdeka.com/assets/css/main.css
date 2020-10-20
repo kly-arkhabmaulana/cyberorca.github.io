@@ -1,0 +1,918 @@
+
+
+/* ==========================================================================
+   Bismillahirrahmanirrahim....						Malang, 04 of August 2015 
+   ========================================================================== */
+.tmp-background {
+	background-image:url("https://planet.merdeka.com/assets/images/ircssbackground.png");
+	min-height:400px;
+}
+.tmp-nobackground{
+	min-height:400px;
+}
+.make-center-text{
+	text-align:center;
+}
+.make-green{
+	background-color:#39B520;
+	color:#FFFFFF;
+}
+
+.rem-pad{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/*
+ * Drag & drop test
+ * */
+ 
+ /* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.column {
+  height: 150px;
+  width: 150px;
+  float: left;
+  border: 2px solid #666666;
+  background-color: #ccc;
+  margin-right: 5px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 3px #000;
+  -ms-box-shadow: inset 0 0 3px #000;
+  box-shadow: inset 0 0 3px #000;
+  text-align: center;
+  cursor: move;
+}
+.column header {
+  color: #fff;
+  text-shadow: #000 0 1px;
+  box-shadow: 5px;
+  padding: 5px;
+  background: -moz-linear-gradient(left center, rgb(0,0,0), rgb(79,79,79), rgb(21,21,21));
+  background: -webkit-gradient(linear, left top, right top,
+                               color-stop(0, rgb(0,0,0)),
+                               color-stop(0.50, rgb(79,79,79)),
+                               color-stop(1, rgb(21,21,21)));
+  background: -webkit-linear-gradient(left center, rgb(0,0,0), rgb(79,79,79), rgb(21,21,21));
+  background: -ms-linear-gradient(left center, rgb(0,0,0), rgb(79,79,79), rgb(21,21,21));
+  border-bottom: 1px solid #ddd;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -ms-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+}
+.column.over {
+  border: 2px dashed #000;
+}
+
+/*
+ * Drag & drop upload test 
+ * */
+#filedrag
+{
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em 0;
+	margin: 1em 0;
+	color: #555;
+	border: 2px dashed #555;
+	border-radius: 7px;
+	cursor: default;
+}
+
+
+#filedrag.hover
+{
+	color: #f00;
+	border-color: #f00;
+	border-style: solid;
+	box-shadow: inset 0 3px 4px #888;
+}
+
+
+/*
+ * From UI Designer
+ * */
+ a{
+	text-decoration:none !important;
+}
+:focus,
+:hover{
+	outline:none !important;
+}
+body{
+	font-family:Arial, Helvetica, sans-serif
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	line-height:normal;
+	margin:0;
+}
+.container{
+	width:auto !important;
+	max-width:1110px !important;
+}
+.list-unstyled{
+	margin:0;
+	padding:0;
+}
+
+/*----------------nav-------------*/
+.navbar-newsite{
+	margin:15px -15px;
+	margin-top:30px;
+}
+/*navbar-brand*/
+.navbar-brand{
+	padding: 5px 0px;
+	margin:0 !important;
+}
+.navbar-brand > img {
+	display:inline-block;
+	vertical-align:top;
+}
+.navbar-brand > img.planet{
+	margin-top: 0px;
+	margin-right:5px;
+}
+
+/*group-header*/
+.group-header{
+	float:right;
+	padding:4px 0;
+}
+.group-left,
+.navbar-menu{
+	display:table-cell;
+	vertical-align:middle;
+}
+.group-right{
+	display:none;
+}
+
+/*navbar-toggle*/
+.navbar-toggle {
+	margin:0;
+	padding:0;
+	margin-left: 10px;
+}
+
+/*search*/
+.form-search{
+	border:1px solid #ececec;
+	width:275px;
+}
+.form-search .form-control{
+	border:0;
+	outline:none;
+	box-shadow:none;
+	height:39px;
+	padding-right:0;
+}
+.form-search .btn{
+	border:0;
+	margin:0 !important;
+	background:none;
+	border-radius:0;
+	height:39px;
+	padding:0;
+	width:39px;
+}
+
+/*navbar-menu*/
+.navbar-menu .navbar-collapse {
+	padding:0;
+	margin-left:8px;
+}
+.navbar-menu .nav{
+	width:294px;
+/*
+	width:240px;
+*/
+	position:relative;
+	top:10px;
+}
+.navbar-menu .nav > li{
+	float:left;
+	margin-left:8px;
+}
+.navbar-menu .nav > li a{
+	padding:0;
+	background:none;
+}
+.navbar-menu .nav > li .icon{
+	background:url("https://planet.merdeka.com/assets/img/new-icon-menu-v4.png") no-repeat;
+	display:block;
+	width:31px;
+	height:30px;
+	margin-right:10px;
+}
+
+.navbar-menu .nav > li .icon.home{
+	background-position: 0px 0px;
+	
+}
+
+.navbar-menu .nav > li .icon.edit{
+	background-position: -33px 0px;
+	
+}
+.navbar-menu .nav > li .icon.cp{
+	background-position: -67px 0px;
+}
+.navbar-menu .nav > li .icon.setting{
+	background-position: -100px 0px;
+}
+.navbar-menu .nav > li .icon.info{
+	background-position: -134px 0px;
+}
+.navbar-menu .nav > li .icon.sign{
+	background-position: -168px 0px;
+}
+.navbar-menu .nav > li .icon.sign-in{
+	background-position: -199px 0px;
+}
+
+/*
+ * hover blue
+ * */
+.navbar-menu .nav > li .icon.home:hover{
+	background-position: 0px -33px;
+} 
+.navbar-menu .nav > li .icon.edit:hover{
+	background-position: -33px -33px;
+}
+.navbar-menu .nav > li .icon.cp:hover{
+	background-position: -67px -33px;
+}
+.navbar-menu .nav > li .icon.setting:hover{
+	background-position: -100px -33px;
+}
+.navbar-menu .nav > li .icon.info:hover{
+	background-position: -134px -33px;
+}
+.navbar-menu .nav > li .icon.sign:hover{
+	background-position: -168px -33px;
+}
+.navbar-menu .nav > li .icon.sign-in:hover{
+	background-position: -199px -33px;
+}
+/*
+ * end of hover blue
+ * */
+@media (max-width:1110px){
+	.navbar-newsite{
+		padding:0 15px;
+	}
+	/*group-header*/
+	.group-header{
+		display:block;
+		float:none;
+		padding:0;
+	}
+	/*navbar-brand*/
+	.navbar-brand{
+		display:block;
+		height:100%;
+		float:none;
+		padding:0;
+		margin-bottom:30px !important;
+	}
+	.navbar-brand > img {
+		display:block;
+		margin: 0 auto;
+	}
+	.navbar-brand > img.planet{
+		margin:0 auto;
+		margin-bottom:5px;
+	}
+	.form-search,
+	.group-left{
+		width:100%;
+	}
+}
+@media (max-width:767px){
+	.group-right{
+		width:1%;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.navbar-menu{
+		display:block;
+		width:100%;
+	}
+	.navbar-menu .navbar-collapse{
+		border:0;
+		margin:0;
+		box-shadow:none;
+	}
+	.navbar-menu .nav{
+		margin:15px auto;
+		width:auto;
+		display:table;
+	}
+	.navbar-menu .nav > li{
+		margin:3px;
+	}
+}
+/*-------------------end nav---------------------*/
+
+/*-------------------cover---------------------*/
+.cover{
+	background:url("https://planet.merdeka.com/assets/img/header.png") no-repeat;
+	background-size:cover;
+	height:290px;
+	margin:0 -15px;
+	padding:0 15px;
+	background-position:center;
+	position:relative;
+}
+.cover:after{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding: 100px 15px 15px;
+    bottom: 0px;
+    z-index: 1;
+    background: linear-gradient(to bottom, transparent 0%, rgba(1, 0, 0, 0.8) 100%);
+	content:"";
+}
+.profile{
+	position: absolute;
+	bottom: -45px;
+	left: 40px;
+	z-index:2;
+}
+.img-profile,
+.detail-profile{
+/*
+	display:table-cell;
+	vertical-align:middle;
+*/
+display: block;
+float:left;
+}
+.detail-profile{
+/*
+	padding-left:15px;
+	vertical-align:top;
+	width:70%;	
+*/
+	padding-left: 15px;
+    vertical-align: top;
+    width: 67%;
+    height: 82px;
+    float: left;
+}
+.img-profile img{
+	width:80px;
+	height:80px;
+/*
+	border:5px solid #fff;
+*/
+}
+.detail-profile .name{
+/*
+	font-size:35px;
+*/
+	font-size:28px;
+	margin:0;
+	line-height:normal;
+	font-weight:bold;
+	color:#000000;
+/*
+	color:#fff;
+*/
+}
+.detail-profile .job{
+/*
+	font-size:24px;
+	color:#fff;
+*/
+	font-size:18px;
+	color:#000000;
+	line-height: 2em;
+}
+@media (max-width:767px){
+	.cover{
+		height:150px
+	}
+	.profile{
+		bottom:-20px;
+	}
+	.img-profile img{
+		width:95px;
+		border:3px solid #fff;
+	}
+	.detail-profile .name{
+		font-size:20px;
+	}
+	.detail-profile .name img{
+		width:12px;
+	}
+	.detail-profile .job{
+		font-size:14px;
+	}
+}
+/*-----------------end cover------------*/
+
+
+/*-----------------content----------*/
+.section-content{
+	padding:0;
+	margin-top:15px;
+	margin-bottom:30px;
+}
+.section-left,
+.section-right{
+	padding:0 15px;
+ }
+.section-left{
+	width:300px;
+/*
+	padding-top:45px;
+*/
+	padding-top:10px;
+	float:left;
+}
+.section-right{
+	overflow:hidden;
+}
+.follow-me {
+	background: #35B4EB;
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0;
+	color: #fff !important;
+}
+.sidebar-module {
+	padding: 20px;
+	background: #f5f5f5;
+	margin-bottom:3px;
+}
+.sidebar-title {
+	font-size: 20px;
+	color: #999;
+	font-weight: bold;
+	margin-bottom:10px
+}
+.sidebar-module p {
+	font-size: 16px;
+	color: #363636;
+	line-height: 1.6em;
+	margin:10px 0;
+}
+.sidebar-module .date-join {
+	color: #969696;
+	font-size: 11px;
+	line-height: 1.5em;
+	display: block;
+	margin-bottom:20px;
+}
+.link-blog {
+	font-size: 13px;
+	font-style: italic;
+	color: #35B4EB;
+}
+.link-sosmed{
+	margin-top:10px;
+}
+.link-sosmed a{
+	width: 20px;
+	height: 20px;
+	background: url("https://planet.merdeka.com/assets/img/sosmed-icon.png") no-repeat;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align:middle;
+	margin-right:5px;
+}
+.link-sosmed .fb{
+	width: 13px;
+}
+.link-sosmed .twitter{
+	background-position: -20px 0px;
+}
+.link-sosmed .instagram{
+	background-position: -46px 0px;
+}
+.link-sosmed .youtube{
+	width: 25px;
+	background-position: -72px 1px;
+}
+.list-article-berita > li{
+	border-top:1px solid #ececec;
+	padding:20px 0;
+}
+.list-article-berita > li:first-child{
+	border:0;
+}
+.article-left,
+.deskrip-right{
+	display:table-cell;
+	vertical-align:top;
+	position:relative;
+}
+
+.deskrip-right{
+ 	padding-left:10px;
+}
+
+.deskrip-right h5 > a {
+	/*font-size: 20px;*/
+	font-size: 17px;
+	color: #363636;
+	line-height: 1.5em;
+	display: block;
+}
+.deskrip-right h5 > a:hover {
+ 	color:#35B4EB;
+}
+.article-left img{
+	margin:5px 0;
+}
+.date {
+	font-size: 12px;
+	color: #888;
+	display: block;
+	margin-top: 8px;
+}
+@media (max-width:1110px){
+	.section-content{
+		padding:0 15px;
+	}
+}
+@media (max-width:767px){
+	.section-left,
+	.section-right{
+		display:block;
+		width:100%;
+		float:none;
+	}
+	.section-left{
+		padding-top:15px;
+		padding-bottom:30px;
+	}
+	.follow-me,
+	.sidebar-title{
+		font-size:15px;
+	}
+	.sidebar-module p{
+		font-size:13px;
+	}
+	.list-article-berita > li .article-left,
+	.list-article-berita > li .deskrip-right{
+		display:block;
+	}
+	.list-article-berita > li .article-left img{
+		width:100%;
+	}
+	.list-article-berita > li .deskrip-right{
+		padding:0;
+		margin-top:10px;
+	}
+	.deskrip-right h5 > a {
+		font-size:16px;
+	}
+	.date{
+		font-size:11px;
+	}
+}
+.list-paging {
+	display: table;
+	margin: 50px auto;
+}
+.list-paging li {
+ 	float:left;
+	border-bottom: 1px solid #ececec;
+}
+.list-paging li > a {
+	vertical-align: middle;
+	display: table-cell;
+	height: 45px;
+	text-align: center;
+	color: #252525;
+	white-space:nowrap;
+	font-size: 18px;
+	padding:0 15px;
+}
+.list-paging li.active > a,
+.list-paging li > a:hover {
+  background: #35B4EB;
+  color: #fff;
+}
+.list-navbar{
+	border-bottom:1px solid #c9c9c9;
+}
+.list-navbar > li{
+	float:left;
+	margin-left:58px;
+}
+.list-navbar > li:first-child{
+	margin:0;
+}
+.list-navbar > li a{
+	display:block;
+	padding:10px 0;
+	font-size:18px;
+	color:#363636;
+	border-bottom:3px solid transparent;
+}
+.list-navbar > li a:hover,
+.list-navbar > li.active a{
+	border-color:#35b4eb;
+}
+.link-dropdown{
+	display:none;
+	padding:10px 0;
+	font-size:18px;
+	color:#363636;
+	border-bottom:3px solid #35b4eb;
+	background:url("https://planet.merdeka.com/assets/img/showmore-icon.png") no-repeat;
+	background-position:100% 50%;
+}
+@media (min-width:1109px){
+	#dropdown-nav{
+		display:block;
+		height: auto !important;
+	}
+}
+@media (max-width:1110px){
+	.link-dropdown{
+		display:block;
+	}
+	.list-navbar > li.active{
+		display:none;
+	}
+	.list-navbar > li{
+		float:none;
+		display:block;
+		margin:0 !important;
+	}
+}
+
+/*---------------------------create-----------------*/
+.form-create{
+	margin-top:20px;
+}
+.form-create .form-group {
+	margin-bottom:20px;
+}
+.form-create label {
+	font-size: 20px;
+	color: #999;
+	line-height: 1.5em;
+}
+.form-create .form-control {
+	background: #f5f5f5;
+	font-size: 20px;
+	color: #999;
+	/*font-weight: bold;*/
+	border: 0;
+	height: 45px;
+	box-shadow: none;
+	border-radius: 0;
+}
+.form-create .select-box{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-create .select-box{
+	width: 40%;
+	font-size: 18px;
+	font-weight:normal;
+	color: #999;
+	overflow: hidden;
+	background: url("https://planet.merdeka.com/assets/img/showmore-icon.png") no-repeat #f5f5f5;
+	background-position: 95%;
+}
+.form-create .select-box,
+.radio-create{
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:30px;
+}
+.form-create .label-inline{
+	margin: 0px;
+	line-height: normal;
+	display: inline-block;
+	vertical-align: middle;
+}
+.radio-create input[type=radio] {
+    display:none;
+}
+.radio-create input[type=radio] + label, input[type=checkbox] + label {
+    margin: 0;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #999;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    transition:all 0.5s ease;
+  }
+.radio-create input[type=radio]:checked + label, input[type=checkbox]:checked + label{
+    background-color: #35B4EB;
+    color: #FFF;
+}
+.form-create .add-tag{
+	font-size: 12px;
+	color: #999;
+	font-style: italic;
+	display:block;
+	margin-top:5px;
+}
+.btn-right{
+	text-align:right;
+}
+.btn-form{
+	background: #35B4EB;
+	color: #fff;
+	border:0;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 12px 15px;
+	height: 50px;
+	margin-left: 20px;
+	transition:all 0.5s ease;
+	display:inline-block;
+	vertical-align:middle;
+}
+.btn-form > img {
+	margin-right: 10px;
+	margin-top: -3px
+}
+.btn-form:hover {
+	background: #2694C3;
+	color: #fff;
+}
+@media (max-width:1110px){
+	.form-create label {
+		font-size:16px;
+	}
+	.form-create .form-control {
+		font-weight:normal;
+		font-size:14px;
+	}
+	.form-create .label-inline{
+		display:block;
+		margin-bottom:5px;
+	}
+	.form-create .select-box,
+	.radio-create{
+		margin:0;
+		display:block;
+		width:100%;
+	}
+	.radio-create input[type=radio] + label, input[type=checkbox] + label {
+		font-size:14px;
+		font-weight:normal;
+		padding:10px 20px;
+	}
+	.btn-right{
+		text-align:center;
+	}
+	.btn-form{
+		margin:0;
+		font-size: 14px;
+		padding: 10px;
+		margin:5px 0;
+	}
+}
+/*-----------------endcontent------------*/
+
+
+/*-----------------footer------------*/
+.mdk-footer {
+  padding-top: 10px;
+  /*padding-bottom: 40px;*/
+  border-top: 1px solid #ececec;
+  text-align: right;
+}
+.mdk-footer span {
+  font-size: 11px;
+  color: #252525;
+}
+/*-----------------end footer------------*/
+ 
+/*
+ * End of UI Designer Copy
+ * */ 
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.modifheight{
+	height:200px !important;
+}
+
+
+/*
+ * Added on 08 of August 2016 
+ */
+ 
+.mdk-footer .footer-links {
+	color:#252525;
+	text-align:center;
+}
+.mdk-footer .footer-links a{
+	color:#252525;				
+}
+
+.mdk-footer .footer-copyright {
+	text-align:center;
+	margin-top:10px;
+	background-color:#CC0001;
+	color:#FFFFFF;
+	padding:12px;
+}
+.mdk-footer .footer-copyright span{
+	color:#FFFFFF;
+}
+
+
+#kl-social-mobile {
+	display: block;
+    width: 282px;
+    float: left;
+}
+.planet-min-height {
+	min-height:450px;
+}
+
+#planetnotif {
+	color:#FFFFFF;
+	background-color:#35B4EB;
+	padding:5px;
+	width:auto;
+	display:inline-block;
+	font-size:13px;
+	position:relative;
+/*
+	right: 0px;
+*/
+	left:0px;
+	top: 7px;
+	border-radius: 2px !important;	
+}
+#planetnotif img {
+	position: absolute;
+	top: -7px;
+/*
+	right: 218px;	
+*/
+	left:4.5em;
+	width:11px;
+	height:9px;
+}
+
+#planetnotif-not-logged {
+	color: #FFFFFF;
+    background-color: #35B4EB;
+    /* background-color: red; */
+    padding: 5px;
+    width: auto;
+    display: inline-block;
+    font-size: 13px;
+    position: relative;
+    right: -108px;
+    top: 7px;
+    border-radius: 2px !important;	
+}
+#planetnotif-not-logged img {
+	position: absolute;
+    top: -7px;
+    right: 16px;
+    width: 11px;
+    height: 9px;
+}
+
+#nav-exception {
+	margin-left:0px;
+}
+/*
+.iarticleitem {
+	display:table;
+}
+*/

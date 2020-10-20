@@ -1,0 +1,54 @@
+<script src="https://unpkg.com/vue"></script>
+<style>
+    .color-box{
+        width: 50px;
+        height: 50px;
+        margin:10px 0;
+    }
+    .disbledButton{
+        cursor: not-allowed;
+        pointer-events: none;
+        /*Button disabled - CSS color class*/
+        color: #c0c0c0;
+    }
+</style>
+<div id="app">
+    <div class="product">
+        <h1> Variants </h1>
+            <div v-for="variant in variants" 
+                 class="color-box"
+                 :style="{backgroundColor : variant.variantColor}"
+                 @mouseover="updateProduct(variant.variantImage)"
+                 >
+            </div>
+            <br/><hr>
+        <div class="product-image">
+            <a :href="url" target="_blank">
+                <span style="color: red;font-weight: bolder;font-size: larger;" v-if="onSale && inventory > 0">ON SALE!</span>
+                <br/>
+                <img :src="image" :alt="altText" :width="width" :height="height"/>
+            </a>
+            <p v-if="inventory > 10">[{{ inventory }}] In Stock</p>
+            <p v-else-if="inventory <=10 && inventory > 0">[{{ inventory }}] Almost Sold Out! </p>
+            <p v-else>Out Of Stock</p>
+            <div class="cart">
+                <p>Cart({{ cart }})</p>
+            </div>
+            <button @click="addToCart" :class="{ disbledButton: !inStock }" >Add to cart</button>
+            <button @click="removeFromCart">Remove from cart</button>
+        </div>    
+        <div class="product-info">
+            <h1> Sizes</h1>
+            <ul>
+                <li v-for="size in sizes"> {{ size }} </li>
+            </ul>
+            
+            <h1> {{ product }} </h1>
+            <ul>
+                <li v-for="detail in details"> {{ detail }} </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>

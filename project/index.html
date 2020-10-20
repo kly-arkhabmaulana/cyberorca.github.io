@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #containerCalc{
+            background-color: black;
+            width: 300px;
+            height: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius:1vw;
+        }
+        #containerCalc .btnCalc button{
+            padding:26px;
+        }
+
+        #containerCalc .btnOperator button{
+            padding:25px;
+            
+        }
+
+        #containerCalc .inputCalc{
+            background-color:black;
+            height:50px;
+            
+        }
+
+        #containerCalc .inputCalc input{
+            background-color:white;
+            height:40px;
+            border: none;
+            margin: 0 auto;
+            position: relative;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="containerCalc">
+        <div class="inputCalc">
+            <input type="text" class="calcText" value="0"></input>
+        </div>
+        <div class="btnOperator">
+                <button class="btn-plus">+</button>
+                <button class="btn-minus">-</button>
+                <button class="btn-divide">/</button>
+                <button class="btn-times">x</button>
+        </div>
+        <div class="btnCalc"></div>
+    </div>
+<script>
+
+var containerCalc = document.querySelector('#containerCalc'),
+    inputCalc = document.querySelector('.inputCalc'),
+    calcText = document.querySelector('.calcText'),
+    btnCalc = document.querySelector('.btnCalc'),
+    startInput = true;
+
+    initCalcContainer();
+
+    function createButton(){
+        for(let i=0;i<10;i++){
+            btn = document.createElement('button');
+            btn.setAttribute('class','btn-'+i);
+            btn.innerText = i;
+            btn.addEventListener('click',eventClick,false);
+            btnCalc.insertAdjacentElement('afterBegin',btn);
+        }
+    }
+
+    function eventClick(e){
+        if(startInput && calcText.value !== ''){
+            calcText.value = '';
+            startInput = false;
+        }
+        calcText.value += this.innerText;
+    }
+
+    function initCalcContainer(){
+        createButton();
+    }
+</script>
+</body>
+</html>

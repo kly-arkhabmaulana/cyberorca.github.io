@@ -1,0 +1,145 @@
+.embedtrigger{ 
+	height:100px !important;
+}
+.ipitem {
+	display:none;
+}
+.cizone {
+	width:100%;
+	height: 100px;
+	color: #7F7F7F;
+	text-align:center;
+}
+.cizone p{
+  position: relative;
+  top: 92%;
+  -webkit-transform: translateY(-92%);
+  -ms-transform: translateY(-92%);
+  transform: translateY(-92%);
+  font-size:16px;
+  color: #999;
+}
+.put-right{
+	float:right; 
+}
+.ipitem-detail {
+	border:1px solid #999;
+	padding:10px;
+	margin-bottom:10px;
+}
+.make-center {
+	text-align:center;
+}
+#thumb-cropper{
+	min-height: 300px;
+	max-height: 300px;
+	margin-bottom: 20px;
+}
+
+#thumb-cropper > img {
+	max-width: 100%;
+}
+
+
+ul.token-input-list-facebook {
+    overflow: hidden;
+    height: auto !important;
+    /*width: 360px;*/
+    width: 100%;
+    border: 1px solid #8496BA;
+    cursor: text;
+    font-size: 12px;
+    font-family: Verdana;
+    min-height: 1px;
+    z-index: 999;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFF;
+    list-style-type: none;
+    clear: left;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	border:1px solid #BFBFBF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 100%;*/
+	width: 100%;
+	max-width:670px;
+	height: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.navbar-brand{
+	padding:5px;
+}
+
+.theme-banner {
+    height: 260px;
+    width: 996px;
+    background-image: url("https://cdns.klimg.com/merdeka.com/media/i/a/ireporters/v2/header-v2-img.jpg");
+    margin-bottom:70px;
+    margin:auto;
+}
+
+.icon-one, .icon-two, .icon-three {
+    width: 250px;
+    height: 240px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 45px;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    font-size: 13px;
+    color: #7D2323;
+}
+.info-grafis-container {
+    background-image: url("https://cdns.klimg.com/merdeka.com/media/i/a/ireporters/v2/gradasi.jpg");
+    background-repeat: repeat-x;
+    width: 996px;
+    height: 350px;
+    margin-top: -27px;
+    margin:auto;
+}
+/*.save-post {
+	margin-top:15px;
+}*/
+/*textarea [name^="ipost_text_content"]{*/
+#ipost_text_content,textarea [name^="ipost_text_content"]{
+	height:300px !important;
+}
+/*#izone_thumb, #izone,[id^="izone_"]{*/
+[id^="izone_"],#izone{
+	height:270px;
+	/*min-height:270px;*/
+    background-image:url("https://cdns.klimg.com/merdeka.com/media/i/a/planet-dragdrop-image-2.jpg");
+    background-repeat:no-repeat;
+	/*background-position:center center;
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;*/
+	background-position: center; 
+	background-color:#F5F5F5;
+}
+.fd-file {
+	font-size:200px;
+}
+.modifheight{
+	height:200px !important;
+}

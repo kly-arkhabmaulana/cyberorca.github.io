@@ -1,0 +1,218 @@
+.list-following{ 
+	margin:30px -15px;
+	margin-bottom:-30px;
+	font-family:'Open Sans', sans-serif;
+}
+.list-following > li {
+	padding:15px;
+	margin-bottom:30px;
+}
+.list-following > li .deskrip-right{
+	width:100%;
+	padding-left:15px;
+}
+.deskrip-follow h6{
+	font-size:20px;
+	color:#000;
+	line-height:1.5em;
+	font-weight:bold;
+}
+.deskrip-follow p{
+	margin:15px 0;
+	line-height:1.5em;
+	font-style:italic;
+	font-size:18px;
+}
+.btn-follow{
+	display:block;
+	border:1px solid #35B4EB;
+	font-size:18px;
+	font-weight:600;
+	padding:5px;
+	text-align:center;
+	margin-top:20px;
+	transition:all 0.5s ease
+}
+.btn-follow:hover,
+.btn-follow.following{
+	background:#35B4EB;
+	color:#fff;
+}
+@media(max-width:991px){
+	.list-following > li .article-left,
+	.list-following > li .deskrip-right{
+		width:100%;
+		display:block;
+		padding:0;
+	}
+	.list-following > li .article-left img{
+		width:100%;
+	}
+	.list-following > li .deskrip-right{
+		margin-top:10px;
+	}
+}
+.section-account{
+	border-top:1px solid #ececec;
+	padding:30px 0;
+	font-family:'Open Sans', sans-serif;
+}
+.section-join h3 {
+	font-weight: 600;
+	padding:0 15px;
+	line-height: 1.5em;
+	font-size: 42px;
+	color: #58595b;
+	text-align: center;
+	margin-bottom:30px;
+}
+.list-join li {
+	text-align: center;
+	padding: 15px;
+}
+.list-join li .img-block {
+	min-height: 215px;
+}
+.list-join li .img-block img {
+	max-width: 100%;
+}
+.list-join li p {
+	font-size: 18px;
+	color: #58595b;
+	line-height: 1.5em;
+}
+@media (max-width:991px) {
+	.deskrip-mdk li .img-block {
+		min-height: 160px;
+	}
+}
+@media (max-width:767px) {
+	.deskrip-mdk li .img-block {
+		min-height: 100%;
+		margin-bottom: 30px;
+	}
+	.section-join h3 {
+		font-size:24px;
+	}
+}
+
+.section-form .form-daftar {
+	border-left: 1px solid #ececec;
+}
+.section-form h3 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.section-form .form-control {
+	border-radius: 0;
+}
+.section-form .control-label {
+	font-size: 16px;
+	color: #58595b;
+	margin: 0;
+	line-height:1.2em;
+	font-weight: normal;
+}
+.section-form .form-group .link-forgot {
+	font-size: 14px;
+	color: #35B4EB;
+	margin-top:5px;
+	display:table;
+}
+.section-form .or{
+	display:block;
+	margin:20px 0;
+	position:relative;
+}
+.section-form .or:before{
+	background: url("https://cdns.klimg.com/kapanlagi.com/v5/i/kl-account/OR.png") no-repeat;
+    height: 45px;
+	display:block;
+	width:45px;
+	margin:0 auto;
+	position:relative;
+	z-index:2;
+	content:"";
+}
+.section-form .or:after{
+	background:#ececec;
+	height:1px;
+	position:absolute;
+	left:0;
+	right:0;
+	top:50%;
+	content:"";
+	z-index:1;
+}
+.section-form .btn-login {
+	color: #fff	;
+	font-size: 18px;
+	background: #35B4EB;
+	border-radius: 0;
+	transition:all 0.5s ease;
+}
+.section-form .btn-login:hover {
+	color: #35B4EB;
+	background: #fff;
+	border: 1px solid #35B4EB;
+}
+.section-form .radio{
+	padding-top:6px;
+}
+.section-form .radio label input {
+	vertical-align: middle;
+}
+.section-form .radio label {
+	font-size: 15px;
+	color: #58595b;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+.section-form .row-select{
+	margin:0 -3px;
+}
+.section-form .form-tanggal{
+	width:33.33%;
+	float:left;
+	padding:0 3px;
+}
+#gplusBtn,
+#fb-button{
+	cursor: pointer;
+    height: 42px;
+    width: 210px;
+    display: block;
+	margin:10px auto;
+}
+#gplusBtn {
+    background: url("https://cdns.klimg.com/kapanlagi.com/v5/i/kl-account/gp-stay.png") no-repeat scroll 0 0 transparent;
+}
+#gplusBtn:hover {
+    background: url("https://cdns.klimg.com/kapanlagi.com/v5/i/kl-account/gp-hov.png") no-repeat scroll 0 0 transparent;
+}
+#fb-button {
+    background: url("https://cdns.klimg.com/kapanlagi.com/v5/i/kl-account/fb-button-stay.png") no-repeat scroll 0 0 transparent;
+}
+#fb-button:hover {
+    background: url('https://cdns.klimg.com/kapanlagi.com/v5/i/kl-account/fb-button-hov.png') no-repeat transparent;
+}
+.section-form .form-col .form-control{
+	margin-bottom:20px;
+}
+@media (max-width:767px){
+	.section-form .control-label{
+		margin-bottom:10px;
+	}
+	.section-form .radio{
+		padding:0;
+	}
+	.section-form .form-daftar {
+		border:0;
+		margin-top:30px;
+	}
+}
+@media (min-width:1109px) and (max-width:1140px){
+	.row{
+		margin:0;
+	}
+}
