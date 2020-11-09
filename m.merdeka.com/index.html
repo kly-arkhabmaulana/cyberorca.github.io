@@ -392,7 +392,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                         // console.log('testing scroll',scrollTop,this.timedBottomFrm);
                                                         this.timedBottomFrm = googletag.defineSlot(this.dfpBottomFrame, [[320, 50],[320, 100]], 'div-gpt-ad-merdeka-bottomfrm').addService(googletag.pubads());
                                                         window.removeEventListener("scroll", this.scrollHandler);
-                                                        googletag.display('div-gpt-ad-merdeka-bottomfrm');
                                                         googletag.pubads().refresh([this.timedBottomFrm]);
 
                                                         this.refreshSlot = this.timedBottomFrm;
@@ -1370,7 +1369,13 @@ $('.mdk-allchannel .slider-for').slick({
 </div>
 </div>
 </li><!--DFP EXPOSER 1 CODE-->
-<div id='div-gpt-ad-merdeka-dfp-exposer-slot1-oop' style="margin:15px 0 25px 0"></div>
+<div id='div-gpt-ad-merdeka-dfp-exposer-slot1-oop' style="margin:15px 0 25px 0">
+    <script>
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-merdeka-dfp-exposer-slot1-oop');
+        });
+    </script>
+</div>
 <!--END DFP EXPOSER 1 CODE-->
 <!--INFEED 1 CODE-->
 	<div id="inf-1"></div>
@@ -1864,7 +1869,13 @@ x:-o-prefocus, .slider-panorama .slick-prev.slick-disabled{
 <li style="padding:0px;" >
 	<div class="mdk-top-stories-item-content" id="div-gpt-ad-merdeka-dfp-nativeOut-slot1-oop"></div>
 </li>
-<!-- END DFP NATIVEOUT 1 --><!--DFP EXPOSER 2 CODE--> <div id='div-gpt-ad-merdeka-dfp-exposer-slot2-oop'></div> <!--END DFP EXPOSER 2 CODE--><li style="padding:0px;" >
+<!-- END DFP NATIVEOUT 1 --><!--DFP EXPOSER 2 CODE--> <div id='div-gpt-ad-merdeka-dfp-exposer-slot2-oop'>
+    <script>
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-merdeka-dfp-exposer-slot2-oop');
+        });
+    </script>
+</div> <!--END DFP EXPOSER 2 CODE--><li style="padding:0px;" >
 <div class="mdk-top-stories-item-container">
 <div class="mdk-top-stories-item-content">
     <a href="http://m.merdeka.com/trending/bikin-haru-anggota-polisi-ini-peluk-mahasiswa-demo-dan-katakan-kamu-itu-adik-saya.html">
@@ -2781,12 +2792,25 @@ x:-o-prefocus, .slider-panorama .slick-prev.slick-disabled{
 			<!-- Google Code for Remarketing Tag -->
         </div>
     </div>
-    <!--DFP BOTTOM FRAME CODE--> <div id="dfp-bframe-cont-transparent" style=" position: fixed; bottom: 0; min-height: 50px; background-color: #ECECEC70; width: 100%; text-align: center;display:none; z-index: 999999"> <div id='div-gpt-ad-merdeka-bottomfrm' style="text-align: center; margin: 0 auto; width: 320px;"></div> </div> <!--END DFP BOTTOM FRAME CODE-->
+    <!--DFP BOTTOM FRAME CODE--> <div id="dfp-bframe-cont-transparent" style=" position: fixed; bottom: 0; min-height: 50px; background-color: #ECECEC70; width: 100%; text-align: center;display:none; z-index: 999999"> 
+        <div id='div-gpt-ad-merdeka-bottomfrm' style="text-align: center; margin: 0 auto; width: 320px;">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display('div-gpt-ad-merdeka-bottomfrm');
+                });
+            </script>
+        </div> </div> <!--END DFP BOTTOM FRAME CODE-->
 	<!--DFP POPUP CODE--> 
         <div id='div-gpt-ad-merdeka-popup-oop' style="text-align: center;"></div> 
         <!--END DFP POPUP CODE-->
     <!--DFP OVERLAY ADS-->
-<div id='div-gpt-ad-dfp-overlay-oop'></div>
+<div id='div-gpt-ad-dfp-overlay-oop'>
+    <script>
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-dfp-overlay-oop');
+        });
+    </script>
+</div>
 <!--END DFP OVERLAY ADS-->
     
     <!-- OLD GPT PLACE -->
